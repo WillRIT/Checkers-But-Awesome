@@ -19,23 +19,22 @@ class_name Board extends Node2D
 		
 @export_tool_button("CLEAR", "Eraser") var clear_action = clear
 @export_tool_button("UPDATE", "Reload") var update_action = update_values
+#@export_file()
 
 var board_arr : Array[Tile] #actual board data
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	clear()
-	update_values()
 	pass # Replace with function body.
 
 func board(y: int, x: int) -> Tile: #board 2d accessor
 	if y >= height or y < 0:
-		print("BOARD Y OUT OF BOUNDS")
+		#print("BOARD Y OUT OF BOUNDS")
 		return null
-	if x >= height or x < 0:
-		print("BOARD X OUT OF BOUNDS")
+	if x >= width or x < 0:
+		#print("BOARD X OUT OF BOUNDS")
 		return null
-
+		
 	return board_arr[(y * width) + x]
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
