@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="Checkers But Awesome"
+run/main_scene="uid://dqq7u7fxw5k0y"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 
