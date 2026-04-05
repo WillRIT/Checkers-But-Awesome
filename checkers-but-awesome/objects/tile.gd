@@ -24,6 +24,7 @@ var x: int
 var size: int
 
 # link references
+@export_group("Link References")
 @export var northwest: Tile = null
 @export var north: Tile = null
 @export var northeast: Tile = null
