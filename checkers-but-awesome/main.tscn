@@ -2,171 +2,255 @@
 
 [ext_resource type="Script" uid="uid://d27ry4406v8fk" path="res://objects/board.gd" id="1_ig7tw"]
 [ext_resource type="Script" uid="uid://mao8rihtt6ts" path="res://objects/tile.gd" id="2_0xm2m"]
-[ext_resource type="Texture2D" uid="uid://du3t7qwxyhd4o" path="res://assets/white.jpg" id="2_h2yge"]
-[ext_resource type="Texture2D" uid="uid://bvw4ed3vfytow" path="res://assets/red.jpg" id="5_lquwl"]
+[ext_resource type="Texture2D" uid="uid://3m8gvoui46iq" path="res://assets/white.jpg" id="2_h2yge"]
 
 [node name="Main" type="Node2D" unique_id=1126547366]
 
 [node name="Board" type="Node2D" parent="." unique_id=1613189343]
 position = Vector2(381, 124)
 script = ExtResource("1_ig7tw")
-height = 5
-width = 6
+height = 7
+width = 9
+tile_size = 40
 loadable = "OOOOOO
 OOOOOO
-OOOOOO
+OOOOOX
 OOOOOO
 OOOOOO"
 metadata/_custom_type_script = "uid://d27ry4406v8fk"
 
-[node name="Tile(0,0)2" type="Sprite2D" parent="Board" unique_id=182441144 node_paths=PackedStringArray("east", "south", "southeast")]
+[node name="Tile(0,0)2" type="Sprite2D" parent="Board" unique_id=874126774 node_paths=PackedStringArray("east", "south", "southeast")]
+scale = Vector2(0.8, 0.8)
 texture = ExtResource("2_h2yge")
 script = ExtResource("2_0xm2m")
 east = NodePath("../Tile(0,1)2")
-south = NodePath("../Tile(1,0)")
-southeast = NodePath("../Tile(1,1)")
+south = NodePath("../Tile(1,0)2")
+southeast = NodePath("../Tile(1,1)2")
 
-[node name="Tile(0,1)2" type="Sprite2D" parent="Board" unique_id=1892055140 node_paths=PackedStringArray("west", "east", "southwest", "south", "southeast")]
-position = Vector2(50, 0)
+[node name="Tile(0,1)2" type="Sprite2D" parent="Board" unique_id=1054830176 node_paths=PackedStringArray("west", "east", "southwest", "south", "southeast")]
+position = Vector2(40, 0)
+scale = Vector2(0.8, 0.8)
 texture = ExtResource("2_h2yge")
 script = ExtResource("2_0xm2m")
 west = NodePath("../Tile(0,0)2")
 east = NodePath("../Tile(0,2)2")
-southwest = NodePath("../Tile(1,0)")
-south = NodePath("../Tile(1,1)")
+southwest = NodePath("../Tile(1,0)2")
+south = NodePath("../Tile(1,1)2")
 southeast = NodePath("../Tile(1,2)2")
 
-[node name="Tile(0,2)2" type="Sprite2D" parent="Board" unique_id=1636782172 node_paths=PackedStringArray("west", "east", "southwest", "south", "southeast")]
-position = Vector2(100, 0)
+[node name="Tile(0,2)2" type="Sprite2D" parent="Board" unique_id=1461244120 node_paths=PackedStringArray("west", "east", "southwest", "south", "southeast")]
+position = Vector2(80, 0)
+scale = Vector2(0.8, 0.8)
 texture = ExtResource("2_h2yge")
 script = ExtResource("2_0xm2m")
 west = NodePath("../Tile(0,1)2")
-east = NodePath("../Tile(0,3)")
-southwest = NodePath("../Tile(1,1)")
+east = NodePath("../Tile(0,3)2")
+southwest = NodePath("../Tile(1,1)2")
 south = NodePath("../Tile(1,2)2")
 southeast = NodePath("../Tile(1,3)2")
 
-[node name="Tile(0,3)" type="Sprite2D" parent="Board" unique_id=1480024156 node_paths=PackedStringArray("west", "east", "southwest", "south", "southeast")]
-position = Vector2(150, 0)
-texture = ExtResource("5_lquwl")
+[node name="Tile(0,3)2" type="Sprite2D" parent="Board" unique_id=1461652409 node_paths=PackedStringArray("west", "east", "southwest", "south", "southeast")]
+position = Vector2(120, 0)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("2_h2yge")
 script = ExtResource("2_0xm2m")
-type = 2
 west = NodePath("../Tile(0,2)2")
-east = NodePath("../Tile(0,4)")
+east = NodePath("../Tile(0,4)2")
 southwest = NodePath("../Tile(1,2)2")
 south = NodePath("../Tile(1,3)2")
 southeast = NodePath("../Tile(1,4)2")
 
-[node name="Tile(0,4)" type="Sprite2D" parent="Board" unique_id=1750075615 node_paths=PackedStringArray("west", "east", "southwest", "south", "southeast")]
-position = Vector2(200, 0)
-texture = ExtResource("5_lquwl")
+[node name="Tile(0,4)2" type="Sprite2D" parent="Board" unique_id=296662695 node_paths=PackedStringArray("west", "east", "southwest", "south", "southeast")]
+position = Vector2(160, 0)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("2_h2yge")
 script = ExtResource("2_0xm2m")
-type = 2
-west = NodePath("../Tile(0,3)")
-east = NodePath("../Tile(0,5)")
+west = NodePath("../Tile(0,3)2")
+east = NodePath("../Tile(0,5)2")
 southwest = NodePath("../Tile(1,3)2")
 south = NodePath("../Tile(1,4)2")
 southeast = NodePath("../Tile(1,5)2")
 
-[node name="Tile(0,5)" type="Sprite2D" parent="Board" unique_id=2141950577 node_paths=PackedStringArray("west", "southwest", "south")]
-position = Vector2(250, 0)
-texture = ExtResource("5_lquwl")
+[node name="Tile(0,5)2" type="Sprite2D" parent="Board" unique_id=2140655155 node_paths=PackedStringArray("west", "east", "southwest", "south", "southeast")]
+position = Vector2(200, 0)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("2_h2yge")
 script = ExtResource("2_0xm2m")
-type = 2
-west = NodePath("../Tile(0,4)")
+west = NodePath("../Tile(0,4)2")
+east = NodePath("../Tile(0,6)")
 southwest = NodePath("../Tile(1,4)2")
 south = NodePath("../Tile(1,5)2")
+southeast = NodePath("../Tile(1,6)")
 
-[node name="Tile(1,0)" type="Sprite2D" parent="Board" unique_id=363669491 node_paths=PackedStringArray("north", "northeast", "east", "south", "southeast")]
-position = Vector2(0, 50)
-texture = ExtResource("5_lquwl")
+[node name="Tile(0,6)" type="Sprite2D" parent="Board" unique_id=877284388 node_paths=PackedStringArray("west", "east", "southwest", "south", "southeast")]
+position = Vector2(240, 0)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("2_h2yge")
 script = ExtResource("2_0xm2m")
-type = 2
+west = NodePath("../Tile(0,5)2")
+east = NodePath("../Tile(0,7)2")
+southwest = NodePath("../Tile(1,5)2")
+south = NodePath("../Tile(1,6)")
+southeast = NodePath("../Tile(1,7)2")
+
+[node name="Tile(0,7)2" type="Sprite2D" parent="Board" unique_id=72991144 node_paths=PackedStringArray("west", "east", "southwest", "south", "southeast")]
+position = Vector2(280, 0)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("2_h2yge")
+script = ExtResource("2_0xm2m")
+west = NodePath("../Tile(0,6)")
+east = NodePath("../Tile(0,8)")
+southwest = NodePath("../Tile(1,6)")
+south = NodePath("../Tile(1,7)2")
+southeast = NodePath("../Tile(1,8)")
+
+[node name="Tile(0,8)" type="Sprite2D" parent="Board" unique_id=1026674712 node_paths=PackedStringArray("west", "southwest", "south")]
+position = Vector2(320, 0)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("2_h2yge")
+script = ExtResource("2_0xm2m")
+west = NodePath("../Tile(0,7)2")
+southwest = NodePath("../Tile(1,7)2")
+south = NodePath("../Tile(1,8)")
+
+[node name="Tile(1,0)2" type="Sprite2D" parent="Board" unique_id=2112606889 node_paths=PackedStringArray("north", "northeast", "east", "south", "southeast")]
+position = Vector2(0, 40)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("2_h2yge")
+script = ExtResource("2_0xm2m")
 north = NodePath("../Tile(0,0)2")
 northeast = NodePath("../Tile(0,1)2")
-east = NodePath("../Tile(1,1)")
+east = NodePath("../Tile(1,1)2")
 south = NodePath("../Tile(2,0)2")
 southeast = NodePath("../Tile(2,1)2")
 
-[node name="Tile(1,1)" type="Sprite2D" parent="Board" unique_id=83431015 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
-position = Vector2(50, 50)
-texture = ExtResource("5_lquwl")
+[node name="Tile(1,1)2" type="Sprite2D" parent="Board" unique_id=2061774734 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+position = Vector2(40, 40)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("2_h2yge")
 script = ExtResource("2_0xm2m")
-type = 2
 northwest = NodePath("../Tile(0,0)2")
 north = NodePath("../Tile(0,1)2")
 northeast = NodePath("../Tile(0,2)2")
-west = NodePath("../Tile(1,0)")
+west = NodePath("../Tile(1,0)2")
 east = NodePath("../Tile(1,2)2")
 southwest = NodePath("../Tile(2,0)2")
 south = NodePath("../Tile(2,1)2")
 southeast = NodePath("../Tile(2,2)2")
 
-[node name="Tile(1,2)2" type="Sprite2D" parent="Board" unique_id=145819943 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
-position = Vector2(100, 50)
+[node name="Tile(1,2)2" type="Sprite2D" parent="Board" unique_id=1448696593 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+position = Vector2(80, 40)
+scale = Vector2(0.8, 0.8)
 texture = ExtResource("2_h2yge")
 script = ExtResource("2_0xm2m")
 northwest = NodePath("../Tile(0,1)2")
 north = NodePath("../Tile(0,2)2")
-northeast = NodePath("../Tile(0,3)")
-west = NodePath("../Tile(1,1)")
+northeast = NodePath("../Tile(0,3)2")
+west = NodePath("../Tile(1,1)2")
 east = NodePath("../Tile(1,3)2")
 southwest = NodePath("../Tile(2,1)2")
 south = NodePath("../Tile(2,2)2")
 southeast = NodePath("../Tile(2,3)2")
 
-[node name="Tile(1,3)2" type="Sprite2D" parent="Board" unique_id=1544595739 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
-position = Vector2(150, 50)
+[node name="Tile(1,3)2" type="Sprite2D" parent="Board" unique_id=1946060021 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+position = Vector2(120, 40)
+scale = Vector2(0.8, 0.8)
 texture = ExtResource("2_h2yge")
 script = ExtResource("2_0xm2m")
 northwest = NodePath("../Tile(0,2)2")
-north = NodePath("../Tile(0,3)")
-northeast = NodePath("../Tile(0,4)")
+north = NodePath("../Tile(0,3)2")
+northeast = NodePath("../Tile(0,4)2")
 west = NodePath("../Tile(1,2)2")
 east = NodePath("../Tile(1,4)2")
 southwest = NodePath("../Tile(2,2)2")
 south = NodePath("../Tile(2,3)2")
 southeast = NodePath("../Tile(2,4)2")
 
-[node name="Tile(1,4)2" type="Sprite2D" parent="Board" unique_id=2023668062 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
-position = Vector2(200, 50)
+[node name="Tile(1,4)2" type="Sprite2D" parent="Board" unique_id=1077539867 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+position = Vector2(160, 40)
+scale = Vector2(0.8, 0.8)
 texture = ExtResource("2_h2yge")
 script = ExtResource("2_0xm2m")
-northwest = NodePath("../Tile(0,3)")
-north = NodePath("../Tile(0,4)")
-northeast = NodePath("../Tile(0,5)")
+northwest = NodePath("../Tile(0,3)2")
+north = NodePath("../Tile(0,4)2")
+northeast = NodePath("../Tile(0,5)2")
 west = NodePath("../Tile(1,3)2")
 east = NodePath("../Tile(1,5)2")
 southwest = NodePath("../Tile(2,3)2")
 south = NodePath("../Tile(2,4)2")
 southeast = NodePath("../Tile(2,5)2")
 
-[node name="Tile(1,5)2" type="Sprite2D" parent="Board" unique_id=1019614246 node_paths=PackedStringArray("northwest", "north", "west", "southwest", "south")]
-position = Vector2(250, 50)
+[node name="Tile(1,5)2" type="Sprite2D" parent="Board" unique_id=1246136118 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+position = Vector2(200, 40)
+scale = Vector2(0.8, 0.8)
 texture = ExtResource("2_h2yge")
 script = ExtResource("2_0xm2m")
-northwest = NodePath("../Tile(0,4)")
-north = NodePath("../Tile(0,5)")
+northwest = NodePath("../Tile(0,4)2")
+north = NodePath("../Tile(0,5)2")
+northeast = NodePath("../Tile(0,6)")
 west = NodePath("../Tile(1,4)2")
+east = NodePath("../Tile(1,6)")
 southwest = NodePath("../Tile(2,4)2")
 south = NodePath("../Tile(2,5)2")
+southeast = NodePath("../Tile(2,6)")
 
-[node name="Tile(2,0)2" type="Sprite2D" parent="Board" unique_id=441041747 node_paths=PackedStringArray("north", "northeast", "east", "south", "southeast")]
-position = Vector2(0, 100)
+[node name="Tile(1,6)" type="Sprite2D" parent="Board" unique_id=1394154416 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+position = Vector2(240, 40)
+scale = Vector2(0.8, 0.8)
 texture = ExtResource("2_h2yge")
 script = ExtResource("2_0xm2m")
-north = NodePath("../Tile(1,0)")
-northeast = NodePath("../Tile(1,1)")
+northwest = NodePath("../Tile(0,5)2")
+north = NodePath("../Tile(0,6)")
+northeast = NodePath("../Tile(0,7)2")
+west = NodePath("../Tile(1,5)2")
+east = NodePath("../Tile(1,7)2")
+southwest = NodePath("../Tile(2,5)2")
+south = NodePath("../Tile(2,6)")
+southeast = NodePath("../Tile(2,7)2")
+
+[node name="Tile(1,7)2" type="Sprite2D" parent="Board" unique_id=481848561 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+position = Vector2(280, 40)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("2_h2yge")
+script = ExtResource("2_0xm2m")
+northwest = NodePath("../Tile(0,6)")
+north = NodePath("../Tile(0,7)2")
+northeast = NodePath("../Tile(0,8)")
+west = NodePath("../Tile(1,6)")
+east = NodePath("../Tile(1,8)")
+southwest = NodePath("../Tile(2,6)")
+south = NodePath("../Tile(2,7)2")
+southeast = NodePath("../Tile(2,8)")
+
+[node name="Tile(1,8)" type="Sprite2D" parent="Board" unique_id=854980127 node_paths=PackedStringArray("northwest", "north", "west", "southwest", "south")]
+position = Vector2(320, 40)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("2_h2yge")
+script = ExtResource("2_0xm2m")
+northwest = NodePath("../Tile(0,7)2")
+north = NodePath("../Tile(0,8)")
+west = NodePath("../Tile(1,7)2")
+southwest = NodePath("../Tile(2,7)2")
+south = NodePath("../Tile(2,8)")
+
+[node name="Tile(2,0)2" type="Sprite2D" parent="Board" unique_id=888162270 node_paths=PackedStringArray("north", "northeast", "east", "south", "southeast")]
+position = Vector2(0, 80)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("2_h2yge")
+script = ExtResource("2_0xm2m")
+north = NodePath("../Tile(1,0)2")
+northeast = NodePath("../Tile(1,1)2")
 east = NodePath("../Tile(2,1)2")
 south = NodePath("../Tile(3,0)2")
 southeast = NodePath("../Tile(3,1)2")
 
-[node name="Tile(2,1)2" type="Sprite2D" parent="Board" unique_id=1847960042 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
-position = Vector2(50, 100)
+[node name="Tile(2,1)2" type="Sprite2D" parent="Board" unique_id=54993605 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+position = Vector2(40, 80)
+scale = Vector2(0.8, 0.8)
 texture = ExtResource("2_h2yge")
 script = ExtResource("2_0xm2m")
-northwest = NodePath("../Tile(1,0)")
-north = NodePath("../Tile(1,1)")
+northwest = NodePath("../Tile(1,0)2")
+north = NodePath("../Tile(1,1)2")
 northeast = NodePath("../Tile(1,2)2")
 west = NodePath("../Tile(2,0)2")
 east = NodePath("../Tile(2,2)2")
@@ -174,11 +258,12 @@ southwest = NodePath("../Tile(3,0)2")
 south = NodePath("../Tile(3,1)2")
 southeast = NodePath("../Tile(3,2)2")
 
-[node name="Tile(2,2)2" type="Sprite2D" parent="Board" unique_id=1567903428 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
-position = Vector2(100, 100)
+[node name="Tile(2,2)2" type="Sprite2D" parent="Board" unique_id=1547387505 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+position = Vector2(80, 80)
+scale = Vector2(0.8, 0.8)
 texture = ExtResource("2_h2yge")
 script = ExtResource("2_0xm2m")
-northwest = NodePath("../Tile(1,1)")
+northwest = NodePath("../Tile(1,1)2")
 north = NodePath("../Tile(1,2)2")
 northeast = NodePath("../Tile(1,3)2")
 west = NodePath("../Tile(2,1)2")
@@ -187,8 +272,9 @@ southwest = NodePath("../Tile(3,1)2")
 south = NodePath("../Tile(3,2)2")
 southeast = NodePath("../Tile(3,3)2")
 
-[node name="Tile(2,3)2" type="Sprite2D" parent="Board" unique_id=493996529 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
-position = Vector2(150, 100)
+[node name="Tile(2,3)2" type="Sprite2D" parent="Board" unique_id=1676496733 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+position = Vector2(120, 80)
+scale = Vector2(0.8, 0.8)
 texture = ExtResource("2_h2yge")
 script = ExtResource("2_0xm2m")
 northwest = NodePath("../Tile(1,2)2")
@@ -200,8 +286,9 @@ southwest = NodePath("../Tile(3,2)2")
 south = NodePath("../Tile(3,3)2")
 southeast = NodePath("../Tile(3,4)2")
 
-[node name="Tile(2,4)2" type="Sprite2D" parent="Board" unique_id=891132508 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
-position = Vector2(200, 100)
+[node name="Tile(2,4)2" type="Sprite2D" parent="Board" unique_id=317629460 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+position = Vector2(160, 80)
+scale = Vector2(0.8, 0.8)
 texture = ExtResource("2_h2yge")
 script = ExtResource("2_0xm2m")
 northwest = NodePath("../Tile(1,3)2")
@@ -213,28 +300,73 @@ southwest = NodePath("../Tile(3,3)2")
 south = NodePath("../Tile(3,4)2")
 southeast = NodePath("../Tile(3,5)2")
 
-[node name="Tile(2,5)2" type="Sprite2D" parent="Board" unique_id=1144423290 node_paths=PackedStringArray("northwest", "north", "west", "southwest", "south")]
-position = Vector2(250, 100)
+[node name="Tile(2,5)2" type="Sprite2D" parent="Board" unique_id=1734590497 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+position = Vector2(200, 80)
+scale = Vector2(0.8, 0.8)
 texture = ExtResource("2_h2yge")
 script = ExtResource("2_0xm2m")
 northwest = NodePath("../Tile(1,4)2")
 north = NodePath("../Tile(1,5)2")
+northeast = NodePath("../Tile(1,6)")
 west = NodePath("../Tile(2,4)2")
+east = NodePath("../Tile(2,6)")
 southwest = NodePath("../Tile(3,4)2")
 south = NodePath("../Tile(3,5)2")
+southeast = NodePath("../Tile(3,6)")
 
-[node name="Tile(3,0)2" type="Sprite2D" parent="Board" unique_id=1700455403 node_paths=PackedStringArray("north", "northeast", "east", "south", "southeast")]
-position = Vector2(0, 150)
+[node name="Tile(2,6)" type="Sprite2D" parent="Board" unique_id=615281949 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+position = Vector2(240, 80)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("2_h2yge")
+script = ExtResource("2_0xm2m")
+northwest = NodePath("../Tile(1,5)2")
+north = NodePath("../Tile(1,6)")
+northeast = NodePath("../Tile(1,7)2")
+west = NodePath("../Tile(2,5)2")
+east = NodePath("../Tile(2,7)2")
+southwest = NodePath("../Tile(3,5)2")
+south = NodePath("../Tile(3,6)")
+southeast = NodePath("../Tile(3,7)2")
+
+[node name="Tile(2,7)2" type="Sprite2D" parent="Board" unique_id=1508314554 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+position = Vector2(280, 80)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("2_h2yge")
+script = ExtResource("2_0xm2m")
+northwest = NodePath("../Tile(1,6)")
+north = NodePath("../Tile(1,7)2")
+northeast = NodePath("../Tile(1,8)")
+west = NodePath("../Tile(2,6)")
+east = NodePath("../Tile(2,8)")
+southwest = NodePath("../Tile(3,6)")
+south = NodePath("../Tile(3,7)2")
+southeast = NodePath("../Tile(3,8)")
+
+[node name="Tile(2,8)" type="Sprite2D" parent="Board" unique_id=2046356851 node_paths=PackedStringArray("northwest", "north", "west", "southwest", "south")]
+position = Vector2(320, 80)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("2_h2yge")
+script = ExtResource("2_0xm2m")
+northwest = NodePath("../Tile(1,7)2")
+north = NodePath("../Tile(1,8)")
+west = NodePath("../Tile(2,7)2")
+southwest = NodePath("../Tile(3,7)2")
+south = NodePath("../Tile(3,8)")
+
+[node name="Tile(3,0)2" type="Sprite2D" parent="Board" unique_id=104753750 node_paths=PackedStringArray("north", "northeast", "east", "south", "southeast")]
+position = Vector2(0, 120)
+scale = Vector2(0.8, 0.8)
 texture = ExtResource("2_h2yge")
 script = ExtResource("2_0xm2m")
 north = NodePath("../Tile(2,0)2")
 northeast = NodePath("../Tile(2,1)2")
 east = NodePath("../Tile(3,1)2")
-south = NodePath("../Tile(4,0)2")
-southeast = NodePath("../Tile(4,1)2")
+south = NodePath("../Tile(4,0)")
+southeast = NodePath("../Tile(4,1)")
 
-[node name="Tile(3,1)2" type="Sprite2D" parent="Board" unique_id=2069202052 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
-position = Vector2(50, 150)
+[node name="Tile(3,1)2" type="Sprite2D" parent="Board" unique_id=428734612 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+position = Vector2(40, 120)
+scale = Vector2(0.8, 0.8)
 texture = ExtResource("2_h2yge")
 script = ExtResource("2_0xm2m")
 northwest = NodePath("../Tile(2,0)2")
@@ -242,12 +374,13 @@ north = NodePath("../Tile(2,1)2")
 northeast = NodePath("../Tile(2,2)2")
 west = NodePath("../Tile(3,0)2")
 east = NodePath("../Tile(3,2)2")
-southwest = NodePath("../Tile(4,0)2")
-south = NodePath("../Tile(4,1)2")
-southeast = NodePath("../Tile(4,2)2")
+southwest = NodePath("../Tile(4,0)")
+south = NodePath("../Tile(4,1)")
+southeast = NodePath("../Tile(4,2)")
 
-[node name="Tile(3,2)2" type="Sprite2D" parent="Board" unique_id=1855282601 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
-position = Vector2(100, 150)
+[node name="Tile(3,2)2" type="Sprite2D" parent="Board" unique_id=313640231 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+position = Vector2(80, 120)
+scale = Vector2(0.8, 0.8)
 texture = ExtResource("2_h2yge")
 script = ExtResource("2_0xm2m")
 northwest = NodePath("../Tile(2,1)2")
@@ -255,12 +388,13 @@ north = NodePath("../Tile(2,2)2")
 northeast = NodePath("../Tile(2,3)2")
 west = NodePath("../Tile(3,1)2")
 east = NodePath("../Tile(3,3)2")
-southwest = NodePath("../Tile(4,1)2")
-south = NodePath("../Tile(4,2)2")
-southeast = NodePath("../Tile(4,3)2")
+southwest = NodePath("../Tile(4,1)")
+south = NodePath("../Tile(4,2)")
+southeast = NodePath("../Tile(4,3)")
 
-[node name="Tile(3,3)2" type="Sprite2D" parent="Board" unique_id=1798465947 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
-position = Vector2(150, 150)
+[node name="Tile(3,3)2" type="Sprite2D" parent="Board" unique_id=611278946 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+position = Vector2(120, 120)
+scale = Vector2(0.8, 0.8)
 texture = ExtResource("2_h2yge")
 script = ExtResource("2_0xm2m")
 northwest = NodePath("../Tile(2,2)2")
@@ -268,12 +402,13 @@ north = NodePath("../Tile(2,3)2")
 northeast = NodePath("../Tile(2,4)2")
 west = NodePath("../Tile(3,2)2")
 east = NodePath("../Tile(3,4)2")
-southwest = NodePath("../Tile(4,2)2")
-south = NodePath("../Tile(4,3)2")
-southeast = NodePath("../Tile(4,4)2")
+southwest = NodePath("../Tile(4,2)")
+south = NodePath("../Tile(4,3)")
+southeast = NodePath("../Tile(4,4)")
 
-[node name="Tile(3,4)2" type="Sprite2D" parent="Board" unique_id=829105104 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
-position = Vector2(200, 150)
+[node name="Tile(3,4)2" type="Sprite2D" parent="Board" unique_id=1778375931 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+position = Vector2(160, 120)
+scale = Vector2(0.8, 0.8)
 texture = ExtResource("2_h2yge")
 script = ExtResource("2_0xm2m")
 northwest = NodePath("../Tile(2,3)2")
@@ -281,221 +416,394 @@ north = NodePath("../Tile(2,4)2")
 northeast = NodePath("../Tile(2,5)2")
 west = NodePath("../Tile(3,3)2")
 east = NodePath("../Tile(3,5)2")
-southwest = NodePath("../Tile(4,3)2")
-south = NodePath("../Tile(4,4)2")
-southeast = NodePath("../Tile(4,5)2")
+southwest = NodePath("../Tile(4,3)")
+south = NodePath("../Tile(4,4)")
+southeast = NodePath("../Tile(4,5)")
 
-[node name="Tile(3,5)2" type="Sprite2D" parent="Board" unique_id=1644164532 node_paths=PackedStringArray("northwest", "north", "west", "southwest", "south")]
-position = Vector2(250, 150)
+[node name="Tile(3,5)2" type="Sprite2D" parent="Board" unique_id=1953472907 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+position = Vector2(200, 120)
+scale = Vector2(0.8, 0.8)
 texture = ExtResource("2_h2yge")
 script = ExtResource("2_0xm2m")
 northwest = NodePath("../Tile(2,4)2")
 north = NodePath("../Tile(2,5)2")
+northeast = NodePath("../Tile(2,6)")
 west = NodePath("../Tile(3,4)2")
-southwest = NodePath("../Tile(4,4)2")
-south = NodePath("../Tile(4,5)2")
+east = NodePath("../Tile(3,6)")
+southwest = NodePath("../Tile(4,4)")
+south = NodePath("../Tile(4,5)")
+southeast = NodePath("../Tile(4,6)")
 
-[node name="Tile(4,0)2" type="Sprite2D" parent="Board" unique_id=1642759706 node_paths=PackedStringArray("north", "northeast", "east")]
-position = Vector2(0, 200)
+[node name="Tile(3,6)" type="Sprite2D" parent="Board" unique_id=1917244514 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+position = Vector2(240, 120)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("2_h2yge")
+script = ExtResource("2_0xm2m")
+northwest = NodePath("../Tile(2,5)2")
+north = NodePath("../Tile(2,6)")
+northeast = NodePath("../Tile(2,7)2")
+west = NodePath("../Tile(3,5)2")
+east = NodePath("../Tile(3,7)2")
+southwest = NodePath("../Tile(4,5)")
+south = NodePath("../Tile(4,6)")
+southeast = NodePath("../Tile(4,7)")
+
+[node name="Tile(3,7)2" type="Sprite2D" parent="Board" unique_id=1652223046 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+position = Vector2(280, 120)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("2_h2yge")
+script = ExtResource("2_0xm2m")
+northwest = NodePath("../Tile(2,6)")
+north = NodePath("../Tile(2,7)2")
+northeast = NodePath("../Tile(2,8)")
+west = NodePath("../Tile(3,6)")
+east = NodePath("../Tile(3,8)")
+southwest = NodePath("../Tile(4,6)")
+south = NodePath("../Tile(4,7)")
+southeast = NodePath("../Tile(4,8)")
+
+[node name="Tile(3,8)" type="Sprite2D" parent="Board" unique_id=1597242816 node_paths=PackedStringArray("northwest", "north", "west", "southwest", "south")]
+position = Vector2(320, 120)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("2_h2yge")
+script = ExtResource("2_0xm2m")
+northwest = NodePath("../Tile(2,7)2")
+north = NodePath("../Tile(2,8)")
+west = NodePath("../Tile(3,7)2")
+southwest = NodePath("../Tile(4,7)")
+south = NodePath("../Tile(4,8)")
+
+[node name="Tile(4,0)" type="Sprite2D" parent="Board" unique_id=1534701636 node_paths=PackedStringArray("north", "northeast", "east", "south", "southeast")]
+position = Vector2(0, 160)
+scale = Vector2(0.8, 0.8)
 texture = ExtResource("2_h2yge")
 script = ExtResource("2_0xm2m")
 north = NodePath("../Tile(3,0)2")
 northeast = NodePath("../Tile(3,1)2")
-east = NodePath("../Tile(4,1)2")
+east = NodePath("../Tile(4,1)")
+south = NodePath("../Tile(5,0)2")
+southeast = NodePath("../Tile(5,1)2")
 
-[node name="Tile(4,1)2" type="Sprite2D" parent="Board" unique_id=1258135030 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east")]
-position = Vector2(50, 200)
+[node name="Tile(4,1)" type="Sprite2D" parent="Board" unique_id=1031310952 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+position = Vector2(40, 160)
+scale = Vector2(0.8, 0.8)
 texture = ExtResource("2_h2yge")
 script = ExtResource("2_0xm2m")
 northwest = NodePath("../Tile(3,0)2")
 north = NodePath("../Tile(3,1)2")
 northeast = NodePath("../Tile(3,2)2")
-west = NodePath("../Tile(4,0)2")
-east = NodePath("../Tile(4,2)2")
+west = NodePath("../Tile(4,0)")
+east = NodePath("../Tile(4,2)")
+southwest = NodePath("../Tile(5,0)2")
+south = NodePath("../Tile(5,1)2")
+southeast = NodePath("../Tile(5,2)2")
 
-[node name="Tile(4,2)2" type="Sprite2D" parent="Board" unique_id=2117542605 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east")]
-position = Vector2(100, 200)
+[node name="Tile(4,2)" type="Sprite2D" parent="Board" unique_id=1696461674 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+position = Vector2(80, 160)
+scale = Vector2(0.8, 0.8)
 texture = ExtResource("2_h2yge")
 script = ExtResource("2_0xm2m")
 northwest = NodePath("../Tile(3,1)2")
 north = NodePath("../Tile(3,2)2")
 northeast = NodePath("../Tile(3,3)2")
-west = NodePath("../Tile(4,1)2")
-east = NodePath("../Tile(4,3)2")
+west = NodePath("../Tile(4,1)")
+east = NodePath("../Tile(4,3)")
+southwest = NodePath("../Tile(5,1)2")
+south = NodePath("../Tile(5,2)2")
+southeast = NodePath("../Tile(5,3)2")
 
-[node name="Tile(4,3)2" type="Sprite2D" parent="Board" unique_id=1238065750 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east")]
-position = Vector2(150, 200)
+[node name="Tile(4,3)" type="Sprite2D" parent="Board" unique_id=941355294 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+position = Vector2(120, 160)
+scale = Vector2(0.8, 0.8)
 texture = ExtResource("2_h2yge")
 script = ExtResource("2_0xm2m")
 northwest = NodePath("../Tile(3,2)2")
 north = NodePath("../Tile(3,3)2")
 northeast = NodePath("../Tile(3,4)2")
-west = NodePath("../Tile(4,2)2")
-east = NodePath("../Tile(4,4)2")
+west = NodePath("../Tile(4,2)")
+east = NodePath("../Tile(4,4)")
+southwest = NodePath("../Tile(5,2)2")
+south = NodePath("../Tile(5,3)2")
+southeast = NodePath("../Tile(5,4)2")
 
-[node name="Tile(4,4)2" type="Sprite2D" parent="Board" unique_id=2103077771 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east")]
-position = Vector2(200, 200)
+[node name="Tile(4,4)" type="Sprite2D" parent="Board" unique_id=695137190 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+position = Vector2(160, 160)
+scale = Vector2(0.8, 0.8)
 texture = ExtResource("2_h2yge")
 script = ExtResource("2_0xm2m")
 northwest = NodePath("../Tile(3,3)2")
 north = NodePath("../Tile(3,4)2")
 northeast = NodePath("../Tile(3,5)2")
-west = NodePath("../Tile(4,3)2")
-east = NodePath("../Tile(4,5)2")
+west = NodePath("../Tile(4,3)")
+east = NodePath("../Tile(4,5)")
+southwest = NodePath("../Tile(5,3)2")
+south = NodePath("../Tile(5,4)2")
+southeast = NodePath("../Tile(5,5)2")
 
-[node name="Tile(4,5)2" type="Sprite2D" parent="Board" unique_id=584616085 node_paths=PackedStringArray("northwest", "north", "west")]
-position = Vector2(250, 200)
+[node name="Tile(4,5)" type="Sprite2D" parent="Board" unique_id=1495086585 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+position = Vector2(200, 160)
+scale = Vector2(0.8, 0.8)
 texture = ExtResource("2_h2yge")
 script = ExtResource("2_0xm2m")
 northwest = NodePath("../Tile(3,4)2")
 north = NodePath("../Tile(3,5)2")
-west = NodePath("../Tile(4,4)2")
+northeast = NodePath("../Tile(3,6)")
+west = NodePath("../Tile(4,4)")
+east = NodePath("../Tile(4,6)")
+southwest = NodePath("../Tile(5,4)2")
+south = NodePath("../Tile(5,5)2")
+southeast = NodePath("../Tile(5,6)2")
 
-[node name="Tile(0,0)5" type="Sprite2D" parent="Board" unique_id=1566947512]
+[node name="Tile(4,6)" type="Sprite2D" parent="Board" unique_id=1451820986 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+position = Vector2(240, 160)
+scale = Vector2(0.8, 0.8)
 texture = ExtResource("2_h2yge")
 script = ExtResource("2_0xm2m")
+northwest = NodePath("../Tile(3,5)2")
+north = NodePath("../Tile(3,6)")
+northeast = NodePath("../Tile(3,7)2")
+west = NodePath("../Tile(4,5)")
+east = NodePath("../Tile(4,7)")
+southwest = NodePath("../Tile(5,5)2")
+south = NodePath("../Tile(5,6)2")
+southeast = NodePath("../Tile(5,7)2")
 
-[node name="Tile(0,1)5" type="Sprite2D" parent="Board" unique_id=1561305600]
-position = Vector2(50, 0)
+[node name="Tile(4,7)" type="Sprite2D" parent="Board" unique_id=2057502904 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+position = Vector2(280, 160)
+scale = Vector2(0.8, 0.8)
 texture = ExtResource("2_h2yge")
 script = ExtResource("2_0xm2m")
+northwest = NodePath("../Tile(3,6)")
+north = NodePath("../Tile(3,7)2")
+northeast = NodePath("../Tile(3,8)")
+west = NodePath("../Tile(4,6)")
+east = NodePath("../Tile(4,8)")
+southwest = NodePath("../Tile(5,6)2")
+south = NodePath("../Tile(5,7)2")
+southeast = NodePath("../Tile(5,8)2")
 
-[node name="Tile(0,2)5" type="Sprite2D" parent="Board" unique_id=1015520136]
-position = Vector2(100, 0)
+[node name="Tile(4,8)" type="Sprite2D" parent="Board" unique_id=2140454024 node_paths=PackedStringArray("northwest", "north", "west", "southwest", "south")]
+position = Vector2(320, 160)
+scale = Vector2(0.8, 0.8)
 texture = ExtResource("2_h2yge")
 script = ExtResource("2_0xm2m")
+northwest = NodePath("../Tile(3,7)2")
+north = NodePath("../Tile(3,8)")
+west = NodePath("../Tile(4,7)")
+southwest = NodePath("../Tile(5,7)2")
+south = NodePath("../Tile(5,8)2")
 
-[node name="Tile(0,3)5" type="Sprite2D" parent="Board" unique_id=1088482634]
-position = Vector2(150, 0)
-texture = ExtResource("2_h2yge")
-script = ExtResource("2_0xm2m")
-
-[node name="Tile(0,4)5" type="Sprite2D" parent="Board" unique_id=1096821516]
-position = Vector2(200, 0)
-texture = ExtResource("2_h2yge")
-script = ExtResource("2_0xm2m")
-
-[node name="Tile(0,5)5" type="Sprite2D" parent="Board" unique_id=278581654]
-position = Vector2(250, 0)
-texture = ExtResource("2_h2yge")
-script = ExtResource("2_0xm2m")
-
-[node name="Tile(1,0)5" type="Sprite2D" parent="Board" unique_id=856634093]
-position = Vector2(0, 50)
-texture = ExtResource("2_h2yge")
-script = ExtResource("2_0xm2m")
-
-[node name="Tile(1,1)5" type="Sprite2D" parent="Board" unique_id=45090828]
-position = Vector2(50, 50)
-texture = ExtResource("2_h2yge")
-script = ExtResource("2_0xm2m")
-
-[node name="Tile(1,2)5" type="Sprite2D" parent="Board" unique_id=1958731700]
-position = Vector2(100, 50)
-texture = ExtResource("2_h2yge")
-script = ExtResource("2_0xm2m")
-
-[node name="Tile(1,3)5" type="Sprite2D" parent="Board" unique_id=937193801]
-position = Vector2(150, 50)
-texture = ExtResource("2_h2yge")
-script = ExtResource("2_0xm2m")
-
-[node name="Tile(1,4)5" type="Sprite2D" parent="Board" unique_id=1735288749]
-position = Vector2(200, 50)
-texture = ExtResource("2_h2yge")
-script = ExtResource("2_0xm2m")
-
-[node name="Tile(1,5)5" type="Sprite2D" parent="Board" unique_id=646233220]
-position = Vector2(250, 50)
-texture = ExtResource("2_h2yge")
-script = ExtResource("2_0xm2m")
-
-[node name="Tile(2,0)5" type="Sprite2D" parent="Board" unique_id=315488669]
-position = Vector2(0, 100)
-texture = ExtResource("2_h2yge")
-script = ExtResource("2_0xm2m")
-
-[node name="Tile(2,1)5" type="Sprite2D" parent="Board" unique_id=128713055]
-position = Vector2(50, 100)
-texture = ExtResource("2_h2yge")
-script = ExtResource("2_0xm2m")
-
-[node name="Tile(2,2)5" type="Sprite2D" parent="Board" unique_id=1517340874]
-position = Vector2(100, 100)
-texture = ExtResource("2_h2yge")
-script = ExtResource("2_0xm2m")
-
-[node name="Tile(2,3)5" type="Sprite2D" parent="Board" unique_id=1236945882]
-position = Vector2(150, 100)
-texture = ExtResource("2_h2yge")
-script = ExtResource("2_0xm2m")
-
-[node name="Tile(2,4)5" type="Sprite2D" parent="Board" unique_id=665462616]
-position = Vector2(200, 100)
-texture = ExtResource("2_h2yge")
-script = ExtResource("2_0xm2m")
-
-[node name="Tile(2,5)5" type="Sprite2D" parent="Board" unique_id=221921367]
-position = Vector2(250, 100)
-texture = ExtResource("2_h2yge")
-script = ExtResource("2_0xm2m")
-
-[node name="Tile(3,0)5" type="Sprite2D" parent="Board" unique_id=23163670]
-position = Vector2(0, 150)
-texture = ExtResource("2_h2yge")
-script = ExtResource("2_0xm2m")
-
-[node name="Tile(3,1)5" type="Sprite2D" parent="Board" unique_id=1361678856]
-position = Vector2(50, 150)
-texture = ExtResource("2_h2yge")
-script = ExtResource("2_0xm2m")
-
-[node name="Tile(3,2)5" type="Sprite2D" parent="Board" unique_id=483236666]
-position = Vector2(100, 150)
-texture = ExtResource("2_h2yge")
-script = ExtResource("2_0xm2m")
-
-[node name="Tile(3,3)5" type="Sprite2D" parent="Board" unique_id=938428973]
-position = Vector2(150, 150)
-texture = ExtResource("2_h2yge")
-script = ExtResource("2_0xm2m")
-
-[node name="Tile(3,4)5" type="Sprite2D" parent="Board" unique_id=736028460]
-position = Vector2(200, 150)
-texture = ExtResource("2_h2yge")
-script = ExtResource("2_0xm2m")
-
-[node name="Tile(3,5)5" type="Sprite2D" parent="Board" unique_id=836199317]
-position = Vector2(250, 150)
-texture = ExtResource("2_h2yge")
-script = ExtResource("2_0xm2m")
-
-[node name="Tile(4,0)5" type="Sprite2D" parent="Board" unique_id=509541220]
+[node name="Tile(5,0)2" type="Sprite2D" parent="Board" unique_id=46149511 node_paths=PackedStringArray("north", "northeast", "east", "south", "southeast")]
 position = Vector2(0, 200)
+scale = Vector2(0.8, 0.8)
 texture = ExtResource("2_h2yge")
 script = ExtResource("2_0xm2m")
+north = NodePath("../Tile(4,0)")
+northeast = NodePath("../Tile(4,1)")
+east = NodePath("../Tile(5,1)2")
+south = NodePath("../Tile(6,0)")
+southeast = NodePath("../Tile(6,1)")
 
-[node name="Tile(4,1)5" type="Sprite2D" parent="Board" unique_id=1372052375]
-position = Vector2(50, 200)
+[node name="Tile(5,1)2" type="Sprite2D" parent="Board" unique_id=1757186162 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+position = Vector2(40, 200)
+scale = Vector2(0.8, 0.8)
 texture = ExtResource("2_h2yge")
 script = ExtResource("2_0xm2m")
+northwest = NodePath("../Tile(4,0)")
+north = NodePath("../Tile(4,1)")
+northeast = NodePath("../Tile(4,2)")
+west = NodePath("../Tile(5,0)2")
+east = NodePath("../Tile(5,2)2")
+southwest = NodePath("../Tile(6,0)")
+south = NodePath("../Tile(6,1)")
+southeast = NodePath("../Tile(6,2)")
 
-[node name="Tile(4,2)5" type="Sprite2D" parent="Board" unique_id=1078006621]
-position = Vector2(100, 200)
+[node name="Tile(5,2)2" type="Sprite2D" parent="Board" unique_id=881148228 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+position = Vector2(80, 200)
+scale = Vector2(0.8, 0.8)
 texture = ExtResource("2_h2yge")
 script = ExtResource("2_0xm2m")
+northwest = NodePath("../Tile(4,1)")
+north = NodePath("../Tile(4,2)")
+northeast = NodePath("../Tile(4,3)")
+west = NodePath("../Tile(5,1)2")
+east = NodePath("../Tile(5,3)2")
+southwest = NodePath("../Tile(6,1)")
+south = NodePath("../Tile(6,2)")
+southeast = NodePath("../Tile(6,3)")
 
-[node name="Tile(4,3)5" type="Sprite2D" parent="Board" unique_id=954188064]
-position = Vector2(150, 200)
+[node name="Tile(5,3)2" type="Sprite2D" parent="Board" unique_id=388387592 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+position = Vector2(120, 200)
+scale = Vector2(0.8, 0.8)
 texture = ExtResource("2_h2yge")
 script = ExtResource("2_0xm2m")
+northwest = NodePath("../Tile(4,2)")
+north = NodePath("../Tile(4,3)")
+northeast = NodePath("../Tile(4,4)")
+west = NodePath("../Tile(5,2)2")
+east = NodePath("../Tile(5,4)2")
+southwest = NodePath("../Tile(6,2)")
+south = NodePath("../Tile(6,3)")
+southeast = NodePath("../Tile(6,4)")
 
-[node name="Tile(4,4)5" type="Sprite2D" parent="Board" unique_id=1306629598]
+[node name="Tile(5,4)2" type="Sprite2D" parent="Board" unique_id=416565929 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+position = Vector2(160, 200)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("2_h2yge")
+script = ExtResource("2_0xm2m")
+northwest = NodePath("../Tile(4,3)")
+north = NodePath("../Tile(4,4)")
+northeast = NodePath("../Tile(4,5)")
+west = NodePath("../Tile(5,3)2")
+east = NodePath("../Tile(5,5)2")
+southwest = NodePath("../Tile(6,3)")
+south = NodePath("../Tile(6,4)")
+southeast = NodePath("../Tile(6,5)")
+
+[node name="Tile(5,5)2" type="Sprite2D" parent="Board" unique_id=825437160 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
 position = Vector2(200, 200)
+scale = Vector2(0.8, 0.8)
 texture = ExtResource("2_h2yge")
 script = ExtResource("2_0xm2m")
+northwest = NodePath("../Tile(4,4)")
+north = NodePath("../Tile(4,5)")
+northeast = NodePath("../Tile(4,6)")
+west = NodePath("../Tile(5,4)2")
+east = NodePath("../Tile(5,6)2")
+southwest = NodePath("../Tile(6,4)")
+south = NodePath("../Tile(6,5)")
+southeast = NodePath("../Tile(6,6)")
 
-[node name="Tile(4,5)5" type="Sprite2D" parent="Board" unique_id=1171011802]
-position = Vector2(250, 200)
+[node name="Tile(5,6)2" type="Sprite2D" parent="Board" unique_id=1892511363 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+position = Vector2(240, 200)
+scale = Vector2(0.8, 0.8)
 texture = ExtResource("2_h2yge")
 script = ExtResource("2_0xm2m")
+northwest = NodePath("../Tile(4,5)")
+north = NodePath("../Tile(4,6)")
+northeast = NodePath("../Tile(4,7)")
+west = NodePath("../Tile(5,5)2")
+east = NodePath("../Tile(5,7)2")
+southwest = NodePath("../Tile(6,5)")
+south = NodePath("../Tile(6,6)")
+southeast = NodePath("../Tile(6,7)")
+
+[node name="Tile(5,7)2" type="Sprite2D" parent="Board" unique_id=1473965942 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+position = Vector2(280, 200)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("2_h2yge")
+script = ExtResource("2_0xm2m")
+northwest = NodePath("../Tile(4,6)")
+north = NodePath("../Tile(4,7)")
+northeast = NodePath("../Tile(4,8)")
+west = NodePath("../Tile(5,6)2")
+east = NodePath("../Tile(5,8)2")
+southwest = NodePath("../Tile(6,6)")
+south = NodePath("../Tile(6,7)")
+southeast = NodePath("../Tile(6,8)")
+
+[node name="Tile(5,8)2" type="Sprite2D" parent="Board" unique_id=1816165696 node_paths=PackedStringArray("northwest", "north", "west", "southwest", "south")]
+position = Vector2(320, 200)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("2_h2yge")
+script = ExtResource("2_0xm2m")
+northwest = NodePath("../Tile(4,7)")
+north = NodePath("../Tile(4,8)")
+west = NodePath("../Tile(5,7)2")
+southwest = NodePath("../Tile(6,7)")
+south = NodePath("../Tile(6,8)")
+
+[node name="Tile(6,0)" type="Sprite2D" parent="Board" unique_id=1370370111 node_paths=PackedStringArray("north", "northeast", "east")]
+position = Vector2(0, 240)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("2_h2yge")
+script = ExtResource("2_0xm2m")
+north = NodePath("../Tile(5,0)2")
+northeast = NodePath("../Tile(5,1)2")
+east = NodePath("../Tile(6,1)")
+
+[node name="Tile(6,1)" type="Sprite2D" parent="Board" unique_id=1552655424 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east")]
+position = Vector2(40, 240)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("2_h2yge")
+script = ExtResource("2_0xm2m")
+northwest = NodePath("../Tile(5,0)2")
+north = NodePath("../Tile(5,1)2")
+northeast = NodePath("../Tile(5,2)2")
+west = NodePath("../Tile(6,0)")
+east = NodePath("../Tile(6,2)")
+
+[node name="Tile(6,2)" type="Sprite2D" parent="Board" unique_id=1781969761 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east")]
+position = Vector2(80, 240)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("2_h2yge")
+script = ExtResource("2_0xm2m")
+northwest = NodePath("../Tile(5,1)2")
+north = NodePath("../Tile(5,2)2")
+northeast = NodePath("../Tile(5,3)2")
+west = NodePath("../Tile(6,1)")
+east = NodePath("../Tile(6,3)")
+
+[node name="Tile(6,3)" type="Sprite2D" parent="Board" unique_id=1920031922 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east")]
+position = Vector2(120, 240)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("2_h2yge")
+script = ExtResource("2_0xm2m")
+northwest = NodePath("../Tile(5,2)2")
+north = NodePath("../Tile(5,3)2")
+northeast = NodePath("../Tile(5,4)2")
+west = NodePath("../Tile(6,2)")
+east = NodePath("../Tile(6,4)")
+
+[node name="Tile(6,4)" type="Sprite2D" parent="Board" unique_id=2124297814 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east")]
+position = Vector2(160, 240)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("2_h2yge")
+script = ExtResource("2_0xm2m")
+northwest = NodePath("../Tile(5,3)2")
+north = NodePath("../Tile(5,4)2")
+northeast = NodePath("../Tile(5,5)2")
+west = NodePath("../Tile(6,3)")
+east = NodePath("../Tile(6,5)")
+
+[node name="Tile(6,5)" type="Sprite2D" parent="Board" unique_id=1871150402 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east")]
+position = Vector2(200, 240)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("2_h2yge")
+script = ExtResource("2_0xm2m")
+northwest = NodePath("../Tile(5,4)2")
+north = NodePath("../Tile(5,5)2")
+northeast = NodePath("../Tile(5,6)2")
+west = NodePath("../Tile(6,4)")
+east = NodePath("../Tile(6,6)")
+
+[node name="Tile(6,6)" type="Sprite2D" parent="Board" unique_id=1398909492 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east")]
+position = Vector2(240, 240)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("2_h2yge")
+script = ExtResource("2_0xm2m")
+northwest = NodePath("../Tile(5,5)2")
+north = NodePath("../Tile(5,6)2")
+northeast = NodePath("../Tile(5,7)2")
+west = NodePath("../Tile(6,5)")
+east = NodePath("../Tile(6,7)")
+
+[node name="Tile(6,7)" type="Sprite2D" parent="Board" unique_id=1571889541 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east")]
+position = Vector2(280, 240)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("2_h2yge")
+script = ExtResource("2_0xm2m")
+northwest = NodePath("../Tile(5,6)2")
+north = NodePath("../Tile(5,7)2")
+northeast = NodePath("../Tile(5,8)2")
+west = NodePath("../Tile(6,6)")
+east = NodePath("../Tile(6,8)")
+
+[node name="Tile(6,8)" type="Sprite2D" parent="Board" unique_id=193773940 node_paths=PackedStringArray("northwest", "north", "west")]
+position = Vector2(320, 240)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("2_h2yge")
+script = ExtResource("2_0xm2m")
+northwest = NodePath("../Tile(5,7)2")
+north = NodePath("../Tile(5,8)2")
+west = NodePath("../Tile(6,7)")
