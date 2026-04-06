@@ -4,7 +4,7 @@ class_name Tile extends Sprite2D
 #region Textures
 const ICON = preload("uid://dgiqw4yimxh3") #placeholder
 const BLACK = preload("uid://brnwttvfed8oy")
-const RED = preload("uid://bvw4ed3vfytow")
+const RED = preload("uid://dfb2xgfoofrw")
 const WHITE = preload("uid://3m8gvoui46iq")
 #endregion
 

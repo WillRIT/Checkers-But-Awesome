@@ -1,0 +1,6 @@
+[gd_resource type="Theme" format=3 uid="uid://bpanln4hm4axv"]
+
+[ext_resource type="StyleBox" uid="uid://bcypg47nuh820" path="res://button_style.tres" id="1_y3u7b"]
+
+[resource]
+Button/styles/normal = ExtResource("1_y3u7b")

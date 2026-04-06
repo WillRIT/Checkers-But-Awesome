@@ -1,0 +1,55 @@
+[gd_scene format=3 uid="uid://dpbwokjm3kgm8"]
+
+[ext_resource type="Theme" uid="uid://bpanln4hm4axv" path="res://button_theme.tres" id="1_y7k74"]
+
+[node name="Title" type="Control" unique_id=1227551345]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=375588902]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.36, 0.79733336, 1, 0.8235294)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=241738184]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -99.5
+offset_top = -46.5
+offset_right = 99.5
+offset_bottom = 46.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 39
+alignment = 1
+
+[node name="Label" type="Label" parent="VBoxContainer" unique_id=430006128]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 45
+text = "CHECKERS BUT AWESOME"
+horizontal_alignment = 1
+
+[node name="Start" type="Button" parent="VBoxContainer" unique_id=1345119721]
+layout_mode = 2
+theme = ExtResource("1_y7k74")
+theme_override_font_sizes/font_size = 45
+text = "START"
+
+[node name="Quit" type="Button" parent="VBoxContainer" unique_id=976302448]
+layout_mode = 2
+theme = ExtResource("1_y7k74")
+theme_override_font_sizes/font_size = 45
+text = "QUIT"
