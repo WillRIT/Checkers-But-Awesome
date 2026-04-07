@@ -46,22 +46,42 @@ func board(y: int, x: int) -> Tile: #board 2d accessor
 		#print("BOARD X OUT OF BOUNDS")
 		return null
 		
-	return board_arr[(y * width) + x]
+	if board_arr.size() <= (y * width) + x: return null
+	else: return board_arr[(y * width) + x]
+	
+func board_set(y: int, x: int, tile: Tile) -> void:
+	board_arr.set((y * width) + x, tile)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta: float) -> void:
 	pass
 
 func update_values() -> void:
-	clear()
+	board_arr.resize(height * width)
 	
+	for t : Tile in board_arr:
+		if t != null:
+			if t.y >= height:
+				print("deleted " + str(t))
+				t.free()
+				board_arr.erase(t)
+			if t:
+				if t.x >= width:
+					print("deleted " + str(t))
+					t.free()
+					board_arr.erase(t)
+	
+	print(board_arr)
 	for y in range(height):
 		for x in range(width):
-			var new_tile = Tile.new(y, x, tile_size)
-			board_arr.append(new_tile)
-			add_child(new_tile)
-			if Engine.is_editor_hint():
-				new_tile.owner = get_tree().edited_scene_root
+			if board(y, x) == null:
+				var new_tile = Tile.new()
+				new_tile.set_props(y, x, tile_size)
+				board_set(y, x, new_tile)
+				add_child(new_tile)
+				if Engine.is_editor_hint():
+					new_tile.owner = get_tree().edited_scene_root
+	print(board_arr)
 	
 	# link set references
 	for y in range(height):
@@ -77,7 +97,7 @@ func update_values() -> void:
 
 func clear() -> void:
 	for child in get_children():
-		child.queue_free()
+		child.free()
 		
 	board_arr.clear()
 
@@ -88,7 +108,7 @@ func save() -> void:
 		for y in range(height):
 			if y > 0: loadable += "\n"
 			for x in range(width):
-				print(char_to_type[board(y, x).type])
+				print(board(y, x).type)
 				loadable += char_to_type[board(y, x).type]
 	elif loadable == "" or loadable == "Board not ready or empty!" or loadable == "String is not valid or empty!":
 		loadable = "Board not ready or empty!"
@@ -118,8 +138,9 @@ func load() -> void:
 	
 	for y in range(height):
 		for x in range(width):
-			var new_tile = Tile.new(y, x, tile_size, char_to_type.find_key(string_array[y][x]))
-			board_arr.append(new_tile)
+			var new_tile = Tile.new()
+			new_tile.set_props(y, x, tile_size, char_to_type.find_key(string_array[y][x]))
+			board_set(y, x, new_tile)
 			add_child(new_tile)
 			if Engine.is_editor_hint():
 				new_tile.owner = get_tree().edited_scene_root

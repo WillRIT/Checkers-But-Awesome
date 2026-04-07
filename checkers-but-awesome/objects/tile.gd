@@ -5,7 +5,7 @@ class_name Tile extends Sprite2D
 const ICON = preload("uid://dgiqw4yimxh3") #placeholder
 const BLACK = preload("uid://brnwttvfed8oy")
 const RED = preload("uid://dfb2xgfoofrw")
-const WHITE = preload("uid://ykkd0vn8m4rr")
+const WHITE = preload("uid://3m8gvoui46iq")
 #endregion
 
 #types
@@ -15,7 +15,7 @@ enum TYPE {
 	NULL
 }
 
-@export var type := TYPE.EMPTY:
+@export var type : TYPE = TYPE.EMPTY:
 	set(value):
 		type = value
 		if is_inside_tree(): update_values()
@@ -34,7 +34,7 @@ var size: int
 @export var south: Tile = null
 @export var southeast: Tile = null
 
-func _init(_y: int = y, _x: int = x, _size: int = size, _type := TYPE.EMPTY) -> void:
+func set_props(_y: int = y, _x: int = x, _size: int = size, _type := TYPE.EMPTY) -> void:
 	y = _y
 	x = _x
 	size = _size
@@ -63,3 +63,6 @@ func update_values() -> void:
 		TYPE.FILLED: texture = BLACK
 		TYPE.NULL: texture = RED
 		_: texture = ICON
+		
+func _to_string() -> String:
+	return "(" + str(y) + "," + str(x) + "): " + str(type)
