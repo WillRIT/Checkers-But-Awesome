@@ -1,14 +1,20 @@
 [gd_scene format=3 uid="uid://dpbwokjm3kgm8"]
 
+[ext_resource type="Script" uid="uid://crxtelcgt32pf" path="res://mainmenu.gd" id="1_oyqm6"]
 [ext_resource type="Theme" uid="uid://bpanln4hm4axv" path="res://button_theme.tres" id="1_y7k74"]
+[ext_resource type="PackedScene" uid="uid://dqq7u7fxw5k0y" path="res://main.tscn" id="2_kpexm"]
 
-[node name="Title" type="Control" unique_id=1227551345]
+[node name="Title" type="Control" unique_id=1227551345 node_paths=PackedStringArray("start_button", "quit_button")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_oyqm6")
+start_button = NodePath("VBoxContainer/Start")
+quit_button = NodePath("VBoxContainer/Quit")
+start_scene = ExtResource("2_kpexm")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=375588902]
 layout_mode = 1
