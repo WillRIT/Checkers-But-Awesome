@@ -8,22 +8,21 @@ const RED = preload("uid://dfb2xgfoofrw")
 const WHITE = preload("uid://ykkd0vn8m4rr")
 #endregion
 
-#types
 enum TYPE {
 	EMPTY,
 	FILLED,
 	NULL
 }
 
-@export var type := TYPE.EMPTY:
+@export var type : TYPE = TYPE.EMPTY:
 	set(value):
 		type = value
 		if is_inside_tree(): update_values()
+
 var y: int
 var x: int
 var size: int
 
-# link references
 @export_group("Link References")
 @export var northwest: Tile = null
 @export var north: Tile = null
@@ -34,24 +33,21 @@ var size: int
 @export var south: Tile = null
 @export var southeast: Tile = null
 
-func _init(_y: int = y, _x: int = x, _size: int = size, _type := TYPE.EMPTY) -> void:
+func set_props(_y: int = y, _x: int = x, _size: int = size, _type: TYPE = type) -> void:
 	y = _y
 	x = _x
 	size = _size
 	type = _type
+	# Automatically update visuals when properties change
+	if is_inside_tree(): 
+		update_values()
 
-# Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	update_values()
-	
-	var texture_scale := Vector2(float(size) / texture.get_width(), float(size) / texture.get_height())
-	scale = texture_scale
-	position = Vector2(x * size, y * size)
 
 func load_name() -> void:
 	name = "Tile(" + str(y) + "," + str(x) + ")"
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta: float) -> void:
 	pass
 
@@ -63,3 +59,14 @@ func update_values() -> void:
 		TYPE.FILLED: texture = BLACK
 		TYPE.NULL: texture = RED
 		_: texture = ICON
+		
+	# Moving scale and position calculations here so they update dynamically 
+	# when the editor changes the Board settings
+	if texture:
+		var texture_scale := Vector2(float(size) / texture.get_width(), float(size) / texture.get_height())
+		scale = texture_scale
+	
+	position = Vector2(x * size, y * size)
+		
+func _to_string() -> String:
+	return "(" + str(y) + "," + str(x) + "): " + str(type)
