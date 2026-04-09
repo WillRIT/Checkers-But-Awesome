@@ -1,6 +1,8 @@
 [gd_resource type="Theme" format=3 uid="uid://bpanln4hm4axv"]
 
+[ext_resource type="FontFile" uid="uid://b7autoxr61xhs" path="res://assets/fonts/Varela/Varela-Regular.ttf" id="1_jjpe7"]
 [ext_resource type="StyleBox" uid="uid://bcypg47nuh820" path="res://button_style.tres" id="1_y3u7b"]
 
 [resource]
+Button/fonts/font = ExtResource("1_jjpe7")
 Button/styles/normal = ExtResource("1_y3u7b")
