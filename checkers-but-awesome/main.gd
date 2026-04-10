@@ -27,7 +27,7 @@ func state_change(newstate: GAMESTATE) -> void:
 	match newstate:
 		GAMESTATE.GAME:
 			#board.loading = level
-			board.load()
+			board.load_string()
 			board.show()
 			find_child("Level Selection").hide();
 			#pieces gets filled
