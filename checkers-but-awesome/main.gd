@@ -59,7 +59,7 @@ func state_change(newstate: GAMESTATE) -> void:
 			board.load_string()
 			board.show()
 			find_child("Level Selection").hide();
-			##find_child("Next Level").hide();
+			find_child("Next Level").hide();
 			#pieces gets filled
 			state = newstate
 		GAMESTATE.LEVELSELECT:
