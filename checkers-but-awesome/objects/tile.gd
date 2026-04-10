@@ -3,13 +3,12 @@ class_name Tile extends Sprite2D
 
 #region Textures
 const ICON = preload("uid://dgiqw4yimxh3") #placeholder
-const BLACK = preload("uid://brnwttvfed8oy")
-const TEAL = preload("uid://dfb2xgfoofrw")
-const WHITE = preload("uid://ykkd0vn8m4rr")
+const BLACK = preload("uid://cam1snfyftdhp")
+const TEAL = preload("uid://brnwttvfed8oy")
+const WHITE = preload("uid://daq07mbbqlo8k")
 const PLAYER_PIECE = preload("uid://bls100m1vwsiq")
 const RED = preload("uid://bvw4ed3vfytow")
 #endregion
-
 enum TYPE {
 	EMPTY,
 	FILLED,
