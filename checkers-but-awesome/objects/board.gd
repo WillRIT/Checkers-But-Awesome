@@ -2,7 +2,7 @@
 class_name Board extends Node2D
 
 var _is_loading := false # Flag to prevent setter cascades
-
+var numOfPieces = 0
 @export_category("Settings")
 @export_range(1, 32, 1, "or_greater", "prefer_slider") var height: int = 8:
 	set(value):
@@ -165,6 +165,8 @@ func load_string() -> void:
 			var new_tile = Tile.new()
 			new_tile.board = self
 			var parsed_type = char_to_type.find_key(string_array[y][x])
+			if parsed_type == 1:
+				numOfPieces += 1
 			
 			# add to scene first so is_inside_tree() is true when setting properties
 			add_child(new_tile) 
