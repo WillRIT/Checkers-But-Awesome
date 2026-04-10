@@ -219,6 +219,7 @@ func _on_input_event(_viewport: Node, event: InputEvent, _shape_idx: int) -> voi
 				if self == p.end:
 					p.start.type = TYPE.EMPTY
 					p.take.type = TYPE.DEAD
+					board.numOfPieces -= 1;
 					p.end.type = TYPE.PLAYER
 					board.clear_highlights()
 					break

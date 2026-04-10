@@ -153,7 +153,7 @@ func load_string() -> void:
 	
 	# block setters from interfering with array math
 	_is_loading = true 
-	
+	numOfPieces = 0
 	clear()
 	height = string_array.size()
 	width = x_length

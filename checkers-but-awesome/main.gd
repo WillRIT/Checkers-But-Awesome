@@ -10,15 +10,15 @@ var levels = [ "OOOOO
 OXOXO
 OOOOO
 XOOOX
-OXXXO",
+OX#XO",
 "OOOXOOO
 OXOOXOO
 OXOOOOO
 OOX XXO
-OOX OOO",
+OO# OOO",
 "  OOO  
   OXX  
-OXO OOX
+OXO OO#
 OX   XX
 OOO OOO
   OXO  
@@ -27,10 +27,10 @@ OOO OOO
 OOOXOXOXO
   OOOOO  
 OXOXOOOXO
-OXXOOXOXO",
+OX#OOXOXO",
 "  OOO
   OXX
-OXXXO
+OX#XO
 XXO  
 OOO  "
 ]
@@ -45,7 +45,7 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	match state:
 		GAMESTATE.GAME:
-			if(board.numOfPieces <= 1):
+			if(board.numOfPieces <= 0):
 				state_change(GAMESTATE.WIN)
 			##if(player cant move)
 				##state_change(GAMESTATE.LOSE)
@@ -55,7 +55,7 @@ func _process(delta: float) -> void:
 func state_change(newstate: GAMESTATE) -> void:
 	match newstate:
 		GAMESTATE.GAME:
-			#board.loading = level
+			board.loadable = levels[level-1]
 			board.load_string()
 			board.show()
 			find_child("Level Selection").hide();
@@ -80,9 +80,9 @@ func _on_button_pressed() -> void:
 	level = 1;
 	state_change(GAMESTATE.GAME)
 func _next_level() -> void:
-	level += 1
-	board.loadable = levels[level-1]
-	print(board.loadable)
-	state_change(GAMESTATE.GAME)
+	if(level != levels.size()):
+		level += 1
+		board.loadable = levels[level-1]
+		state_change(GAMESTATE.GAME)
 func _reset_level()->void:
 	board.load_string()
