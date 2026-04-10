@@ -6,6 +6,7 @@ const ICON = preload("uid://dgiqw4yimxh3") #placeholder
 const BLACK = preload("uid://brnwttvfed8oy")
 const TEAL = preload("uid://dfb2xgfoofrw")
 const WHITE = preload("uid://ykkd0vn8m4rr")
+const PLAYER_PIECE = preload("uid://bls100m1vwsiq")
 #endregion
 
 enum TYPE {
@@ -23,7 +24,7 @@ enum TYPE {
 
 var y: int
 var x: int
-var size: int
+@export var size: int
 
 @export_tool_button("Get Valid Moves", "PathFollow2D") var moves_action = get_possible_moves
 
@@ -37,6 +38,9 @@ var size: int
 @export var south: Tile = null
 @export var southeast: Tile = null
 
+var area : Area2D
+var collision : CollisionShape2D
+
 func set_props(_y: int = y, _x: int = x, _size: int = size, _type: TYPE = type) -> void:
 	y = _y
 	x = _x
@@ -47,6 +51,20 @@ func set_props(_y: int = y, _x: int = x, _size: int = size, _type: TYPE = type) 
 		update_values()
 
 func _ready() -> void:
+	if not is_instance_valid(area):
+		area = Area2D.new()
+		add_child(area)
+		area.input_event.connect(_on_input_event)
+		if Engine.is_editor_hint():
+			area.owner = get_tree().edited_scene_root
+			
+	if not is_instance_valid(collision):
+		collision = CollisionShape2D.new()
+		collision.shape = RectangleShape2D.new()
+		area.add_child(collision)
+		if Engine.is_editor_hint():
+			collision.owner = get_tree().edited_scene_root
+	 
 	update_values()
 
 func load_name() -> void:
@@ -80,6 +98,8 @@ func update_values() -> void:
 		scale = texture_scale
 	
 	position = Vector2(x * size, y * size)
+	
+	collision.shape.size = Vector2(float(size), float(size))
 		
 func _to_string() -> String:
 	return "(" + str(y) + "," + str(x) + "): " + str(type)
@@ -159,3 +179,8 @@ func get_possible_moves() -> Array[TakePath]:
 		p.show_path()
 	
 	return possible_moves
+
+func _on_input_event(viewport: Node, event: InputEvent, shape_idk: int) -> void:
+	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
+		print("Sprite clicked!")
+		# Add your logic here
