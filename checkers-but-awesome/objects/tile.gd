@@ -124,9 +124,15 @@ func get_possible_moves() -> Array[TakePath]:
 		if is_instance_valid(northwest.northwest) and northwest.northwest.type == TYPE.EMPTY:
 			possible_moves.append(TakePath.new(self, northwest.northwest, northwest))
 		#bounce off the wall possibility
-		if (not is_instance_valid(northwest.northwest) or northwest.northwest.type == TYPE.NULL) and (not is_instance_valid(northwest.west) or northwest.west.type == TYPE.NULL):
-			if is_instance_valid(northwest.northeast) and northwest.northeast.type == TYPE.EMPTY:
-				possible_moves.append(TakePath.new(self, northwest.northeast, northwest))
+		if (not is_instance_valid(northwest.northwest) or northwest.northwest.type == TYPE.NULL):
+			#side bounce
+			if (not is_instance_valid(northwest.west) or northwest.west.type == TYPE.NULL):
+				if is_instance_valid(northwest.northeast) and northwest.northeast.type == TYPE.EMPTY:
+					possible_moves.append(TakePath.new(self, northwest.northeast, northwest))
+			#vert bounce
+			if (not is_instance_valid(northwest.north) or northwest.north.type == TYPE.NULL):
+				if is_instance_valid(northwest.southwest) and northwest.southwest.type == TYPE.EMPTY:
+					possible_moves.append(TakePath.new(self, northwest.southwest, northwest))
 					
 	# UP
 	if is_instance_valid(north) and north.type == TYPE.FILLED:
@@ -139,9 +145,15 @@ func get_possible_moves() -> Array[TakePath]:
 		if is_instance_valid(northeast.northeast) and northeast.northeast.type == TYPE.EMPTY:
 			possible_moves.append(TakePath.new(self, northeast.northeast, northeast))
 		#bounce off the wall possibility
-		if (not is_instance_valid(northeast.northeast) or northeast.northeast.type == TYPE.NULL) and (not is_instance_valid(northeast.east) or northeast.east.type == TYPE.NULL):
-			if is_instance_valid(northeast.northwest) and northeast.northwest.type == TYPE.EMPTY:
-				possible_moves.append(TakePath.new(self, northeast.northwest, northeast))
+		if (not is_instance_valid(northeast.northeast) or northeast.northeast.type == TYPE.NULL):
+			#side bounce
+			if (not is_instance_valid(northeast.east) or northeast.east.type == TYPE.NULL):
+				if is_instance_valid(northeast.northwest) and northeast.northwest.type == TYPE.EMPTY:
+					possible_moves.append(TakePath.new(self, northeast.northwest, northeast))
+			#vert bounce
+			if (not is_instance_valid(northeast.north) or northeast.north.type == TYPE.NULL):
+				if is_instance_valid(northeast.southeast) and northeast.southeast.type == TYPE.EMPTY:
+					possible_moves.append(TakePath.new(self, northeast.southeast, northeast))
 	
 	# LEFT
 	if is_instance_valid(west) and west.type == TYPE.FILLED:
@@ -159,9 +171,15 @@ func get_possible_moves() -> Array[TakePath]:
 		if is_instance_valid(southwest.southwest) and southwest.southwest.type == TYPE.EMPTY:
 			possible_moves.append(TakePath.new(self, southwest.southwest, southwest))
 		#bounce off the wall possibility
-		if (not is_instance_valid(southwest.southwest) or southwest.southwest.type == TYPE.NULL) and (not is_instance_valid(southwest.west) or southwest.west.type == TYPE.NULL):
-			if is_instance_valid(southwest.southeast) and southwest.southeast.type == TYPE.EMPTY:
-				possible_moves.append(TakePath.new(self, southwest.southeast, southwest))
+		if (not is_instance_valid(southwest.southwest) or southwest.southwest.type == TYPE.NULL):
+			#side bounce
+			if (not is_instance_valid(southwest.west) or southwest.west.type == TYPE.NULL):
+				if is_instance_valid(southwest.southeast) and southwest.southeast.type == TYPE.EMPTY:
+					possible_moves.append(TakePath.new(self, southwest.southeast, southwest))
+			#vert bounce
+			if (not is_instance_valid(southwest.south) or southwest.south.type == TYPE.NULL):
+				if is_instance_valid(southwest.northwest) and southwest.northwest.type == TYPE.EMPTY:
+					possible_moves.append(TakePath.new(self, southwest.northwest, southwest))
 					
 	# DOWN
 	if is_instance_valid(south) and south.type == TYPE.FILLED:
@@ -174,9 +192,15 @@ func get_possible_moves() -> Array[TakePath]:
 		if is_instance_valid(southeast.southeast) and southeast.southeast.type == TYPE.EMPTY:
 			possible_moves.append(TakePath.new(self, southeast.southeast, southeast))
 		#bounce off the wall possibility
-		if (not is_instance_valid(southeast.southeast) or southeast.southeast.type == TYPE.NULL) and (not is_instance_valid(southeast.east) or southeast.east.type == TYPE.NULL):
-			if is_instance_valid(southeast.southwest) and southeast.southwest.type == TYPE.EMPTY:
-				possible_moves.append(TakePath.new(self, southeast.southwest, southeast))
+		if (not is_instance_valid(southeast.southeast) or southeast.southeast.type == TYPE.NULL):
+			#side bounce
+			if (not is_instance_valid(southeast.east) or southeast.east.type == TYPE.NULL):
+				if is_instance_valid(southeast.southwest) and southeast.southwest.type == TYPE.EMPTY:
+					possible_moves.append(TakePath.new(self, southeast.southwest, southeast))
+			#vert bounce
+			if (not is_instance_valid(southeast.south) or southeast.south.type == TYPE.NULL):
+				if is_instance_valid(southeast.northeast) and southeast.northeast.type == TYPE.EMPTY:
+					possible_moves.append(TakePath.new(self, southeast.northeast, southeast))
 	
 	
 	print(possible_moves)
@@ -186,7 +210,7 @@ func get_possible_moves() -> Array[TakePath]:
 	
 	return possible_moves
 
-func _on_input_event(viewport: Node, event: InputEvent, shape_idk: int) -> void:
+func _on_input_event(_viewport: Node, event: InputEvent, _shape_idx: int) -> void:
 	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
 		if type == TYPE.PLAYER:
 			board.current_possible_moves = get_possible_moves()
@@ -197,3 +221,4 @@ func _on_input_event(viewport: Node, event: InputEvent, shape_idk: int) -> void:
 					p.take.type = TYPE.DEAD
 					p.end.type = TYPE.PLAYER
 					board.clear_highlights()
+					break
