@@ -25,7 +25,7 @@ var _is_loading := false # Flag to prevent setter cascades
 @export_category("Save/Load Board")
 @export_tool_button("SAVE", "Save") var save_action = save
 @export_multiline("monospace", "no_wrap") var loadable := ""
-@export_tool_button("LOAD", "Load") var load_action = load
+@export_tool_button("LOAD", "Load") var load_action = load_string
 
 @export_group("Settings")
 @export var char_to_type: Dictionary[Tile.TYPE, String] = {
@@ -39,6 +39,7 @@ var board_arr : Array[Tile] = []
 func _ready() -> void:
 	if Engine.is_editor_hint() and board_arr.is_empty():
 		update_values()
+		load_string()
 
 func board(y: int, x: int) -> Tile: 
 	if y >= height or y < 0: return null
@@ -122,7 +123,7 @@ func save() -> void:
 	else:
 		loadable = "Board not ready or empty!"
 
-func load() -> void:
+func load_string() -> void:
 	if loadable in ["Board not ready or empty!", "String is not valid or empty!", "", null]:
 		loadable = "String is not valid or empty!"
 		return

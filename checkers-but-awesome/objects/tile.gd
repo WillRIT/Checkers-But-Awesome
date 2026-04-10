@@ -25,7 +25,7 @@ var y: int
 var x: int
 var size: int
 
-@export_tool_button("Get Valid Moves") var moves_action = get_possible_moves
+@export_tool_button("Get Valid Moves", "PathFollow2D") var moves_action = get_possible_moves
 
 @export_group("Link References")
 @export var northwest: Tile = null
