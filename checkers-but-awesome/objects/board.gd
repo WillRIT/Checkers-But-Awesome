@@ -31,10 +31,14 @@ var numOfPieces = 0
 @export var char_to_type: Dictionary[Tile.TYPE, String] = {
 	Tile.TYPE.EMPTY: "O",
 	Tile.TYPE.FILLED: "X",
+	Tile.TYPE.PLAYER: "#",
+	Tile.TYPE.DEAD: ".",
 	Tile.TYPE.NULL: " "
 }
 
 var board_arr : Array[Tile] = []
+
+var current_possible_moves : Array[TakePath] = []
 
 func _ready() -> void:
 	if Engine.is_editor_hint() and board_arr.is_empty():
@@ -80,6 +84,7 @@ func update_values() -> void:
 			var index = (y * width) + x
 			if board_arr[index] == null:
 				var new_tile = Tile.new()
+				new_tile.board = self
 				board_arr[index] = new_tile
 				add_child(new_tile)
 				new_tile.set_props(y, x, tile_size)
@@ -158,6 +163,7 @@ func load_string() -> void:
 	for y in range(height):
 		for x in range(width):
 			var new_tile = Tile.new()
+			new_tile.board = self
 			var parsed_type = char_to_type.find_key(string_array[y][x])
 			if parsed_type == 1:
 				numOfPieces += 1
@@ -173,3 +179,7 @@ func load_string() -> void:
 	# re-enable setters and safely trigger link update
 	_is_loading = false
 	update_values()
+
+func clear_highlights() -> void:
+	for t: Tile in board_arr:
+		t.highlighted = false
