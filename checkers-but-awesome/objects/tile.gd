@@ -7,11 +7,14 @@ const BLACK = preload("uid://brnwttvfed8oy")
 const TEAL = preload("uid://dfb2xgfoofrw")
 const WHITE = preload("uid://ykkd0vn8m4rr")
 const PLAYER_PIECE = preload("uid://bls100m1vwsiq")
+const RED = preload("uid://bvw4ed3vfytow")
 #endregion
 
 enum TYPE {
 	EMPTY,
 	FILLED,
+	PLAYER,
+	DEAD,
 	NULL
 }
 
@@ -40,6 +43,7 @@ var x: int
 
 var area : Area2D
 var collision : CollisionShape2D
+var board : Board
 
 func set_props(_y: int = y, _x: int = x, _size: int = size, _type: TYPE = type) -> void:
 	y = _y
@@ -88,6 +92,8 @@ func update_values() -> void:
 	match type:
 		TYPE.EMPTY: texture = WHITE
 		TYPE.FILLED: texture = BLACK
+		TYPE.PLAYER: texture = PLAYER_PIECE
+		TYPE.DEAD: texture = RED
 		TYPE.NULL: texture = TEAL
 		_: texture = ICON
 		
@@ -99,7 +105,7 @@ func update_values() -> void:
 	
 	position = Vector2(x * size, y * size)
 	
-	collision.shape.size = Vector2(float(size), float(size))
+	collision.shape.size = Vector2(float(size), float(size)) / scale.x
 		
 func _to_string() -> String:
 	return "(" + str(y) + "," + str(x) + "): " + str(type)
@@ -182,5 +188,12 @@ func get_possible_moves() -> Array[TakePath]:
 
 func _on_input_event(viewport: Node, event: InputEvent, shape_idk: int) -> void:
 	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
-		print("Sprite clicked!")
-		# Add your logic here
+		if type == TYPE.PLAYER:
+			board.current_possible_moves = get_possible_moves()
+		elif highlighted:
+			for p: TakePath in board.current_possible_moves:
+				if self == p.end:
+					p.start.type = TYPE.EMPTY
+					p.take.type = TYPE.DEAD
+					p.end.type = TYPE.PLAYER
+					board.clear_highlights()
