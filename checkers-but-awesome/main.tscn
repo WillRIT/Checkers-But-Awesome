@@ -201,6 +201,7 @@ OXOXOOOXO
 OX#OOXOXO"
 metadata/_custom_type_script = "uid://d27ry4406v8fk"
 
+<<<<<<< Updated upstream
 [node name="Reset" type="Control" parent="Board" unique_id=688635222]
 layout_mode = 3
 anchors_preset = 0
@@ -217,18 +218,32 @@ text = "Reset"
 
 [node name="Tile(0,0)" type="Sprite2D" parent="Board" unique_id=378928829 node_paths=PackedStringArray("east", "south", "southeast")]
 texture = ExtResource("2_h2yge")
+=======
+[node name="Tile(0,0)" type="Sprite2D" parent="Camera2D/Board" unique_id=838243042 node_paths=PackedStringArray("east", "south", "southeast")]
+scale = Vector2(0.33333334, 0.33333334)
+texture = ExtResource("3_272bh")
+>>>>>>> Stashed changes
 script = ExtResource("2_0xm2m")
 size = 50
 east = NodePath("../Tile(0,1)")
 south = NodePath("../Tile(1,0)")
 southeast = NodePath("../Tile(1,1)")
 
+<<<<<<< Updated upstream
 [node name="@Area2D@63542" type="Area2D" parent="Board/Tile(0,0)" unique_id=2120429347]
 
 [node name="@CollisionShape2D@63543" type="CollisionShape2D" parent="Board/Tile(0,0)/@Area2D@63542" unique_id=341344466]
 shape = SubResource("RectangleShape2D_272bh")
 
 [node name="Tile(0,1)" type="Sprite2D" parent="Board" unique_id=1980387077 node_paths=PackedStringArray("west", "east", "southwest", "south", "southeast")]
+=======
+[node name="@Area2D@20826" type="Area2D" parent="Camera2D/Board/Tile(0,0)" unique_id=1644655153]
+
+[node name="@CollisionShape2D@20827" type="CollisionShape2D" parent="Camera2D/Board/Tile(0,0)/@Area2D@20826" unique_id=2135065183]
+shape = SubResource("RectangleShape2D_272bh")
+
+[node name="Tile(0,1)" type="Sprite2D" parent="Camera2D/Board" unique_id=670861208 node_paths=PackedStringArray("west", "east", "southwest", "south", "southeast")]
+>>>>>>> Stashed changes
 position = Vector2(50, 0)
 texture = ExtResource("5_lquwl")
 script = ExtResource("2_0xm2m")
@@ -240,12 +255,21 @@ southwest = NodePath("../Tile(1,0)")
 south = NodePath("../Tile(1,1)")
 southeast = NodePath("../Tile(1,2)")
 
+<<<<<<< Updated upstream
 [node name="@Area2D@63545" type="Area2D" parent="Board/Tile(0,1)" unique_id=918441947]
 
 [node name="@CollisionShape2D@63546" type="CollisionShape2D" parent="Board/Tile(0,1)/@Area2D@63545" unique_id=153434043]
 shape = SubResource("RectangleShape2D_5vw27")
 
 [node name="Tile(0,2)" type="Sprite2D" parent="Board" unique_id=234165576 node_paths=PackedStringArray("west", "east", "southwest", "south", "southeast")]
+=======
+[node name="@Area2D@20829" type="Area2D" parent="Camera2D/Board/Tile(0,1)" unique_id=967800358]
+
+[node name="@CollisionShape2D@20830" type="CollisionShape2D" parent="Camera2D/Board/Tile(0,1)/@Area2D@20829" unique_id=1873040128]
+shape = SubResource("RectangleShape2D_5vw27")
+
+[node name="Tile(0,2)" type="Sprite2D" parent="Camera2D/Board" unique_id=1428295367 node_paths=PackedStringArray("west", "east", "southwest", "south", "southeast")]
+>>>>>>> Stashed changes
 position = Vector2(100, 0)
 texture = ExtResource("2_h2yge")
 script = ExtResource("2_0xm2m")
@@ -256,12 +280,21 @@ southwest = NodePath("../Tile(1,1)")
 south = NodePath("../Tile(1,2)")
 southeast = NodePath("../Tile(1,3)")
 
+<<<<<<< Updated upstream
 [node name="@Area2D@63548" type="Area2D" parent="Board/Tile(0,2)" unique_id=1219056122]
 
 [node name="@CollisionShape2D@63549" type="CollisionShape2D" parent="Board/Tile(0,2)/@Area2D@63548" unique_id=1138982116]
 shape = SubResource("RectangleShape2D_kek77")
 
 [node name="Tile(0,3)" type="Sprite2D" parent="Board" unique_id=804727856 node_paths=PackedStringArray("west", "east", "southwest", "south", "southeast")]
+=======
+[node name="@Area2D@20832" type="Area2D" parent="Camera2D/Board/Tile(0,2)" unique_id=724673140]
+
+[node name="@CollisionShape2D@20833" type="CollisionShape2D" parent="Camera2D/Board/Tile(0,2)/@Area2D@20832" unique_id=238122451]
+shape = SubResource("RectangleShape2D_kek77")
+
+[node name="Tile(0,3)" type="Sprite2D" parent="Camera2D/Board" unique_id=958830743 node_paths=PackedStringArray("west", "east", "southwest", "south", "southeast")]
+>>>>>>> Stashed changes
 position = Vector2(150, 0)
 texture = ExtResource("2_h2yge")
 script = ExtResource("2_0xm2m")
@@ -272,12 +305,21 @@ southwest = NodePath("../Tile(1,2)")
 south = NodePath("../Tile(1,3)")
 southeast = NodePath("../Tile(1,4)")
 
+<<<<<<< Updated upstream
 [node name="@Area2D@63551" type="Area2D" parent="Board/Tile(0,3)" unique_id=897216230]
 
 [node name="@CollisionShape2D@63552" type="CollisionShape2D" parent="Board/Tile(0,3)/@Area2D@63551" unique_id=1864255704]
 shape = SubResource("RectangleShape2D_4c57u")
 
 [node name="Tile(0,4)" type="Sprite2D" parent="Board" unique_id=296615122 node_paths=PackedStringArray("west", "east", "southwest", "south", "southeast")]
+=======
+[node name="@Area2D@20835" type="Area2D" parent="Camera2D/Board/Tile(0,3)" unique_id=1206721337]
+
+[node name="@CollisionShape2D@20836" type="CollisionShape2D" parent="Camera2D/Board/Tile(0,3)/@Area2D@20835" unique_id=1862898641]
+shape = SubResource("RectangleShape2D_4c57u")
+
+[node name="Tile(0,4)" type="Sprite2D" parent="Camera2D/Board" unique_id=275943418 node_paths=PackedStringArray("west", "east", "southwest", "south", "southeast")]
+>>>>>>> Stashed changes
 position = Vector2(200, 0)
 texture = ExtResource("2_h2yge")
 script = ExtResource("2_0xm2m")
@@ -288,12 +330,21 @@ southwest = NodePath("../Tile(1,3)")
 south = NodePath("../Tile(1,4)")
 southeast = NodePath("../Tile(1,5)")
 
+<<<<<<< Updated upstream
 [node name="@Area2D@63554" type="Area2D" parent="Board/Tile(0,4)" unique_id=1492403239]
 
 [node name="@CollisionShape2D@63555" type="CollisionShape2D" parent="Board/Tile(0,4)/@Area2D@63554" unique_id=816394621]
 shape = SubResource("RectangleShape2D_efxa6")
 
 [node name="Tile(0,5)" type="Sprite2D" parent="Board" unique_id=939849196 node_paths=PackedStringArray("west", "east", "southwest", "south", "southeast")]
+=======
+[node name="@Area2D@20838" type="Area2D" parent="Camera2D/Board/Tile(0,4)" unique_id=1282335086]
+
+[node name="@CollisionShape2D@20839" type="CollisionShape2D" parent="Camera2D/Board/Tile(0,4)/@Area2D@20838" unique_id=1012141767]
+shape = SubResource("RectangleShape2D_efxa6")
+
+[node name="Tile(0,5)" type="Sprite2D" parent="Camera2D/Board" unique_id=1059547988 node_paths=PackedStringArray("west", "east", "southwest", "south", "southeast")]
+>>>>>>> Stashed changes
 position = Vector2(250, 0)
 texture = ExtResource("2_h2yge")
 script = ExtResource("2_0xm2m")
@@ -304,12 +355,21 @@ southwest = NodePath("../Tile(1,4)")
 south = NodePath("../Tile(1,5)")
 southeast = NodePath("../Tile(1,6)")
 
+<<<<<<< Updated upstream
 [node name="@Area2D@63557" type="Area2D" parent="Board/Tile(0,5)" unique_id=1821563099]
 
 [node name="@CollisionShape2D@63558" type="CollisionShape2D" parent="Board/Tile(0,5)/@Area2D@63557" unique_id=1770104695]
 shape = SubResource("RectangleShape2D_dg77c")
 
 [node name="Tile(0,6)" type="Sprite2D" parent="Board" unique_id=2063100151 node_paths=PackedStringArray("west", "east", "southwest", "south", "southeast")]
+=======
+[node name="@Area2D@20841" type="Area2D" parent="Camera2D/Board/Tile(0,5)" unique_id=483071243]
+
+[node name="@CollisionShape2D@20842" type="CollisionShape2D" parent="Camera2D/Board/Tile(0,5)/@Area2D@20841" unique_id=1996597062]
+shape = SubResource("RectangleShape2D_dg77c")
+
+[node name="Tile(0,6)" type="Sprite2D" parent="Camera2D/Board" unique_id=956210008 node_paths=PackedStringArray("west", "east", "southwest", "south", "southeast")]
+>>>>>>> Stashed changes
 position = Vector2(300, 0)
 texture = ExtResource("2_h2yge")
 script = ExtResource("2_0xm2m")
@@ -320,12 +380,21 @@ southwest = NodePath("../Tile(1,5)")
 south = NodePath("../Tile(1,6)")
 southeast = NodePath("../Tile(1,7)")
 
+<<<<<<< Updated upstream
 [node name="@Area2D@63560" type="Area2D" parent="Board/Tile(0,6)" unique_id=1173753760]
 
 [node name="@CollisionShape2D@63561" type="CollisionShape2D" parent="Board/Tile(0,6)/@Area2D@63560" unique_id=1816090491]
 shape = SubResource("RectangleShape2D_ycdy4")
 
 [node name="Tile(0,7)" type="Sprite2D" parent="Board" unique_id=1521302490 node_paths=PackedStringArray("west", "east", "southwest", "south", "southeast")]
+=======
+[node name="@Area2D@20844" type="Area2D" parent="Camera2D/Board/Tile(0,6)" unique_id=952972802]
+
+[node name="@CollisionShape2D@20845" type="CollisionShape2D" parent="Camera2D/Board/Tile(0,6)/@Area2D@20844" unique_id=685542621]
+shape = SubResource("RectangleShape2D_ycdy4")
+
+[node name="Tile(0,7)" type="Sprite2D" parent="Camera2D/Board" unique_id=309178297 node_paths=PackedStringArray("west", "east", "southwest", "south", "southeast")]
+>>>>>>> Stashed changes
 position = Vector2(350, 0)
 texture = ExtResource("5_lquwl")
 script = ExtResource("2_0xm2m")
@@ -337,12 +406,21 @@ southwest = NodePath("../Tile(1,6)")
 south = NodePath("../Tile(1,7)")
 southeast = NodePath("../Tile(1,8)")
 
+<<<<<<< Updated upstream
 [node name="@Area2D@63563" type="Area2D" parent="Board/Tile(0,7)" unique_id=2056662288]
 
 [node name="@CollisionShape2D@63564" type="CollisionShape2D" parent="Board/Tile(0,7)/@Area2D@63563" unique_id=490921517]
 shape = SubResource("RectangleShape2D_w48qg")
 
 [node name="Tile(0,8)" type="Sprite2D" parent="Board" unique_id=468441979 node_paths=PackedStringArray("west", "southwest", "south")]
+=======
+[node name="@Area2D@20847" type="Area2D" parent="Camera2D/Board/Tile(0,7)" unique_id=1169891857]
+
+[node name="@CollisionShape2D@20848" type="CollisionShape2D" parent="Camera2D/Board/Tile(0,7)/@Area2D@20847" unique_id=483537561]
+shape = SubResource("RectangleShape2D_w48qg")
+
+[node name="Tile(0,8)" type="Sprite2D" parent="Camera2D/Board" unique_id=438683558 node_paths=PackedStringArray("west", "southwest", "south")]
+>>>>>>> Stashed changes
 position = Vector2(400, 0)
 texture = ExtResource("2_h2yge")
 script = ExtResource("2_0xm2m")
@@ -351,12 +429,21 @@ west = NodePath("../Tile(0,7)")
 southwest = NodePath("../Tile(1,7)")
 south = NodePath("../Tile(1,8)")
 
+<<<<<<< Updated upstream
 [node name="@Area2D@63566" type="Area2D" parent="Board/Tile(0,8)" unique_id=2114732483]
 
 [node name="@CollisionShape2D@63567" type="CollisionShape2D" parent="Board/Tile(0,8)/@Area2D@63566" unique_id=36947326]
 shape = SubResource("RectangleShape2D_vivmo")
 
 [node name="Tile(1,0)" type="Sprite2D" parent="Board" unique_id=213146397 node_paths=PackedStringArray("north", "northeast", "east", "south", "southeast")]
+=======
+[node name="@Area2D@20850" type="Area2D" parent="Camera2D/Board/Tile(0,8)" unique_id=288481905]
+
+[node name="@CollisionShape2D@20851" type="CollisionShape2D" parent="Camera2D/Board/Tile(0,8)/@Area2D@20850" unique_id=1424221411]
+shape = SubResource("RectangleShape2D_vivmo")
+
+[node name="Tile(1,0)" type="Sprite2D" parent="Camera2D/Board" unique_id=1971149101 node_paths=PackedStringArray("north", "northeast", "east", "south", "southeast")]
+>>>>>>> Stashed changes
 position = Vector2(0, 50)
 texture = ExtResource("2_h2yge")
 script = ExtResource("2_0xm2m")
@@ -367,12 +454,21 @@ east = NodePath("../Tile(1,1)")
 south = NodePath("../Tile(2,0)")
 southeast = NodePath("../Tile(2,1)")
 
+<<<<<<< Updated upstream
 [node name="@Area2D@63569" type="Area2D" parent="Board/Tile(1,0)" unique_id=1464741691]
 
 [node name="@CollisionShape2D@63570" type="CollisionShape2D" parent="Board/Tile(1,0)/@Area2D@63569" unique_id=1787933855]
 shape = SubResource("RectangleShape2D_2cqfq")
 
 [node name="Tile(1,1)" type="Sprite2D" parent="Board" unique_id=708963941 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+=======
+[node name="@Area2D@20853" type="Area2D" parent="Camera2D/Board/Tile(1,0)" unique_id=1236186535]
+
+[node name="@CollisionShape2D@20854" type="CollisionShape2D" parent="Camera2D/Board/Tile(1,0)/@Area2D@20853" unique_id=120920500]
+shape = SubResource("RectangleShape2D_2cqfq")
+
+[node name="Tile(1,1)" type="Sprite2D" parent="Camera2D/Board" unique_id=1214426157 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+>>>>>>> Stashed changes
 position = Vector2(50, 50)
 texture = ExtResource("2_h2yge")
 script = ExtResource("2_0xm2m")
@@ -386,12 +482,21 @@ southwest = NodePath("../Tile(2,0)")
 south = NodePath("../Tile(2,1)")
 southeast = NodePath("../Tile(2,2)")
 
+<<<<<<< Updated upstream
 [node name="@Area2D@63572" type="Area2D" parent="Board/Tile(1,1)" unique_id=391516455]
 
 [node name="@CollisionShape2D@63573" type="CollisionShape2D" parent="Board/Tile(1,1)/@Area2D@63572" unique_id=263533501]
 shape = SubResource("RectangleShape2D_yaehf")
 
 [node name="Tile(1,2)" type="Sprite2D" parent="Board" unique_id=708135824 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+=======
+[node name="@Area2D@20856" type="Area2D" parent="Camera2D/Board/Tile(1,1)" unique_id=85354887]
+
+[node name="@CollisionShape2D@20857" type="CollisionShape2D" parent="Camera2D/Board/Tile(1,1)/@Area2D@20856" unique_id=1610647098]
+shape = SubResource("RectangleShape2D_yaehf")
+
+[node name="Tile(1,2)" type="Sprite2D" parent="Camera2D/Board" unique_id=2093505298 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+>>>>>>> Stashed changes
 position = Vector2(100, 50)
 texture = ExtResource("2_h2yge")
 script = ExtResource("2_0xm2m")
@@ -405,12 +510,21 @@ southwest = NodePath("../Tile(2,1)")
 south = NodePath("../Tile(2,2)")
 southeast = NodePath("../Tile(2,3)")
 
+<<<<<<< Updated upstream
 [node name="@Area2D@63575" type="Area2D" parent="Board/Tile(1,2)" unique_id=1734458902]
 
 [node name="@CollisionShape2D@63576" type="CollisionShape2D" parent="Board/Tile(1,2)/@Area2D@63575" unique_id=148123711]
 shape = SubResource("RectangleShape2D_074og")
 
 [node name="Tile(1,3)" type="Sprite2D" parent="Board" unique_id=1830864693 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+=======
+[node name="@Area2D@20859" type="Area2D" parent="Camera2D/Board/Tile(1,2)" unique_id=251256802]
+
+[node name="@CollisionShape2D@20860" type="CollisionShape2D" parent="Camera2D/Board/Tile(1,2)/@Area2D@20859" unique_id=1158598878]
+shape = SubResource("RectangleShape2D_074og")
+
+[node name="Tile(1,3)" type="Sprite2D" parent="Camera2D/Board" unique_id=1380717703 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+>>>>>>> Stashed changes
 position = Vector2(150, 50)
 texture = ExtResource("5_lquwl")
 script = ExtResource("2_0xm2m")
@@ -425,12 +539,21 @@ southwest = NodePath("../Tile(2,2)")
 south = NodePath("../Tile(2,3)")
 southeast = NodePath("../Tile(2,4)")
 
+<<<<<<< Updated upstream
 [node name="@Area2D@63578" type="Area2D" parent="Board/Tile(1,3)" unique_id=965300189]
 
 [node name="@CollisionShape2D@63579" type="CollisionShape2D" parent="Board/Tile(1,3)/@Area2D@63578" unique_id=1234770744]
 shape = SubResource("RectangleShape2D_cegan")
 
 [node name="Tile(1,4)" type="Sprite2D" parent="Board" unique_id=1307275553 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+=======
+[node name="@Area2D@20862" type="Area2D" parent="Camera2D/Board/Tile(1,3)" unique_id=865922434]
+
+[node name="@CollisionShape2D@20863" type="CollisionShape2D" parent="Camera2D/Board/Tile(1,3)/@Area2D@20862" unique_id=1677467671]
+shape = SubResource("RectangleShape2D_cegan")
+
+[node name="Tile(1,4)" type="Sprite2D" parent="Camera2D/Board" unique_id=194058917 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+>>>>>>> Stashed changes
 position = Vector2(200, 50)
 texture = ExtResource("2_h2yge")
 script = ExtResource("2_0xm2m")
@@ -444,12 +567,21 @@ southwest = NodePath("../Tile(2,3)")
 south = NodePath("../Tile(2,4)")
 southeast = NodePath("../Tile(2,5)")
 
+<<<<<<< Updated upstream
 [node name="@Area2D@63581" type="Area2D" parent="Board/Tile(1,4)" unique_id=1709316039]
 
 [node name="@CollisionShape2D@63582" type="CollisionShape2D" parent="Board/Tile(1,4)/@Area2D@63581" unique_id=310589136]
 shape = SubResource("RectangleShape2D_82xsv")
 
 [node name="Tile(1,5)" type="Sprite2D" parent="Board" unique_id=652144632 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+=======
+[node name="@Area2D@20865" type="Area2D" parent="Camera2D/Board/Tile(1,4)" unique_id=1500288129]
+
+[node name="@CollisionShape2D@20866" type="CollisionShape2D" parent="Camera2D/Board/Tile(1,4)/@Area2D@20865" unique_id=379765311]
+shape = SubResource("RectangleShape2D_82xsv")
+
+[node name="Tile(1,5)" type="Sprite2D" parent="Camera2D/Board" unique_id=300250088 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+>>>>>>> Stashed changes
 position = Vector2(250, 50)
 texture = ExtResource("5_lquwl")
 script = ExtResource("2_0xm2m")
@@ -464,12 +596,21 @@ southwest = NodePath("../Tile(2,4)")
 south = NodePath("../Tile(2,5)")
 southeast = NodePath("../Tile(2,6)")
 
+<<<<<<< Updated upstream
 [node name="@Area2D@63584" type="Area2D" parent="Board/Tile(1,5)" unique_id=1983723181]
 
 [node name="@CollisionShape2D@63585" type="CollisionShape2D" parent="Board/Tile(1,5)/@Area2D@63584" unique_id=1417119294]
 shape = SubResource("RectangleShape2D_getpj")
 
 [node name="Tile(1,6)" type="Sprite2D" parent="Board" unique_id=1742003632 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+=======
+[node name="@Area2D@20868" type="Area2D" parent="Camera2D/Board/Tile(1,5)" unique_id=653483973]
+
+[node name="@CollisionShape2D@20869" type="CollisionShape2D" parent="Camera2D/Board/Tile(1,5)/@Area2D@20868" unique_id=169227381]
+shape = SubResource("RectangleShape2D_getpj")
+
+[node name="Tile(1,6)" type="Sprite2D" parent="Camera2D/Board" unique_id=1081049067 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+>>>>>>> Stashed changes
 position = Vector2(300, 50)
 texture = ExtResource("2_h2yge")
 script = ExtResource("2_0xm2m")
@@ -483,12 +624,21 @@ southwest = NodePath("../Tile(2,5)")
 south = NodePath("../Tile(2,6)")
 southeast = NodePath("../Tile(2,7)")
 
+<<<<<<< Updated upstream
 [node name="@Area2D@63587" type="Area2D" parent="Board/Tile(1,6)" unique_id=2036618265]
 
 [node name="@CollisionShape2D@63588" type="CollisionShape2D" parent="Board/Tile(1,6)/@Area2D@63587" unique_id=476225696]
 shape = SubResource("RectangleShape2D_ryguw")
 
 [node name="Tile(1,7)" type="Sprite2D" parent="Board" unique_id=44340774 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+=======
+[node name="@Area2D@20871" type="Area2D" parent="Camera2D/Board/Tile(1,6)" unique_id=1355645773]
+
+[node name="@CollisionShape2D@20872" type="CollisionShape2D" parent="Camera2D/Board/Tile(1,6)/@Area2D@20871" unique_id=999147954]
+shape = SubResource("RectangleShape2D_ryguw")
+
+[node name="Tile(1,7)" type="Sprite2D" parent="Camera2D/Board" unique_id=42942766 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+>>>>>>> Stashed changes
 position = Vector2(350, 50)
 texture = ExtResource("5_lquwl")
 script = ExtResource("2_0xm2m")
@@ -503,12 +653,21 @@ southwest = NodePath("../Tile(2,6)")
 south = NodePath("../Tile(2,7)")
 southeast = NodePath("../Tile(2,8)")
 
+<<<<<<< Updated upstream
 [node name="@Area2D@63590" type="Area2D" parent="Board/Tile(1,7)" unique_id=562670527]
 
 [node name="@CollisionShape2D@63591" type="CollisionShape2D" parent="Board/Tile(1,7)/@Area2D@63590" unique_id=1097027899]
 shape = SubResource("RectangleShape2D_d13ii")
 
 [node name="Tile(1,8)" type="Sprite2D" parent="Board" unique_id=531475295 node_paths=PackedStringArray("northwest", "north", "west", "southwest", "south")]
+=======
+[node name="@Area2D@20874" type="Area2D" parent="Camera2D/Board/Tile(1,7)" unique_id=1646021417]
+
+[node name="@CollisionShape2D@20875" type="CollisionShape2D" parent="Camera2D/Board/Tile(1,7)/@Area2D@20874" unique_id=1438504697]
+shape = SubResource("RectangleShape2D_d13ii")
+
+[node name="Tile(1,8)" type="Sprite2D" parent="Camera2D/Board" unique_id=996301080 node_paths=PackedStringArray("northwest", "north", "west", "southwest", "south")]
+>>>>>>> Stashed changes
 position = Vector2(400, 50)
 texture = ExtResource("2_h2yge")
 script = ExtResource("2_0xm2m")
@@ -519,12 +678,21 @@ west = NodePath("../Tile(1,7)")
 southwest = NodePath("../Tile(2,7)")
 south = NodePath("../Tile(2,8)")
 
+<<<<<<< Updated upstream
 [node name="@Area2D@63593" type="Area2D" parent="Board/Tile(1,8)" unique_id=968744173]
 
 [node name="@CollisionShape2D@63594" type="CollisionShape2D" parent="Board/Tile(1,8)/@Area2D@63593" unique_id=100808693]
 shape = SubResource("RectangleShape2D_1u8w0")
 
 [node name="Tile(2,0)" type="Sprite2D" parent="Board" unique_id=583986535 node_paths=PackedStringArray("north", "northeast", "east", "south", "southeast")]
+=======
+[node name="@Area2D@20877" type="Area2D" parent="Camera2D/Board/Tile(1,8)" unique_id=1521794539]
+
+[node name="@CollisionShape2D@20878" type="CollisionShape2D" parent="Camera2D/Board/Tile(1,8)/@Area2D@20877" unique_id=989261660]
+shape = SubResource("RectangleShape2D_1u8w0")
+
+[node name="Tile(2,0)" type="Sprite2D" parent="Camera2D/Board" unique_id=796710633 node_paths=PackedStringArray("north", "northeast", "east", "south", "southeast")]
+>>>>>>> Stashed changes
 position = Vector2(0, 100)
 texture = ExtResource("6_5vw27")
 script = ExtResource("2_0xm2m")
@@ -536,12 +704,21 @@ east = NodePath("../Tile(2,1)")
 south = NodePath("../Tile(3,0)")
 southeast = NodePath("../Tile(3,1)")
 
+<<<<<<< Updated upstream
 [node name="@Area2D@63596" type="Area2D" parent="Board/Tile(2,0)" unique_id=356104438]
 
 [node name="@CollisionShape2D@63597" type="CollisionShape2D" parent="Board/Tile(2,0)/@Area2D@63596" unique_id=1229414710]
 shape = SubResource("RectangleShape2D_0odxb")
 
 [node name="Tile(2,1)" type="Sprite2D" parent="Board" unique_id=1354136009 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+=======
+[node name="@Area2D@20880" type="Area2D" parent="Camera2D/Board/Tile(2,0)" unique_id=1475607405]
+
+[node name="@CollisionShape2D@20881" type="CollisionShape2D" parent="Camera2D/Board/Tile(2,0)/@Area2D@20880" unique_id=1091292156]
+shape = SubResource("RectangleShape2D_0odxb")
+
+[node name="Tile(2,1)" type="Sprite2D" parent="Camera2D/Board" unique_id=762380265 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+>>>>>>> Stashed changes
 position = Vector2(50, 100)
 texture = ExtResource("6_5vw27")
 script = ExtResource("2_0xm2m")
@@ -556,12 +733,21 @@ southwest = NodePath("../Tile(3,0)")
 south = NodePath("../Tile(3,1)")
 southeast = NodePath("../Tile(3,2)")
 
+<<<<<<< Updated upstream
 [node name="@Area2D@63599" type="Area2D" parent="Board/Tile(2,1)" unique_id=484356810]
 
 [node name="@CollisionShape2D@63600" type="CollisionShape2D" parent="Board/Tile(2,1)/@Area2D@63599" unique_id=643852921]
 shape = SubResource("RectangleShape2D_lswn8")
 
 [node name="Tile(2,2)" type="Sprite2D" parent="Board" unique_id=1440732607 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+=======
+[node name="@Area2D@20883" type="Area2D" parent="Camera2D/Board/Tile(2,1)" unique_id=14843207]
+
+[node name="@CollisionShape2D@20884" type="CollisionShape2D" parent="Camera2D/Board/Tile(2,1)/@Area2D@20883" unique_id=1225012980]
+shape = SubResource("RectangleShape2D_lswn8")
+
+[node name="Tile(2,2)" type="Sprite2D" parent="Camera2D/Board" unique_id=166717762 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+>>>>>>> Stashed changes
 position = Vector2(100, 100)
 texture = ExtResource("2_h2yge")
 script = ExtResource("2_0xm2m")
@@ -575,12 +761,21 @@ southwest = NodePath("../Tile(3,1)")
 south = NodePath("../Tile(3,2)")
 southeast = NodePath("../Tile(3,3)")
 
+<<<<<<< Updated upstream
 [node name="@Area2D@63602" type="Area2D" parent="Board/Tile(2,2)" unique_id=1229280333]
 
 [node name="@CollisionShape2D@63603" type="CollisionShape2D" parent="Board/Tile(2,2)/@Area2D@63602" unique_id=1454782051]
 shape = SubResource("RectangleShape2D_a6jrf")
 
 [node name="Tile(2,3)" type="Sprite2D" parent="Board" unique_id=1850263060 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+=======
+[node name="@Area2D@20886" type="Area2D" parent="Camera2D/Board/Tile(2,2)" unique_id=502659600]
+
+[node name="@CollisionShape2D@20887" type="CollisionShape2D" parent="Camera2D/Board/Tile(2,2)/@Area2D@20886" unique_id=429573832]
+shape = SubResource("RectangleShape2D_a6jrf")
+
+[node name="Tile(2,3)" type="Sprite2D" parent="Camera2D/Board" unique_id=206150343 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+>>>>>>> Stashed changes
 position = Vector2(150, 100)
 texture = ExtResource("2_h2yge")
 script = ExtResource("2_0xm2m")
@@ -594,12 +789,21 @@ southwest = NodePath("../Tile(3,2)")
 south = NodePath("../Tile(3,3)")
 southeast = NodePath("../Tile(3,4)")
 
+<<<<<<< Updated upstream
 [node name="@Area2D@63605" type="Area2D" parent="Board/Tile(2,3)" unique_id=360343177]
 
 [node name="@CollisionShape2D@63606" type="CollisionShape2D" parent="Board/Tile(2,3)/@Area2D@63605" unique_id=1682380071]
 shape = SubResource("RectangleShape2D_xuqvo")
 
 [node name="Tile(2,4)" type="Sprite2D" parent="Board" unique_id=2021731907 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+=======
+[node name="@Area2D@20889" type="Area2D" parent="Camera2D/Board/Tile(2,3)" unique_id=1647730904]
+
+[node name="@CollisionShape2D@20890" type="CollisionShape2D" parent="Camera2D/Board/Tile(2,3)/@Area2D@20889" unique_id=80208375]
+shape = SubResource("RectangleShape2D_xuqvo")
+
+[node name="Tile(2,4)" type="Sprite2D" parent="Camera2D/Board" unique_id=1091994199 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+>>>>>>> Stashed changes
 position = Vector2(200, 100)
 texture = ExtResource("2_h2yge")
 script = ExtResource("2_0xm2m")
@@ -613,12 +817,21 @@ southwest = NodePath("../Tile(3,3)")
 south = NodePath("../Tile(3,4)")
 southeast = NodePath("../Tile(3,5)")
 
+<<<<<<< Updated upstream
 [node name="@Area2D@63608" type="Area2D" parent="Board/Tile(2,4)" unique_id=2124712528]
 
 [node name="@CollisionShape2D@63609" type="CollisionShape2D" parent="Board/Tile(2,4)/@Area2D@63608" unique_id=1067210308]
 shape = SubResource("RectangleShape2D_qsp4k")
 
 [node name="Tile(2,5)" type="Sprite2D" parent="Board" unique_id=1301087077 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+=======
+[node name="@Area2D@20892" type="Area2D" parent="Camera2D/Board/Tile(2,4)" unique_id=1632541451]
+
+[node name="@CollisionShape2D@20893" type="CollisionShape2D" parent="Camera2D/Board/Tile(2,4)/@Area2D@20892" unique_id=33415181]
+shape = SubResource("RectangleShape2D_qsp4k")
+
+[node name="Tile(2,5)" type="Sprite2D" parent="Camera2D/Board" unique_id=1425359242 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+>>>>>>> Stashed changes
 position = Vector2(250, 100)
 texture = ExtResource("2_h2yge")
 script = ExtResource("2_0xm2m")
@@ -632,12 +845,21 @@ southwest = NodePath("../Tile(3,4)")
 south = NodePath("../Tile(3,5)")
 southeast = NodePath("../Tile(3,6)")
 
+<<<<<<< Updated upstream
 [node name="@Area2D@63611" type="Area2D" parent="Board/Tile(2,5)" unique_id=1829417757]
 
 [node name="@CollisionShape2D@63612" type="CollisionShape2D" parent="Board/Tile(2,5)/@Area2D@63611" unique_id=720176115]
 shape = SubResource("RectangleShape2D_kq58d")
 
 [node name="Tile(2,6)" type="Sprite2D" parent="Board" unique_id=2102426890 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+=======
+[node name="@Area2D@20895" type="Area2D" parent="Camera2D/Board/Tile(2,5)" unique_id=927282081]
+
+[node name="@CollisionShape2D@20896" type="CollisionShape2D" parent="Camera2D/Board/Tile(2,5)/@Area2D@20895" unique_id=583286809]
+shape = SubResource("RectangleShape2D_kq58d")
+
+[node name="Tile(2,6)" type="Sprite2D" parent="Camera2D/Board" unique_id=836839012 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+>>>>>>> Stashed changes
 position = Vector2(300, 100)
 texture = ExtResource("2_h2yge")
 script = ExtResource("2_0xm2m")
@@ -651,12 +873,21 @@ southwest = NodePath("../Tile(3,5)")
 south = NodePath("../Tile(3,6)")
 southeast = NodePath("../Tile(3,7)")
 
+<<<<<<< Updated upstream
 [node name="@Area2D@63614" type="Area2D" parent="Board/Tile(2,6)" unique_id=1250471826]
 
 [node name="@CollisionShape2D@63615" type="CollisionShape2D" parent="Board/Tile(2,6)/@Area2D@63614" unique_id=911804679]
 shape = SubResource("RectangleShape2D_seu75")
 
 [node name="Tile(2,7)" type="Sprite2D" parent="Board" unique_id=490539742 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+=======
+[node name="@Area2D@20898" type="Area2D" parent="Camera2D/Board/Tile(2,6)" unique_id=2090954041]
+
+[node name="@CollisionShape2D@20899" type="CollisionShape2D" parent="Camera2D/Board/Tile(2,6)/@Area2D@20898" unique_id=302019699]
+shape = SubResource("RectangleShape2D_seu75")
+
+[node name="Tile(2,7)" type="Sprite2D" parent="Camera2D/Board" unique_id=1057804391 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+>>>>>>> Stashed changes
 position = Vector2(350, 100)
 texture = ExtResource("6_5vw27")
 script = ExtResource("2_0xm2m")
@@ -671,12 +902,21 @@ southwest = NodePath("../Tile(3,6)")
 south = NodePath("../Tile(3,7)")
 southeast = NodePath("../Tile(3,8)")
 
+<<<<<<< Updated upstream
 [node name="@Area2D@63617" type="Area2D" parent="Board/Tile(2,7)" unique_id=698602201]
 
 [node name="@CollisionShape2D@63618" type="CollisionShape2D" parent="Board/Tile(2,7)/@Area2D@63617" unique_id=786880672]
 shape = SubResource("RectangleShape2D_htxhm")
 
 [node name="Tile(2,8)" type="Sprite2D" parent="Board" unique_id=1810861007 node_paths=PackedStringArray("northwest", "north", "west", "southwest", "south")]
+=======
+[node name="@Area2D@20901" type="Area2D" parent="Camera2D/Board/Tile(2,7)" unique_id=484327134]
+
+[node name="@CollisionShape2D@20902" type="CollisionShape2D" parent="Camera2D/Board/Tile(2,7)/@Area2D@20901" unique_id=1993733031]
+shape = SubResource("RectangleShape2D_htxhm")
+
+[node name="Tile(2,8)" type="Sprite2D" parent="Camera2D/Board" unique_id=1324968614 node_paths=PackedStringArray("northwest", "north", "west", "southwest", "south")]
+>>>>>>> Stashed changes
 position = Vector2(400, 100)
 texture = ExtResource("6_5vw27")
 script = ExtResource("2_0xm2m")
@@ -688,12 +928,21 @@ west = NodePath("../Tile(2,7)")
 southwest = NodePath("../Tile(3,7)")
 south = NodePath("../Tile(3,8)")
 
+<<<<<<< Updated upstream
 [node name="@Area2D@63620" type="Area2D" parent="Board/Tile(2,8)" unique_id=1307435290]
 
 [node name="@CollisionShape2D@63621" type="CollisionShape2D" parent="Board/Tile(2,8)/@Area2D@63620" unique_id=344346611]
 shape = SubResource("RectangleShape2D_jq2sk")
 
 [node name="Tile(3,0)" type="Sprite2D" parent="Board" unique_id=1978468428 node_paths=PackedStringArray("north", "northeast", "east", "south", "southeast")]
+=======
+[node name="@Area2D@20904" type="Area2D" parent="Camera2D/Board/Tile(2,8)" unique_id=1870611298]
+
+[node name="@CollisionShape2D@20905" type="CollisionShape2D" parent="Camera2D/Board/Tile(2,8)/@Area2D@20904" unique_id=1582614882]
+shape = SubResource("RectangleShape2D_jq2sk")
+
+[node name="Tile(3,0)" type="Sprite2D" parent="Camera2D/Board" unique_id=2073845368 node_paths=PackedStringArray("north", "northeast", "east", "south", "southeast")]
+>>>>>>> Stashed changes
 position = Vector2(0, 150)
 texture = ExtResource("2_h2yge")
 script = ExtResource("2_0xm2m")
@@ -704,12 +953,21 @@ east = NodePath("../Tile(3,1)")
 south = NodePath("../Tile(4,0)")
 southeast = NodePath("../Tile(4,1)")
 
+<<<<<<< Updated upstream
 [node name="@Area2D@63623" type="Area2D" parent="Board/Tile(3,0)" unique_id=562211240]
 
 [node name="@CollisionShape2D@63624" type="CollisionShape2D" parent="Board/Tile(3,0)/@Area2D@63623" unique_id=1690969610]
 shape = SubResource("RectangleShape2D_4k2k6")
 
 [node name="Tile(3,1)" type="Sprite2D" parent="Board" unique_id=439283279 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+=======
+[node name="@Area2D@20907" type="Area2D" parent="Camera2D/Board/Tile(3,0)" unique_id=410276311]
+
+[node name="@CollisionShape2D@20908" type="CollisionShape2D" parent="Camera2D/Board/Tile(3,0)/@Area2D@20907" unique_id=770072074]
+shape = SubResource("RectangleShape2D_4k2k6")
+
+[node name="Tile(3,1)" type="Sprite2D" parent="Camera2D/Board" unique_id=910664830 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+>>>>>>> Stashed changes
 position = Vector2(50, 150)
 texture = ExtResource("5_lquwl")
 script = ExtResource("2_0xm2m")
@@ -724,12 +982,21 @@ southwest = NodePath("../Tile(4,0)")
 south = NodePath("../Tile(4,1)")
 southeast = NodePath("../Tile(4,2)")
 
+<<<<<<< Updated upstream
 [node name="@Area2D@63626" type="Area2D" parent="Board/Tile(3,1)" unique_id=2011618427]
 
 [node name="@CollisionShape2D@63627" type="CollisionShape2D" parent="Board/Tile(3,1)/@Area2D@63626" unique_id=2054138840]
 shape = SubResource("RectangleShape2D_0rl1p")
 
 [node name="Tile(3,2)" type="Sprite2D" parent="Board" unique_id=1716864272 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+=======
+[node name="@Area2D@20910" type="Area2D" parent="Camera2D/Board/Tile(3,1)" unique_id=1866030214]
+
+[node name="@CollisionShape2D@20911" type="CollisionShape2D" parent="Camera2D/Board/Tile(3,1)/@Area2D@20910" unique_id=841507356]
+shape = SubResource("RectangleShape2D_0rl1p")
+
+[node name="Tile(3,2)" type="Sprite2D" parent="Camera2D/Board" unique_id=118531682 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+>>>>>>> Stashed changes
 position = Vector2(100, 150)
 texture = ExtResource("2_h2yge")
 script = ExtResource("2_0xm2m")
@@ -743,12 +1010,21 @@ southwest = NodePath("../Tile(4,1)")
 south = NodePath("../Tile(4,2)")
 southeast = NodePath("../Tile(4,3)")
 
+<<<<<<< Updated upstream
 [node name="@Area2D@63629" type="Area2D" parent="Board/Tile(3,2)" unique_id=1652959730]
 
 [node name="@CollisionShape2D@63630" type="CollisionShape2D" parent="Board/Tile(3,2)/@Area2D@63629" unique_id=484746169]
 shape = SubResource("RectangleShape2D_ok6jj")
 
 [node name="Tile(3,3)" type="Sprite2D" parent="Board" unique_id=1258459653 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+=======
+[node name="@Area2D@20913" type="Area2D" parent="Camera2D/Board/Tile(3,2)" unique_id=1886514563]
+
+[node name="@CollisionShape2D@20914" type="CollisionShape2D" parent="Camera2D/Board/Tile(3,2)/@Area2D@20913" unique_id=190439074]
+shape = SubResource("RectangleShape2D_ok6jj")
+
+[node name="Tile(3,3)" type="Sprite2D" parent="Camera2D/Board" unique_id=768630245 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+>>>>>>> Stashed changes
 position = Vector2(150, 150)
 texture = ExtResource("5_lquwl")
 script = ExtResource("2_0xm2m")
@@ -763,12 +1039,21 @@ southwest = NodePath("../Tile(4,2)")
 south = NodePath("../Tile(4,3)")
 southeast = NodePath("../Tile(4,4)")
 
+<<<<<<< Updated upstream
 [node name="@Area2D@63632" type="Area2D" parent="Board/Tile(3,3)" unique_id=1243832348]
 
 [node name="@CollisionShape2D@63633" type="CollisionShape2D" parent="Board/Tile(3,3)/@Area2D@63632" unique_id=2141551048]
 shape = SubResource("RectangleShape2D_facbu")
 
 [node name="Tile(3,4)" type="Sprite2D" parent="Board" unique_id=692168971 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+=======
+[node name="@Area2D@20916" type="Area2D" parent="Camera2D/Board/Tile(3,3)" unique_id=1662485268]
+
+[node name="@CollisionShape2D@20917" type="CollisionShape2D" parent="Camera2D/Board/Tile(3,3)/@Area2D@20916" unique_id=230148772]
+shape = SubResource("RectangleShape2D_facbu")
+
+[node name="Tile(3,4)" type="Sprite2D" parent="Camera2D/Board" unique_id=1938724846 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+>>>>>>> Stashed changes
 position = Vector2(200, 150)
 texture = ExtResource("2_h2yge")
 script = ExtResource("2_0xm2m")
@@ -782,12 +1067,21 @@ southwest = NodePath("../Tile(4,3)")
 south = NodePath("../Tile(4,4)")
 southeast = NodePath("../Tile(4,5)")
 
+<<<<<<< Updated upstream
 [node name="@Area2D@63635" type="Area2D" parent="Board/Tile(3,4)" unique_id=1641953415]
 
 [node name="@CollisionShape2D@63636" type="CollisionShape2D" parent="Board/Tile(3,4)/@Area2D@63635" unique_id=412978656]
 shape = SubResource("RectangleShape2D_b1qrp")
 
 [node name="Tile(3,5)" type="Sprite2D" parent="Board" unique_id=1982075513 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+=======
+[node name="@Area2D@20919" type="Area2D" parent="Camera2D/Board/Tile(3,4)" unique_id=676799857]
+
+[node name="@CollisionShape2D@20920" type="CollisionShape2D" parent="Camera2D/Board/Tile(3,4)/@Area2D@20919" unique_id=663812705]
+shape = SubResource("RectangleShape2D_b1qrp")
+
+[node name="Tile(3,5)" type="Sprite2D" parent="Camera2D/Board" unique_id=1429118278 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+>>>>>>> Stashed changes
 position = Vector2(250, 150)
 texture = ExtResource("2_h2yge")
 script = ExtResource("2_0xm2m")
@@ -801,12 +1095,21 @@ southwest = NodePath("../Tile(4,4)")
 south = NodePath("../Tile(4,5)")
 southeast = NodePath("../Tile(4,6)")
 
+<<<<<<< Updated upstream
 [node name="@Area2D@63638" type="Area2D" parent="Board/Tile(3,5)" unique_id=577826646]
 
 [node name="@CollisionShape2D@63639" type="CollisionShape2D" parent="Board/Tile(3,5)/@Area2D@63638" unique_id=1497609175]
 shape = SubResource("RectangleShape2D_come4")
 
 [node name="Tile(3,6)" type="Sprite2D" parent="Board" unique_id=731687436 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+=======
+[node name="@Area2D@20922" type="Area2D" parent="Camera2D/Board/Tile(3,5)" unique_id=1655085558]
+
+[node name="@CollisionShape2D@20923" type="CollisionShape2D" parent="Camera2D/Board/Tile(3,5)/@Area2D@20922" unique_id=107798771]
+shape = SubResource("RectangleShape2D_come4")
+
+[node name="Tile(3,6)" type="Sprite2D" parent="Camera2D/Board" unique_id=1404944579 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+>>>>>>> Stashed changes
 position = Vector2(300, 150)
 texture = ExtResource("2_h2yge")
 script = ExtResource("2_0xm2m")
@@ -820,12 +1123,21 @@ southwest = NodePath("../Tile(4,5)")
 south = NodePath("../Tile(4,6)")
 southeast = NodePath("../Tile(4,7)")
 
+<<<<<<< Updated upstream
 [node name="@Area2D@63641" type="Area2D" parent="Board/Tile(3,6)" unique_id=718811312]
 
 [node name="@CollisionShape2D@63642" type="CollisionShape2D" parent="Board/Tile(3,6)/@Area2D@63641" unique_id=361776470]
 shape = SubResource("RectangleShape2D_h8e4i")
 
 [node name="Tile(3,7)" type="Sprite2D" parent="Board" unique_id=397997996 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+=======
+[node name="@Area2D@20925" type="Area2D" parent="Camera2D/Board/Tile(3,6)" unique_id=1768844074]
+
+[node name="@CollisionShape2D@20926" type="CollisionShape2D" parent="Camera2D/Board/Tile(3,6)/@Area2D@20925" unique_id=1598208112]
+shape = SubResource("RectangleShape2D_h8e4i")
+
+[node name="Tile(3,7)" type="Sprite2D" parent="Camera2D/Board" unique_id=1194238618 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+>>>>>>> Stashed changes
 position = Vector2(350, 150)
 texture = ExtResource("5_lquwl")
 script = ExtResource("2_0xm2m")
@@ -840,12 +1152,21 @@ southwest = NodePath("../Tile(4,6)")
 south = NodePath("../Tile(4,7)")
 southeast = NodePath("../Tile(4,8)")
 
+<<<<<<< Updated upstream
 [node name="@Area2D@63644" type="Area2D" parent="Board/Tile(3,7)" unique_id=1969120371]
 
 [node name="@CollisionShape2D@63645" type="CollisionShape2D" parent="Board/Tile(3,7)/@Area2D@63644" unique_id=580048882]
 shape = SubResource("RectangleShape2D_4lmeg")
 
 [node name="Tile(3,8)" type="Sprite2D" parent="Board" unique_id=642471777 node_paths=PackedStringArray("northwest", "north", "west", "southwest", "south")]
+=======
+[node name="@Area2D@20928" type="Area2D" parent="Camera2D/Board/Tile(3,7)" unique_id=229487115]
+
+[node name="@CollisionShape2D@20929" type="CollisionShape2D" parent="Camera2D/Board/Tile(3,7)/@Area2D@20928" unique_id=280584331]
+shape = SubResource("RectangleShape2D_4lmeg")
+
+[node name="Tile(3,8)" type="Sprite2D" parent="Camera2D/Board" unique_id=843075267 node_paths=PackedStringArray("northwest", "north", "west", "southwest", "south")]
+>>>>>>> Stashed changes
 position = Vector2(400, 150)
 texture = ExtResource("2_h2yge")
 script = ExtResource("2_0xm2m")
@@ -856,12 +1177,21 @@ west = NodePath("../Tile(3,7)")
 southwest = NodePath("../Tile(4,7)")
 south = NodePath("../Tile(4,8)")
 
+<<<<<<< Updated upstream
 [node name="@Area2D@63647" type="Area2D" parent="Board/Tile(3,8)" unique_id=1167703025]
 
 [node name="@CollisionShape2D@63648" type="CollisionShape2D" parent="Board/Tile(3,8)/@Area2D@63647" unique_id=1960135553]
 shape = SubResource("RectangleShape2D_0cp0l")
 
 [node name="Tile(4,0)" type="Sprite2D" parent="Board" unique_id=1406786655 node_paths=PackedStringArray("north", "northeast", "east")]
+=======
+[node name="@Area2D@20931" type="Area2D" parent="Camera2D/Board/Tile(3,8)" unique_id=2017254509]
+
+[node name="@CollisionShape2D@20932" type="CollisionShape2D" parent="Camera2D/Board/Tile(3,8)/@Area2D@20931" unique_id=2004250549]
+shape = SubResource("RectangleShape2D_0cp0l")
+
+[node name="Tile(4,0)" type="Sprite2D" parent="Camera2D/Board" unique_id=1934789573 node_paths=PackedStringArray("north", "northeast", "east")]
+>>>>>>> Stashed changes
 position = Vector2(0, 200)
 texture = ExtResource("2_h2yge")
 script = ExtResource("2_0xm2m")
@@ -870,12 +1200,21 @@ north = NodePath("../Tile(3,0)")
 northeast = NodePath("../Tile(3,1)")
 east = NodePath("../Tile(4,1)")
 
+<<<<<<< Updated upstream
 [node name="@Area2D@63650" type="Area2D" parent="Board/Tile(4,0)" unique_id=499422422]
 
 [node name="@CollisionShape2D@63651" type="CollisionShape2D" parent="Board/Tile(4,0)/@Area2D@63650" unique_id=1362701044]
 shape = SubResource("RectangleShape2D_d2t1y")
 
 [node name="Tile(4,1)" type="Sprite2D" parent="Board" unique_id=1097425626 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east")]
+=======
+[node name="@Area2D@20934" type="Area2D" parent="Camera2D/Board/Tile(4,0)" unique_id=536194880]
+
+[node name="@CollisionShape2D@20935" type="CollisionShape2D" parent="Camera2D/Board/Tile(4,0)/@Area2D@20934" unique_id=1680297606]
+shape = SubResource("RectangleShape2D_d2t1y")
+
+[node name="Tile(4,1)" type="Sprite2D" parent="Camera2D/Board" unique_id=934084616 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east")]
+>>>>>>> Stashed changes
 position = Vector2(50, 200)
 texture = ExtResource("5_lquwl")
 script = ExtResource("2_0xm2m")
@@ -887,12 +1226,21 @@ northeast = NodePath("../Tile(3,2)")
 west = NodePath("../Tile(4,0)")
 east = NodePath("../Tile(4,2)")
 
+<<<<<<< Updated upstream
 [node name="@Area2D@63653" type="Area2D" parent="Board/Tile(4,1)" unique_id=1803048676]
 
 [node name="@CollisionShape2D@63654" type="CollisionShape2D" parent="Board/Tile(4,1)/@Area2D@63653" unique_id=214657227]
 shape = SubResource("RectangleShape2D_gngh3")
 
 [node name="Tile(4,2)" type="Sprite2D" parent="Board" unique_id=1042991063 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east")]
+=======
+[node name="@Area2D@20937" type="Area2D" parent="Camera2D/Board/Tile(4,1)" unique_id=1390360951]
+
+[node name="@CollisionShape2D@20938" type="CollisionShape2D" parent="Camera2D/Board/Tile(4,1)/@Area2D@20937" unique_id=1389559459]
+shape = SubResource("RectangleShape2D_gngh3")
+
+[node name="Tile(4,2)" type="Sprite2D" parent="Camera2D/Board" unique_id=2122660219 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east")]
+>>>>>>> Stashed changes
 position = Vector2(100, 200)
 scale = Vector2(0.33333334, 0.33333334)
 texture = ExtResource("5_7mycd")
@@ -905,12 +1253,21 @@ northeast = NodePath("../Tile(3,3)")
 west = NodePath("../Tile(4,1)")
 east = NodePath("../Tile(4,3)")
 
+<<<<<<< Updated upstream
 [node name="@Area2D@63656" type="Area2D" parent="Board/Tile(4,2)" unique_id=194720634]
 
 [node name="@CollisionShape2D@63657" type="CollisionShape2D" parent="Board/Tile(4,2)/@Area2D@63656" unique_id=980716641]
 shape = SubResource("RectangleShape2D_0n3wm")
 
 [node name="Tile(4,3)" type="Sprite2D" parent="Board" unique_id=1602789026 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east")]
+=======
+[node name="@Area2D@20940" type="Area2D" parent="Camera2D/Board/Tile(4,2)" unique_id=1615768600]
+
+[node name="@CollisionShape2D@20941" type="CollisionShape2D" parent="Camera2D/Board/Tile(4,2)/@Area2D@20940" unique_id=684197798]
+shape = SubResource("RectangleShape2D_0n3wm")
+
+[node name="Tile(4,3)" type="Sprite2D" parent="Camera2D/Board" unique_id=707574412 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east")]
+>>>>>>> Stashed changes
 position = Vector2(150, 200)
 texture = ExtResource("2_h2yge")
 script = ExtResource("2_0xm2m")
@@ -921,12 +1278,21 @@ northeast = NodePath("../Tile(3,4)")
 west = NodePath("../Tile(4,2)")
 east = NodePath("../Tile(4,4)")
 
+<<<<<<< Updated upstream
 [node name="@Area2D@63659" type="Area2D" parent="Board/Tile(4,3)" unique_id=375651518]
 
 [node name="@CollisionShape2D@63660" type="CollisionShape2D" parent="Board/Tile(4,3)/@Area2D@63659" unique_id=431534935]
 shape = SubResource("RectangleShape2D_qnost")
 
 [node name="Tile(4,4)" type="Sprite2D" parent="Board" unique_id=1128967037 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east")]
+=======
+[node name="@Area2D@20943" type="Area2D" parent="Camera2D/Board/Tile(4,3)" unique_id=1047576013]
+
+[node name="@CollisionShape2D@20944" type="CollisionShape2D" parent="Camera2D/Board/Tile(4,3)/@Area2D@20943" unique_id=1218280100]
+shape = SubResource("RectangleShape2D_qnost")
+
+[node name="Tile(4,4)" type="Sprite2D" parent="Camera2D/Board" unique_id=1245876091 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east")]
+>>>>>>> Stashed changes
 position = Vector2(200, 200)
 texture = ExtResource("2_h2yge")
 script = ExtResource("2_0xm2m")
@@ -937,12 +1303,21 @@ northeast = NodePath("../Tile(3,5)")
 west = NodePath("../Tile(4,3)")
 east = NodePath("../Tile(4,5)")
 
+<<<<<<< Updated upstream
 [node name="@Area2D@63662" type="Area2D" parent="Board/Tile(4,4)" unique_id=222244644]
 
 [node name="@CollisionShape2D@63663" type="CollisionShape2D" parent="Board/Tile(4,4)/@Area2D@63662" unique_id=1688739224]
 shape = SubResource("RectangleShape2D_wnkbs")
 
 [node name="Tile(4,5)" type="Sprite2D" parent="Board" unique_id=1601841232 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east")]
+=======
+[node name="@Area2D@20946" type="Area2D" parent="Camera2D/Board/Tile(4,4)" unique_id=2056661306]
+
+[node name="@CollisionShape2D@20947" type="CollisionShape2D" parent="Camera2D/Board/Tile(4,4)/@Area2D@20946" unique_id=449140294]
+shape = SubResource("RectangleShape2D_wnkbs")
+
+[node name="Tile(4,5)" type="Sprite2D" parent="Camera2D/Board" unique_id=48769250 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east")]
+>>>>>>> Stashed changes
 position = Vector2(250, 200)
 texture = ExtResource("5_lquwl")
 script = ExtResource("2_0xm2m")
@@ -954,12 +1329,21 @@ northeast = NodePath("../Tile(3,6)")
 west = NodePath("../Tile(4,4)")
 east = NodePath("../Tile(4,6)")
 
+<<<<<<< Updated upstream
 [node name="@Area2D@63665" type="Area2D" parent="Board/Tile(4,5)" unique_id=1934267785]
 
 [node name="@CollisionShape2D@63666" type="CollisionShape2D" parent="Board/Tile(4,5)/@Area2D@63665" unique_id=460557953]
 shape = SubResource("RectangleShape2D_f6a44")
 
 [node name="Tile(4,6)" type="Sprite2D" parent="Board" unique_id=1508253987 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east")]
+=======
+[node name="@Area2D@20949" type="Area2D" parent="Camera2D/Board/Tile(4,5)" unique_id=1575864479]
+
+[node name="@CollisionShape2D@20950" type="CollisionShape2D" parent="Camera2D/Board/Tile(4,5)/@Area2D@20949" unique_id=580102515]
+shape = SubResource("RectangleShape2D_f6a44")
+
+[node name="Tile(4,6)" type="Sprite2D" parent="Camera2D/Board" unique_id=1593091173 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east")]
+>>>>>>> Stashed changes
 position = Vector2(300, 200)
 texture = ExtResource("2_h2yge")
 script = ExtResource("2_0xm2m")
@@ -970,12 +1354,21 @@ northeast = NodePath("../Tile(3,7)")
 west = NodePath("../Tile(4,5)")
 east = NodePath("../Tile(4,7)")
 
+<<<<<<< Updated upstream
 [node name="@Area2D@63668" type="Area2D" parent="Board/Tile(4,6)" unique_id=259513543]
 
 [node name="@CollisionShape2D@63669" type="CollisionShape2D" parent="Board/Tile(4,6)/@Area2D@63668" unique_id=1676564972]
 shape = SubResource("RectangleShape2D_0cbny")
 
 [node name="Tile(4,7)" type="Sprite2D" parent="Board" unique_id=1874503373 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east")]
+=======
+[node name="@Area2D@20952" type="Area2D" parent="Camera2D/Board/Tile(4,6)" unique_id=856353633]
+
+[node name="@CollisionShape2D@20953" type="CollisionShape2D" parent="Camera2D/Board/Tile(4,6)/@Area2D@20952" unique_id=2092191373]
+shape = SubResource("RectangleShape2D_0cbny")
+
+[node name="Tile(4,7)" type="Sprite2D" parent="Camera2D/Board" unique_id=358510524 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east")]
+>>>>>>> Stashed changes
 position = Vector2(350, 200)
 texture = ExtResource("5_lquwl")
 script = ExtResource("2_0xm2m")
@@ -987,12 +1380,21 @@ northeast = NodePath("../Tile(3,8)")
 west = NodePath("../Tile(4,6)")
 east = NodePath("../Tile(4,8)")
 
+<<<<<<< Updated upstream
 [node name="@Area2D@63671" type="Area2D" parent="Board/Tile(4,7)" unique_id=1688475210]
 
 [node name="@CollisionShape2D@63672" type="CollisionShape2D" parent="Board/Tile(4,7)/@Area2D@63671" unique_id=678926255]
 shape = SubResource("RectangleShape2D_hrvbo")
 
 [node name="Tile(4,8)" type="Sprite2D" parent="Board" unique_id=1294017976 node_paths=PackedStringArray("northwest", "north", "west")]
+=======
+[node name="@Area2D@20955" type="Area2D" parent="Camera2D/Board/Tile(4,7)" unique_id=1015534217]
+
+[node name="@CollisionShape2D@20956" type="CollisionShape2D" parent="Camera2D/Board/Tile(4,7)/@Area2D@20955" unique_id=793497994]
+shape = SubResource("RectangleShape2D_hrvbo")
+
+[node name="Tile(4,8)" type="Sprite2D" parent="Camera2D/Board" unique_id=1074247182 node_paths=PackedStringArray("northwest", "north", "west")]
+>>>>>>> Stashed changes
 position = Vector2(400, 200)
 texture = ExtResource("2_h2yge")
 script = ExtResource("2_0xm2m")
@@ -1001,9 +1403,15 @@ northwest = NodePath("../Tile(3,7)")
 north = NodePath("../Tile(3,8)")
 west = NodePath("../Tile(4,7)")
 
+<<<<<<< Updated upstream
 [node name="@Area2D@63674" type="Area2D" parent="Board/Tile(4,8)" unique_id=738487097]
 
 [node name="@CollisionShape2D@63675" type="CollisionShape2D" parent="Board/Tile(4,8)/@Area2D@63674" unique_id=1158459133]
+=======
+[node name="@Area2D@20958" type="Area2D" parent="Camera2D/Board/Tile(4,8)" unique_id=1616819283]
+
+[node name="@CollisionShape2D@20959" type="CollisionShape2D" parent="Camera2D/Board/Tile(4,8)/@Area2D@20958" unique_id=1995169823]
+>>>>>>> Stashed changes
 shape = SubResource("RectangleShape2D_uypp3")
 
 [connection signal="pressed" from="Next Level/Button" to="." method="_next_level"]

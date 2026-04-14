@@ -3,9 +3,15 @@ class_name Tile extends Sprite2D
 
 #region Textures
 const ICON = preload("uid://dgiqw4yimxh3") #placeholder
+<<<<<<< Updated upstream
 const BLACK = preload("uid://brnwttvfed8oy")
 const TEAL = preload("uid://dfb2xgfoofrw")
 const WHITE = preload("uid://ykkd0vn8m4rr")
+=======
+const BLACK = preload("uid://cam1snfyftdhp")
+const TRANS = preload("uid://blmlbd57urqqu")
+const WHITE = preload("uid://daq07mbbqlo8k")
+>>>>>>> Stashed changes
 const PLAYER_PIECE = preload("uid://bls100m1vwsiq")
 const RED = preload("uid://bvw4ed3vfytow")
 #endregion
@@ -94,7 +100,7 @@ func update_values() -> void:
 		TYPE.FILLED: texture = BLACK
 		TYPE.PLAYER: texture = PLAYER_PIECE
 		TYPE.DEAD: texture = RED
-		TYPE.NULL: texture = TEAL
+		TYPE.NULL: texture = TRANS
 		_: texture = ICON
 		
 	# Moving scale and position calculations here so they update dynamically 
