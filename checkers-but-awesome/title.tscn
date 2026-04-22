@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://crxtelcgt32pf" path="res://mainmenu.gd" id="1_oyqm6"]
 [ext_resource type="Theme" uid="uid://bpanln4hm4axv" path="res://button_theme.tres" id="1_y7k74"]
 [ext_resource type="PackedScene" uid="uid://dqq7u7fxw5k0y" path="res://main.tscn" id="2_kpexm"]
+[ext_resource type="FontFile" uid="uid://ug68qvopl2ey" path="res://assets/fonts/Anton/Anton-Regular.ttf" id="3_3xoar"]
 
 [node name="Title" type="Control" unique_id=1227551345 node_paths=PackedStringArray("start_button", "quit_button")]
 layout_mode = 3
@@ -44,7 +45,8 @@ alignment = 1
 [node name="Label" type="Label" parent="VBoxContainer" unique_id=430006128]
 layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_font_sizes/font_size = 45
+theme_override_fonts/font = ExtResource("3_3xoar")
+theme_override_font_sizes/font_size = 76
 text = "CHECKERS BUT AWESOME"
 horizontal_alignment = 1
 
