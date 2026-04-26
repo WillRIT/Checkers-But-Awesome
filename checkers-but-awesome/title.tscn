@@ -1,9 +1,10 @@
 [gd_scene format=3 uid="uid://dpbwokjm3kgm8"]
 
 [ext_resource type="Script" uid="uid://crxtelcgt32pf" path="res://mainmenu.gd" id="1_oyqm6"]
-[ext_resource type="Theme" uid="uid://bpanln4hm4axv" path="res://button_theme.tres" id="1_y7k74"]
-[ext_resource type="PackedScene" uid="uid://dqq7u7fxw5k0y" path="res://main.tscn" id="2_kpexm"]
-[ext_resource type="FontFile" uid="uid://ug68qvopl2ey" path="res://assets/fonts/Anton/Anton-Regular.ttf" id="3_3xoar"]
+[ext_resource type="PackedScene" uid="uid://fdvjay0qaipi" path="res://scenes/dummy.tscn" id="2_kpexm"]
+[ext_resource type="Texture2D" uid="uid://c842ft3fhctuk" path="res://assets/cba-bkgd.png" id="3_mom7w"]
+[ext_resource type="Texture2D" uid="uid://by3tvmypgaf6o" path="res://assets/cba-logo-black.png" id="4_7lgly"]
+[ext_resource type="Theme" uid="uid://cij650wjll7as" path="res://assets/select_button.theme" id="5_0824t"]
 
 [node name="Title" type="Control" unique_id=1227551345 node_paths=PackedStringArray("start_button", "quit_button")]
 layout_mode = 3
@@ -17,14 +18,14 @@ start_button = NodePath("VBoxContainer/Start")
 quit_button = NodePath("VBoxContainer/Quit")
 start_scene = ExtResource("2_kpexm")
 
-[node name="ColorRect" type="ColorRect" parent="." unique_id=375588902]
+[node name="ColorRect" type="TextureRect" parent="." unique_id=2037548351]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0.36, 0.79733336, 1, 0.8235294)
+texture = ExtResource("3_mom7w")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=241738184]
 layout_mode = 1
@@ -42,22 +43,19 @@ grow_vertical = 2
 theme_override_constants/separation = 39
 alignment = 1
 
-[node name="Label" type="Label" parent="VBoxContainer" unique_id=430006128]
+[node name="Label" type="TextureRect" parent="VBoxContainer" unique_id=1400167339]
 layout_mode = 2
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_fonts/font = ExtResource("3_3xoar")
-theme_override_font_sizes/font_size = 76
-text = "CHECKERS BUT AWESOME"
-horizontal_alignment = 1
+texture = ExtResource("4_7lgly")
+stretch_mode = 2
 
 [node name="Start" type="Button" parent="VBoxContainer" unique_id=1345119721]
 layout_mode = 2
-theme = ExtResource("1_y7k74")
+theme = ExtResource("5_0824t")
 theme_override_font_sizes/font_size = 45
 text = "START"
 
 [node name="Quit" type="Button" parent="VBoxContainer" unique_id=976302448]
 layout_mode = 2
-theme = ExtResource("1_y7k74")
+theme = ExtResource("5_0824t")
 theme_override_font_sizes/font_size = 45
 text = "QUIT"
