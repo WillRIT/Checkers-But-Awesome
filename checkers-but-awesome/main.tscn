@@ -356,6 +356,7 @@ offset_left = 215.0
 offset_top = 486.0
 offset_right = 271.0
 offset_bottom = 517.0
+theme = ExtResource("2_5vw27")
 text = "Levels"
 
 [node name="Button" type="Button" parent="Board/Reset" unique_id=1232848030]
@@ -364,6 +365,7 @@ offset_left = 147.0
 offset_top = 486.0
 offset_right = 198.0
 offset_bottom = 517.0
+theme = ExtResource("2_5vw27")
 text = "Reset"
 
 [node name="Tile(0,0)" type="Sprite2D" parent="Board" unique_id=1220091570 node_paths=PackedStringArray("east", "south", "southeast")]
