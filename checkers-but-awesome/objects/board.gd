@@ -2,7 +2,7 @@
 class_name Board extends Node2D
 
 var _is_loading := false # Flag to prevent setter cascades
-
+var numOfPieces = 0
 @export_category("Settings")
 @export_range(1, 32, 1, "or_greater", "prefer_slider") var height: int = 8:
 	set(value):
@@ -25,20 +25,25 @@ var _is_loading := false # Flag to prevent setter cascades
 @export_category("Save/Load Board")
 @export_tool_button("SAVE", "Save") var save_action = save
 @export_multiline("monospace", "no_wrap") var loadable := ""
-@export_tool_button("LOAD", "Load") var load_action = load
+@export_tool_button("LOAD", "Load") var load_action = load_string
 
 @export_group("Settings")
 @export var char_to_type: Dictionary[Tile.TYPE, String] = {
 	Tile.TYPE.EMPTY: "O",
 	Tile.TYPE.FILLED: "X",
+	Tile.TYPE.PLAYER: "#",
+	Tile.TYPE.DEAD: ".",
 	Tile.TYPE.NULL: " "
 }
 
 var board_arr : Array[Tile] = []
 
+var current_possible_moves : Array[TakePath] = []
+
 func _ready() -> void:
 	if Engine.is_editor_hint() and board_arr.is_empty():
 		update_values()
+		load_string()
 
 func board(y: int, x: int) -> Tile: 
 	if y >= height or y < 0: return null
@@ -79,6 +84,7 @@ func update_values() -> void:
 			var index = (y * width) + x
 			if board_arr[index] == null:
 				var new_tile = Tile.new()
+				new_tile.board = self
 				board_arr[index] = new_tile
 				add_child(new_tile)
 				new_tile.set_props(y, x, tile_size)
@@ -122,7 +128,7 @@ func save() -> void:
 	else:
 		loadable = "Board not ready or empty!"
 
-func load() -> void:
+func load_string() -> void:
 	if loadable in ["Board not ready or empty!", "String is not valid or empty!", "", null]:
 		loadable = "String is not valid or empty!"
 		return
@@ -147,7 +153,7 @@ func load() -> void:
 	
 	# block setters from interfering with array math
 	_is_loading = true 
-	
+	numOfPieces = 0
 	clear()
 	height = string_array.size()
 	width = x_length
@@ -157,7 +163,10 @@ func load() -> void:
 	for y in range(height):
 		for x in range(width):
 			var new_tile = Tile.new()
+			new_tile.board = self
 			var parsed_type = char_to_type.find_key(string_array[y][x])
+			if parsed_type == 1:
+				numOfPieces += 1
 			
 			# add to scene first so is_inside_tree() is true when setting properties
 			add_child(new_tile) 
@@ -170,3 +179,7 @@ func load() -> void:
 	# re-enable setters and safely trigger link update
 	_is_loading = false
 	update_values()
+
+func clear_highlights() -> void:
+	for t: Tile in board_arr:
+		t.highlighted = false
