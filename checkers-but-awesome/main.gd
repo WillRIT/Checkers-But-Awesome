@@ -36,7 +36,6 @@ OOO  "
 ]
 @export var level : int
 @export var state : GAMESTATE
-@export var start_scene: PackedScene
 var board : Node
 var pieces : Array
 var player : Node
@@ -77,8 +76,8 @@ func state_change(newstate: GAMESTATE) -> void:
 			state = newstate
 
 
-func _on_button_pressed(selected : int) -> void:
-	level = selected;
+func _on_button_pressed() -> void:
+	level = 1;
 	state_change(GAMESTATE.GAME)
 func _next_level() -> void:
 	if(level != levels.size()):
@@ -87,8 +86,3 @@ func _next_level() -> void:
 		state_change(GAMESTATE.GAME)
 func _reset_level()->void:
 	board.load_string()
-func _back_to_select() -> void:
-	state_change(GAMESTATE.LEVELSELECT)
-
-func _on_menu_pressed() -> void:
-	get_tree().change_scene_to_packed(start_scene)

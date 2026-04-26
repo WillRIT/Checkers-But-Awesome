@@ -3,13 +3,17 @@
 [ext_resource type="Script" uid="uid://yofwwypfdgke" path="res://main.gd" id="1_7mycd"]
 [ext_resource type="Script" uid="uid://d27ry4406v8fk" path="res://objects/board.gd" id="1_ig7tw"]
 [ext_resource type="Script" uid="uid://mao8rihtt6ts" path="res://objects/tile.gd" id="2_0xm2m"]
-[ext_resource type="PackedScene" uid="uid://dpbwokjm3kgm8" path="res://title.tscn" id="2_4c57u"]
 [ext_resource type="Theme" uid="uid://bpanln4hm4axv" path="res://button_theme.tres" id="2_5vw27"]
-[ext_resource type="FontFile" uid="uid://ug68qvopl2ey" path="res://assets/fonts/Anton/Anton-Regular.ttf" id="3_kek77"]
 [ext_resource type="Texture2D" uid="uid://daq07mbbqlo8k" path="res://assets/whiteTile.png" id="4_5vw27"]
 [ext_resource type="Texture2D" uid="uid://bls100m1vwsiq" path="res://assets/PlayerPiece.png" id="5_7mycd"]
+[ext_resource type="Texture2D" uid="uid://brnwttvfed8oy" path="res://assets/black.jpg" id="5_lquwl"]
 [ext_resource type="Texture2D" uid="uid://bvw4ed3vfytow" path="res://assets/red.jpg" id="6_5vw27"]
-[ext_resource type="Texture2D" uid="uid://cam1snfyftdhp" path="res://assets/EnemyPiece.png" id="7_4c57u"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kek77"]
+size = Vector2(150, 150)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4c57u"]
+size = Vector2(50, 50)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_efxa6"]
 size = Vector2(150, 150)
@@ -27,7 +31,7 @@ size = Vector2(150, 150)
 size = Vector2(150, 150)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2cqfq"]
-size = Vector2(150, 150)
+size = Vector2(50, 50)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yaehf"]
 size = Vector2(150, 150)
@@ -42,34 +46,34 @@ size = Vector2(150, 150)
 size = Vector2(150, 150)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_getpj"]
-size = Vector2(150, 150)
+size = Vector2(50, 50)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ryguw"]
 size = Vector2(150, 150)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_d13ii"]
-size = Vector2(150, 150)
+size = Vector2(50, 50)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1u8w0"]
 size = Vector2(150, 150)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0odxb"]
-size = Vector2(150, 150)
+size = Vector2(50, 50)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lswn8"]
 size = Vector2(150, 150)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_a6jrf"]
-size = Vector2(150, 150)
+size = Vector2(50, 50)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xuqvo"]
-size = Vector2(150, 150)
+size = Vector2(50, 50)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qsp4k"]
-size = Vector2(50, 50)
+size = Vector2(150, 150)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kq58d"]
-size = Vector2(50, 50)
+size = Vector2(150, 150)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_seu75"]
 size = Vector2(150, 150)
@@ -81,13 +85,13 @@ size = Vector2(150, 150)
 size = Vector2(150, 150)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4k2k6"]
-size = Vector2(150, 150)
+size = Vector2(50, 50)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0rl1p"]
-size = Vector2(150, 150)
+size = Vector2(50, 50)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ok6jj"]
-size = Vector2(50, 50)
+size = Vector2(150, 150)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_facbu"]
 size = Vector2(50, 50)
@@ -96,7 +100,7 @@ size = Vector2(50, 50)
 size = Vector2(150, 150)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_come4"]
-size = Vector2(150, 150)
+size = Vector2(50, 50)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_h8e4i"]
 size = Vector2(150, 150)
@@ -108,7 +112,7 @@ size = Vector2(150, 150)
 size = Vector2(150, 150)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_d2t1y"]
-size = Vector2(150, 150)
+size = Vector2(50, 50)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gngh3"]
 size = Vector2(150, 150)
@@ -117,7 +121,7 @@ size = Vector2(150, 150)
 size = Vector2(150, 150)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qnost"]
-size = Vector2(150, 150)
+size = Vector2(50, 50)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wnkbs"]
 size = Vector2(150, 150)
@@ -129,38 +133,19 @@ size = Vector2(150, 150)
 size = Vector2(150, 150)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hrvbo"]
-size = Vector2(150, 150)
+size = Vector2(50, 50)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_uypp3"]
 size = Vector2(150, 150)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_blkrb"]
-size = Vector2(150, 150)
+size = Vector2(50, 50)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_abqjc"]
 size = Vector2(150, 150)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_6iyjs"]
-size = Vector2(150, 150)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_4w656"]
-size = Vector2(150, 150)
-
 [node name="Main" type="Node2D" unique_id=1126547366]
 script = ExtResource("1_7mycd")
-start_scene = ExtResource("2_4c57u")
-
-[node name="ColorRect" type="ColorRect" parent="." unique_id=1235448214]
-anchors_preset = -1
-anchor_left = -9.525001
-anchor_top = -3.1000001
-anchor_right = -9.525001
-anchor_bottom = -3.1000001
-offset_left = 2.0
-offset_top = 1.0
-offset_right = 1154.0
-offset_bottom = 651.0
-color = Color(0.36, 0.79733336, 1, 0.8235294)
 
 [node name="Next Level" type="Control" parent="." unique_id=1099893393]
 visible = false
@@ -170,15 +155,6 @@ offset_left = 760.0
 offset_top = 250.0
 offset_right = 800.0
 offset_bottom = 290.0
-
-[node name="Button2" type="Button" parent="Next Level" unique_id=959749929]
-layout_mode = 0
-offset_left = -495.0
-offset_top = 110.0
-offset_right = 132.0
-offset_bottom = 141.0
-theme = ExtResource("2_5vw27")
-text = "Level Select"
 
 [node name="Button" type="Button" parent="Next Level" unique_id=1754105779]
 layout_mode = 0
@@ -207,154 +183,22 @@ offset_top = 124.0
 offset_right = 421.0
 offset_bottom = 164.0
 
-[node name="ColorRect" type="ColorRect" parent="Level Selection" unique_id=1455112771]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = -9.525001
-anchor_top = -3.1000001
-anchor_right = -9.525001
-anchor_bottom = -3.1000001
-offset_left = 3.0517578e-05
-offset_right = 1152.0
-offset_bottom = 650.0
-color = Color(0.36, 0.79733336, 1, 0.8235294)
-
-[node name="Menu" type="Button" parent="Level Selection/ColorRect" unique_id=1809549683]
+[node name="Button" type="Button" parent="Level Selection" unique_id=1313911236]
 layout_mode = 0
-offset_left = 492.5
-offset_top = 400.0
-offset_right = 633.5
-offset_bottom = 454.0
-theme_override_fonts/font = ExtResource("3_kek77")
-theme_override_font_sizes/font_size = 30
-text = "Main Menu"
-
-[node name="1" type="Button" parent="Level Selection/ColorRect" unique_id=1081632262]
-layout_mode = 1
-offset_left = 225.0
-offset_top = 200.0
-offset_right = 350.0
-offset_bottom = 254.0
-theme_override_fonts/font = ExtResource("3_kek77")
-theme_override_font_sizes/font_size = 30
+offset_left = -116.0
+offset_top = 181.0
+offset_right = 511.0
+offset_bottom = 212.0
+theme = ExtResource("2_5vw27")
 text = "Level 1"
 
-[node name="2" type="Button" parent="Level Selection/ColorRect" unique_id=1101114550]
-layout_mode = 1
-offset_left = 362.5
-offset_top = 200.0
-offset_right = 487.5
-offset_bottom = 254.0
-theme_override_fonts/font = ExtResource("3_kek77")
-theme_override_font_sizes/font_size = 30
-text = "Level 2"
-
-[node name="3" type="Button" parent="Level Selection/ColorRect" unique_id=460095792]
-layout_mode = 1
-offset_left = 500.0
-offset_top = 200.0
-offset_right = 625.0
-offset_bottom = 254.0
-theme_override_fonts/font = ExtResource("3_kek77")
-theme_override_font_sizes/font_size = 30
-text = "Level 3"
-
-[node name="4" type="Button" parent="Level Selection/ColorRect" unique_id=2106233573]
-layout_mode = 1
-offset_left = 637.5
-offset_top = 200.0
-offset_right = 762.5
-offset_bottom = 254.0
-theme_override_fonts/font = ExtResource("3_kek77")
-theme_override_font_sizes/font_size = 30
-text = "Level 4"
-
-[node name="5" type="Button" parent="Level Selection/ColorRect" unique_id=315423381]
-layout_mode = 1
-offset_left = 775.0
-offset_top = 200.0
-offset_right = 900.0
-offset_bottom = 254.0
-theme_override_fonts/font = ExtResource("3_kek77")
-theme_override_font_sizes/font_size = 30
-text = "Level 5"
-
-[node name="6" type="Button" parent="Level Selection/ColorRect" unique_id=293737473]
-layout_mode = 1
-offset_left = 225.0
-offset_top = 300.0
-offset_right = 350.0
-offset_bottom = 354.0
-theme_override_fonts/font = ExtResource("3_kek77")
-theme_override_font_sizes/font_size = 30
-text = "Level 6"
-
-[node name="7" type="Button" parent="Level Selection/ColorRect" unique_id=1769582846]
-layout_mode = 1
-offset_left = 362.5
-offset_top = 300.0
-offset_right = 487.5
-offset_bottom = 354.0
-theme_override_fonts/font = ExtResource("3_kek77")
-theme_override_font_sizes/font_size = 30
-text = "Level 7"
-
-[node name="8" type="Button" parent="Level Selection/ColorRect" unique_id=1857850612]
-layout_mode = 1
-offset_left = 500.0
-offset_top = 300.0
-offset_right = 625.0
-offset_bottom = 354.0
-theme_override_fonts/font = ExtResource("3_kek77")
-theme_override_font_sizes/font_size = 30
-text = "Level 8"
-
-[node name="9" type="Button" parent="Level Selection/ColorRect" unique_id=860917077]
-layout_mode = 1
-offset_left = 637.5
-offset_top = 300.0
-offset_right = 762.5
-offset_bottom = 354.0
-theme_override_fonts/font = ExtResource("3_kek77")
-theme_override_font_sizes/font_size = 30
-text = "Level 9"
-
-[node name="10" type="Button" parent="Level Selection/ColorRect" unique_id=290950321]
-layout_mode = 1
-offset_left = 775.0
-offset_top = 300.0
-offset_right = 900.0
-offset_bottom = 354.0
-theme_override_fonts/font = ExtResource("3_kek77")
-theme_override_font_sizes/font_size = 30
-text = "Level 10"
-
-[node name="VBoxContainer" type="VBoxContainer" parent="Level Selection" unique_id=1781867137]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 4.3370004
-anchor_top = 4.5750003
-anchor_right = 4.3370004
-anchor_bottom = 4.5750003
-offset_left = -355.48
-offset_top = -257.0
-offset_right = 368.52
-offset_bottom = -129.00002
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_constants/separation = 39
-alignment = 1
-
-[node name="Label" type="Label" parent="Level Selection/VBoxContainer" unique_id=791900745]
-layout_mode = 2
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_fonts/font = ExtResource("3_kek77")
-theme_override_font_sizes/font_size = 76
-text = "Level Select"
-horizontal_alignment = 1
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1406137391]
+visible = false
+offset_right = 1146.0
+offset_bottom = 641.0
+color = Color(0.34901962, 0.70980394, 0.8784314, 1)
 
 [node name="Board" type="Node2D" parent="." unique_id=1613189343]
-visible = false
 position = Vector2(381, 124)
 script = ExtResource("1_ig7tw")
 height = 5
@@ -372,23 +216,15 @@ anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="Level Select" type="Button" parent="Board/Reset" unique_id=59275408]
-layout_mode = 0
-offset_left = 215.0
-offset_top = 486.0
-offset_right = 271.0
-offset_bottom = 517.0
-text = "Levels"
-
 [node name="Button" type="Button" parent="Board/Reset" unique_id=1232848030]
 layout_mode = 0
-offset_left = 148.0
+offset_left = 183.0
 offset_top = 486.0
-offset_right = 199.0
+offset_right = 234.0
 offset_bottom = 517.0
 text = "Reset"
 
-[node name="Tile(0,0)" type="Sprite2D" parent="Board" unique_id=983325764 node_paths=PackedStringArray("east", "south", "southeast")]
+[node name="Tile(0,0)" type="Sprite2D" parent="Board" unique_id=1627762360 node_paths=PackedStringArray("east", "south", "southeast")]
 scale = Vector2(0.33333334, 0.33333334)
 texture = ExtResource("4_5vw27")
 script = ExtResource("2_0xm2m")
@@ -397,15 +233,14 @@ east = NodePath("../Tile(0,1)")
 south = NodePath("../Tile(1,0)")
 southeast = NodePath("../Tile(1,1)")
 
-[node name="@Area2D@18743" type="Area2D" parent="Board/Tile(0,0)" unique_id=1967190640]
+[node name="@Area2D@19016" type="Area2D" parent="Board/Tile(0,0)" unique_id=1409134084]
 
-[node name="@CollisionShape2D@18744" type="CollisionShape2D" parent="Board/Tile(0,0)/@Area2D@18743" unique_id=845444714]
-shape = SubResource("RectangleShape2D_efxa6")
+[node name="@CollisionShape2D@19017" type="CollisionShape2D" parent="Board/Tile(0,0)/@Area2D@19016" unique_id=486685816]
+shape = SubResource("RectangleShape2D_kek77")
 
-[node name="Tile(0,1)" type="Sprite2D" parent="Board" unique_id=1979953894 node_paths=PackedStringArray("west", "east", "southwest", "south", "southeast")]
+[node name="Tile(0,1)" type="Sprite2D" parent="Board" unique_id=1339653024 node_paths=PackedStringArray("west", "east", "southwest", "south", "southeast")]
 position = Vector2(50, 0)
-scale = Vector2(0.33333334, 0.33333334)
-texture = ExtResource("7_4c57u")
+texture = ExtResource("5_lquwl")
 script = ExtResource("2_0xm2m")
 type = 1
 size = 50
@@ -415,12 +250,12 @@ southwest = NodePath("../Tile(1,0)")
 south = NodePath("../Tile(1,1)")
 southeast = NodePath("../Tile(1,2)")
 
-[node name="@Area2D@18746" type="Area2D" parent="Board/Tile(0,1)" unique_id=1661295628]
+[node name="@Area2D@19019" type="Area2D" parent="Board/Tile(0,1)" unique_id=1159748703]
 
-[node name="@CollisionShape2D@18747" type="CollisionShape2D" parent="Board/Tile(0,1)/@Area2D@18746" unique_id=124177899]
-shape = SubResource("RectangleShape2D_dg77c")
+[node name="@CollisionShape2D@19020" type="CollisionShape2D" parent="Board/Tile(0,1)/@Area2D@19019" unique_id=2041097499]
+shape = SubResource("RectangleShape2D_4c57u")
 
-[node name="Tile(0,2)" type="Sprite2D" parent="Board" unique_id=1845158853 node_paths=PackedStringArray("west", "east", "southwest", "south", "southeast")]
+[node name="Tile(0,2)" type="Sprite2D" parent="Board" unique_id=1518007620 node_paths=PackedStringArray("west", "east", "southwest", "south", "southeast")]
 position = Vector2(100, 0)
 scale = Vector2(0.33333334, 0.33333334)
 texture = ExtResource("4_5vw27")
@@ -432,12 +267,12 @@ southwest = NodePath("../Tile(1,1)")
 south = NodePath("../Tile(1,2)")
 southeast = NodePath("../Tile(1,3)")
 
-[node name="@Area2D@18749" type="Area2D" parent="Board/Tile(0,2)" unique_id=2016697411]
+[node name="@Area2D@19022" type="Area2D" parent="Board/Tile(0,2)" unique_id=1981025092]
 
-[node name="@CollisionShape2D@18750" type="CollisionShape2D" parent="Board/Tile(0,2)/@Area2D@18749" unique_id=477337721]
-shape = SubResource("RectangleShape2D_ycdy4")
+[node name="@CollisionShape2D@19023" type="CollisionShape2D" parent="Board/Tile(0,2)/@Area2D@19022" unique_id=78793400]
+shape = SubResource("RectangleShape2D_efxa6")
 
-[node name="Tile(0,3)" type="Sprite2D" parent="Board" unique_id=1072732537 node_paths=PackedStringArray("west", "east", "southwest", "south", "southeast")]
+[node name="Tile(0,3)" type="Sprite2D" parent="Board" unique_id=1185831904 node_paths=PackedStringArray("west", "east", "southwest", "south", "southeast")]
 position = Vector2(150, 0)
 scale = Vector2(0.33333334, 0.33333334)
 texture = ExtResource("4_5vw27")
@@ -449,12 +284,12 @@ southwest = NodePath("../Tile(1,2)")
 south = NodePath("../Tile(1,3)")
 southeast = NodePath("../Tile(1,4)")
 
-[node name="@Area2D@18752" type="Area2D" parent="Board/Tile(0,3)" unique_id=1251415494]
+[node name="@Area2D@19025" type="Area2D" parent="Board/Tile(0,3)" unique_id=45019110]
 
-[node name="@CollisionShape2D@18753" type="CollisionShape2D" parent="Board/Tile(0,3)/@Area2D@18752" unique_id=101802829]
-shape = SubResource("RectangleShape2D_w48qg")
+[node name="@CollisionShape2D@19026" type="CollisionShape2D" parent="Board/Tile(0,3)/@Area2D@19025" unique_id=1371000883]
+shape = SubResource("RectangleShape2D_dg77c")
 
-[node name="Tile(0,4)" type="Sprite2D" parent="Board" unique_id=518083898 node_paths=PackedStringArray("west", "east", "southwest", "south", "southeast")]
+[node name="Tile(0,4)" type="Sprite2D" parent="Board" unique_id=1820975986 node_paths=PackedStringArray("west", "east", "southwest", "south", "southeast")]
 position = Vector2(200, 0)
 scale = Vector2(0.33333334, 0.33333334)
 texture = ExtResource("4_5vw27")
@@ -466,12 +301,12 @@ southwest = NodePath("../Tile(1,3)")
 south = NodePath("../Tile(1,4)")
 southeast = NodePath("../Tile(1,5)")
 
-[node name="@Area2D@18755" type="Area2D" parent="Board/Tile(0,4)" unique_id=624798289]
+[node name="@Area2D@19028" type="Area2D" parent="Board/Tile(0,4)" unique_id=624956833]
 
-[node name="@CollisionShape2D@18756" type="CollisionShape2D" parent="Board/Tile(0,4)/@Area2D@18755" unique_id=71485199]
-shape = SubResource("RectangleShape2D_vivmo")
+[node name="@CollisionShape2D@19029" type="CollisionShape2D" parent="Board/Tile(0,4)/@Area2D@19028" unique_id=1940264453]
+shape = SubResource("RectangleShape2D_ycdy4")
 
-[node name="Tile(0,5)" type="Sprite2D" parent="Board" unique_id=2076210718 node_paths=PackedStringArray("west", "east", "southwest", "south", "southeast")]
+[node name="Tile(0,5)" type="Sprite2D" parent="Board" unique_id=2116776077 node_paths=PackedStringArray("west", "east", "southwest", "south", "southeast")]
 position = Vector2(250, 0)
 scale = Vector2(0.33333334, 0.33333334)
 texture = ExtResource("4_5vw27")
@@ -483,12 +318,12 @@ southwest = NodePath("../Tile(1,4)")
 south = NodePath("../Tile(1,5)")
 southeast = NodePath("../Tile(1,6)")
 
-[node name="@Area2D@18758" type="Area2D" parent="Board/Tile(0,5)" unique_id=68573208]
+[node name="@Area2D@19031" type="Area2D" parent="Board/Tile(0,5)" unique_id=1162732853]
 
-[node name="@CollisionShape2D@18759" type="CollisionShape2D" parent="Board/Tile(0,5)/@Area2D@18758" unique_id=969528518]
-shape = SubResource("RectangleShape2D_2cqfq")
+[node name="@CollisionShape2D@19032" type="CollisionShape2D" parent="Board/Tile(0,5)/@Area2D@19031" unique_id=139456723]
+shape = SubResource("RectangleShape2D_w48qg")
 
-[node name="Tile(0,6)" type="Sprite2D" parent="Board" unique_id=142250540 node_paths=PackedStringArray("west", "east", "southwest", "south", "southeast")]
+[node name="Tile(0,6)" type="Sprite2D" parent="Board" unique_id=87186518 node_paths=PackedStringArray("west", "east", "southwest", "south", "southeast")]
 position = Vector2(300, 0)
 scale = Vector2(0.33333334, 0.33333334)
 texture = ExtResource("4_5vw27")
@@ -500,15 +335,14 @@ southwest = NodePath("../Tile(1,5)")
 south = NodePath("../Tile(1,6)")
 southeast = NodePath("../Tile(1,7)")
 
-[node name="@Area2D@18761" type="Area2D" parent="Board/Tile(0,6)" unique_id=142807781]
+[node name="@Area2D@19034" type="Area2D" parent="Board/Tile(0,6)" unique_id=1133581911]
 
-[node name="@CollisionShape2D@18762" type="CollisionShape2D" parent="Board/Tile(0,6)/@Area2D@18761" unique_id=730961813]
-shape = SubResource("RectangleShape2D_yaehf")
+[node name="@CollisionShape2D@19035" type="CollisionShape2D" parent="Board/Tile(0,6)/@Area2D@19034" unique_id=1530835512]
+shape = SubResource("RectangleShape2D_vivmo")
 
-[node name="Tile(0,7)" type="Sprite2D" parent="Board" unique_id=389358721 node_paths=PackedStringArray("west", "east", "southwest", "south", "southeast")]
+[node name="Tile(0,7)" type="Sprite2D" parent="Board" unique_id=258516260 node_paths=PackedStringArray("west", "east", "southwest", "south", "southeast")]
 position = Vector2(350, 0)
-scale = Vector2(0.33333334, 0.33333334)
-texture = ExtResource("7_4c57u")
+texture = ExtResource("5_lquwl")
 script = ExtResource("2_0xm2m")
 type = 1
 size = 50
@@ -518,12 +352,12 @@ southwest = NodePath("../Tile(1,6)")
 south = NodePath("../Tile(1,7)")
 southeast = NodePath("../Tile(1,8)")
 
-[node name="@Area2D@18764" type="Area2D" parent="Board/Tile(0,7)" unique_id=1294593241]
+[node name="@Area2D@19037" type="Area2D" parent="Board/Tile(0,7)" unique_id=1925208208]
 
-[node name="@CollisionShape2D@18765" type="CollisionShape2D" parent="Board/Tile(0,7)/@Area2D@18764" unique_id=67394206]
-shape = SubResource("RectangleShape2D_074og")
+[node name="@CollisionShape2D@19038" type="CollisionShape2D" parent="Board/Tile(0,7)/@Area2D@19037" unique_id=1086072334]
+shape = SubResource("RectangleShape2D_2cqfq")
 
-[node name="Tile(0,8)" type="Sprite2D" parent="Board" unique_id=1153495867 node_paths=PackedStringArray("west", "southwest", "south")]
+[node name="Tile(0,8)" type="Sprite2D" parent="Board" unique_id=746698744 node_paths=PackedStringArray("west", "southwest", "south")]
 position = Vector2(400, 0)
 scale = Vector2(0.33333334, 0.33333334)
 texture = ExtResource("4_5vw27")
@@ -533,12 +367,12 @@ west = NodePath("../Tile(0,7)")
 southwest = NodePath("../Tile(1,7)")
 south = NodePath("../Tile(1,8)")
 
-[node name="@Area2D@18767" type="Area2D" parent="Board/Tile(0,8)" unique_id=1192704300]
+[node name="@Area2D@19040" type="Area2D" parent="Board/Tile(0,8)" unique_id=1143517229]
 
-[node name="@CollisionShape2D@18768" type="CollisionShape2D" parent="Board/Tile(0,8)/@Area2D@18767" unique_id=1553797172]
-shape = SubResource("RectangleShape2D_cegan")
+[node name="@CollisionShape2D@19041" type="CollisionShape2D" parent="Board/Tile(0,8)/@Area2D@19040" unique_id=1045800633]
+shape = SubResource("RectangleShape2D_yaehf")
 
-[node name="Tile(1,0)" type="Sprite2D" parent="Board" unique_id=1982178549 node_paths=PackedStringArray("north", "northeast", "east", "south", "southeast")]
+[node name="Tile(1,0)" type="Sprite2D" parent="Board" unique_id=92531837 node_paths=PackedStringArray("north", "northeast", "east", "south", "southeast")]
 position = Vector2(0, 50)
 scale = Vector2(0.33333334, 0.33333334)
 texture = ExtResource("4_5vw27")
@@ -550,12 +384,12 @@ east = NodePath("../Tile(1,1)")
 south = NodePath("../Tile(2,0)")
 southeast = NodePath("../Tile(2,1)")
 
-[node name="@Area2D@18770" type="Area2D" parent="Board/Tile(1,0)" unique_id=188459872]
+[node name="@Area2D@19043" type="Area2D" parent="Board/Tile(1,0)" unique_id=736058034]
 
-[node name="@CollisionShape2D@18771" type="CollisionShape2D" parent="Board/Tile(1,0)/@Area2D@18770" unique_id=469984521]
-shape = SubResource("RectangleShape2D_82xsv")
+[node name="@CollisionShape2D@19044" type="CollisionShape2D" parent="Board/Tile(1,0)/@Area2D@19043" unique_id=493398852]
+shape = SubResource("RectangleShape2D_074og")
 
-[node name="Tile(1,1)" type="Sprite2D" parent="Board" unique_id=1011782893 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+[node name="Tile(1,1)" type="Sprite2D" parent="Board" unique_id=1400169455 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
 position = Vector2(50, 50)
 scale = Vector2(0.33333334, 0.33333334)
 texture = ExtResource("4_5vw27")
@@ -570,12 +404,12 @@ southwest = NodePath("../Tile(2,0)")
 south = NodePath("../Tile(2,1)")
 southeast = NodePath("../Tile(2,2)")
 
-[node name="@Area2D@18773" type="Area2D" parent="Board/Tile(1,1)" unique_id=289087207]
+[node name="@Area2D@19046" type="Area2D" parent="Board/Tile(1,1)" unique_id=658435586]
 
-[node name="@CollisionShape2D@18774" type="CollisionShape2D" parent="Board/Tile(1,1)/@Area2D@18773" unique_id=593697449]
-shape = SubResource("RectangleShape2D_getpj")
+[node name="@CollisionShape2D@19047" type="CollisionShape2D" parent="Board/Tile(1,1)/@Area2D@19046" unique_id=1927264686]
+shape = SubResource("RectangleShape2D_cegan")
 
-[node name="Tile(1,2)" type="Sprite2D" parent="Board" unique_id=1241703318 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+[node name="Tile(1,2)" type="Sprite2D" parent="Board" unique_id=869316852 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
 position = Vector2(100, 50)
 scale = Vector2(0.33333334, 0.33333334)
 texture = ExtResource("4_5vw27")
@@ -590,15 +424,14 @@ southwest = NodePath("../Tile(2,1)")
 south = NodePath("../Tile(2,2)")
 southeast = NodePath("../Tile(2,3)")
 
-[node name="@Area2D@18776" type="Area2D" parent="Board/Tile(1,2)" unique_id=1296871459]
+[node name="@Area2D@19049" type="Area2D" parent="Board/Tile(1,2)" unique_id=793891506]
 
-[node name="@CollisionShape2D@18777" type="CollisionShape2D" parent="Board/Tile(1,2)/@Area2D@18776" unique_id=54941695]
-shape = SubResource("RectangleShape2D_ryguw")
+[node name="@CollisionShape2D@19050" type="CollisionShape2D" parent="Board/Tile(1,2)/@Area2D@19049" unique_id=1424977647]
+shape = SubResource("RectangleShape2D_82xsv")
 
-[node name="Tile(1,3)" type="Sprite2D" parent="Board" unique_id=1580178345 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+[node name="Tile(1,3)" type="Sprite2D" parent="Board" unique_id=1311369813 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
 position = Vector2(150, 50)
-scale = Vector2(0.33333334, 0.33333334)
-texture = ExtResource("7_4c57u")
+texture = ExtResource("5_lquwl")
 script = ExtResource("2_0xm2m")
 type = 1
 size = 50
@@ -611,12 +444,12 @@ southwest = NodePath("../Tile(2,2)")
 south = NodePath("../Tile(2,3)")
 southeast = NodePath("../Tile(2,4)")
 
-[node name="@Area2D@18779" type="Area2D" parent="Board/Tile(1,3)" unique_id=1671406622]
+[node name="@Area2D@19052" type="Area2D" parent="Board/Tile(1,3)" unique_id=2106752243]
 
-[node name="@CollisionShape2D@18780" type="CollisionShape2D" parent="Board/Tile(1,3)/@Area2D@18779" unique_id=40143397]
-shape = SubResource("RectangleShape2D_d13ii")
+[node name="@CollisionShape2D@19053" type="CollisionShape2D" parent="Board/Tile(1,3)/@Area2D@19052" unique_id=1922591793]
+shape = SubResource("RectangleShape2D_getpj")
 
-[node name="Tile(1,4)" type="Sprite2D" parent="Board" unique_id=1935636732 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+[node name="Tile(1,4)" type="Sprite2D" parent="Board" unique_id=93754497 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
 position = Vector2(200, 50)
 scale = Vector2(0.33333334, 0.33333334)
 texture = ExtResource("4_5vw27")
@@ -631,15 +464,14 @@ southwest = NodePath("../Tile(2,3)")
 south = NodePath("../Tile(2,4)")
 southeast = NodePath("../Tile(2,5)")
 
-[node name="@Area2D@18782" type="Area2D" parent="Board/Tile(1,4)" unique_id=16665419]
+[node name="@Area2D@19055" type="Area2D" parent="Board/Tile(1,4)" unique_id=873417770]
 
-[node name="@CollisionShape2D@18783" type="CollisionShape2D" parent="Board/Tile(1,4)/@Area2D@18782" unique_id=309378034]
-shape = SubResource("RectangleShape2D_1u8w0")
+[node name="@CollisionShape2D@19056" type="CollisionShape2D" parent="Board/Tile(1,4)/@Area2D@19055" unique_id=2016646065]
+shape = SubResource("RectangleShape2D_ryguw")
 
-[node name="Tile(1,5)" type="Sprite2D" parent="Board" unique_id=1638901275 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+[node name="Tile(1,5)" type="Sprite2D" parent="Board" unique_id=212413842 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
 position = Vector2(250, 50)
-scale = Vector2(0.33333334, 0.33333334)
-texture = ExtResource("7_4c57u")
+texture = ExtResource("5_lquwl")
 script = ExtResource("2_0xm2m")
 type = 1
 size = 50
@@ -652,12 +484,12 @@ southwest = NodePath("../Tile(2,4)")
 south = NodePath("../Tile(2,5)")
 southeast = NodePath("../Tile(2,6)")
 
-[node name="@Area2D@18785" type="Area2D" parent="Board/Tile(1,5)" unique_id=1081988115]
+[node name="@Area2D@19058" type="Area2D" parent="Board/Tile(1,5)" unique_id=759451716]
 
-[node name="@CollisionShape2D@18786" type="CollisionShape2D" parent="Board/Tile(1,5)/@Area2D@18785" unique_id=586647479]
-shape = SubResource("RectangleShape2D_0odxb")
+[node name="@CollisionShape2D@19059" type="CollisionShape2D" parent="Board/Tile(1,5)/@Area2D@19058" unique_id=462947873]
+shape = SubResource("RectangleShape2D_d13ii")
 
-[node name="Tile(1,6)" type="Sprite2D" parent="Board" unique_id=2123642851 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+[node name="Tile(1,6)" type="Sprite2D" parent="Board" unique_id=1198780218 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
 position = Vector2(300, 50)
 scale = Vector2(0.33333334, 0.33333334)
 texture = ExtResource("4_5vw27")
@@ -672,15 +504,14 @@ southwest = NodePath("../Tile(2,5)")
 south = NodePath("../Tile(2,6)")
 southeast = NodePath("../Tile(2,7)")
 
-[node name="@Area2D@18788" type="Area2D" parent="Board/Tile(1,6)" unique_id=1224042073]
+[node name="@Area2D@19061" type="Area2D" parent="Board/Tile(1,6)" unique_id=1204700092]
 
-[node name="@CollisionShape2D@18789" type="CollisionShape2D" parent="Board/Tile(1,6)/@Area2D@18788" unique_id=1875804516]
-shape = SubResource("RectangleShape2D_lswn8")
+[node name="@CollisionShape2D@19062" type="CollisionShape2D" parent="Board/Tile(1,6)/@Area2D@19061" unique_id=1387585011]
+shape = SubResource("RectangleShape2D_1u8w0")
 
-[node name="Tile(1,7)" type="Sprite2D" parent="Board" unique_id=137081180 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+[node name="Tile(1,7)" type="Sprite2D" parent="Board" unique_id=1055524822 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
 position = Vector2(350, 50)
-scale = Vector2(0.33333334, 0.33333334)
-texture = ExtResource("7_4c57u")
+texture = ExtResource("5_lquwl")
 script = ExtResource("2_0xm2m")
 type = 1
 size = 50
@@ -693,12 +524,12 @@ southwest = NodePath("../Tile(2,6)")
 south = NodePath("../Tile(2,7)")
 southeast = NodePath("../Tile(2,8)")
 
-[node name="@Area2D@18791" type="Area2D" parent="Board/Tile(1,7)" unique_id=2131220652]
+[node name="@Area2D@19064" type="Area2D" parent="Board/Tile(1,7)" unique_id=3571265]
 
-[node name="@CollisionShape2D@18792" type="CollisionShape2D" parent="Board/Tile(1,7)/@Area2D@18791" unique_id=956594018]
-shape = SubResource("RectangleShape2D_a6jrf")
+[node name="@CollisionShape2D@19065" type="CollisionShape2D" parent="Board/Tile(1,7)/@Area2D@19064" unique_id=39363611]
+shape = SubResource("RectangleShape2D_0odxb")
 
-[node name="Tile(1,8)" type="Sprite2D" parent="Board" unique_id=1223413357 node_paths=PackedStringArray("northwest", "north", "west", "southwest", "south")]
+[node name="Tile(1,8)" type="Sprite2D" parent="Board" unique_id=692557459 node_paths=PackedStringArray("northwest", "north", "west", "southwest", "south")]
 position = Vector2(400, 50)
 scale = Vector2(0.33333334, 0.33333334)
 texture = ExtResource("4_5vw27")
@@ -710,12 +541,12 @@ west = NodePath("../Tile(1,7)")
 southwest = NodePath("../Tile(2,7)")
 south = NodePath("../Tile(2,8)")
 
-[node name="@Area2D@18794" type="Area2D" parent="Board/Tile(1,8)" unique_id=386495326]
+[node name="@Area2D@19067" type="Area2D" parent="Board/Tile(1,8)" unique_id=1839385867]
 
-[node name="@CollisionShape2D@18795" type="CollisionShape2D" parent="Board/Tile(1,8)/@Area2D@18794" unique_id=1344982177]
-shape = SubResource("RectangleShape2D_xuqvo")
+[node name="@CollisionShape2D@19068" type="CollisionShape2D" parent="Board/Tile(1,8)/@Area2D@19067" unique_id=611759515]
+shape = SubResource("RectangleShape2D_lswn8")
 
-[node name="Tile(2,0)" type="Sprite2D" parent="Board" unique_id=744925753 node_paths=PackedStringArray("north", "northeast", "east", "south", "southeast")]
+[node name="Tile(2,0)" type="Sprite2D" parent="Board" unique_id=1931878940 node_paths=PackedStringArray("north", "northeast", "east", "south", "southeast")]
 position = Vector2(0, 100)
 texture = ExtResource("6_5vw27")
 script = ExtResource("2_0xm2m")
@@ -727,12 +558,12 @@ east = NodePath("../Tile(2,1)")
 south = NodePath("../Tile(3,0)")
 southeast = NodePath("../Tile(3,1)")
 
-[node name="@Area2D@18797" type="Area2D" parent="Board/Tile(2,0)" unique_id=1705279272]
+[node name="@Area2D@19070" type="Area2D" parent="Board/Tile(2,0)" unique_id=100768305]
 
-[node name="@CollisionShape2D@18798" type="CollisionShape2D" parent="Board/Tile(2,0)/@Area2D@18797" unique_id=699195462]
-shape = SubResource("RectangleShape2D_qsp4k")
+[node name="@CollisionShape2D@19071" type="CollisionShape2D" parent="Board/Tile(2,0)/@Area2D@19070" unique_id=702645396]
+shape = SubResource("RectangleShape2D_a6jrf")
 
-[node name="Tile(2,1)" type="Sprite2D" parent="Board" unique_id=518222541 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+[node name="Tile(2,1)" type="Sprite2D" parent="Board" unique_id=557167019 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
 position = Vector2(50, 100)
 texture = ExtResource("6_5vw27")
 script = ExtResource("2_0xm2m")
@@ -747,12 +578,12 @@ southwest = NodePath("../Tile(3,0)")
 south = NodePath("../Tile(3,1)")
 southeast = NodePath("../Tile(3,2)")
 
-[node name="@Area2D@18800" type="Area2D" parent="Board/Tile(2,1)" unique_id=599327081]
+[node name="@Area2D@19073" type="Area2D" parent="Board/Tile(2,1)" unique_id=865774920]
 
-[node name="@CollisionShape2D@18801" type="CollisionShape2D" parent="Board/Tile(2,1)/@Area2D@18800" unique_id=2057085396]
-shape = SubResource("RectangleShape2D_kq58d")
+[node name="@CollisionShape2D@19074" type="CollisionShape2D" parent="Board/Tile(2,1)/@Area2D@19073" unique_id=531485436]
+shape = SubResource("RectangleShape2D_xuqvo")
 
-[node name="Tile(2,2)" type="Sprite2D" parent="Board" unique_id=963595494 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+[node name="Tile(2,2)" type="Sprite2D" parent="Board" unique_id=1638433700 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
 position = Vector2(100, 100)
 scale = Vector2(0.33333334, 0.33333334)
 texture = ExtResource("4_5vw27")
@@ -767,12 +598,12 @@ southwest = NodePath("../Tile(3,1)")
 south = NodePath("../Tile(3,2)")
 southeast = NodePath("../Tile(3,3)")
 
-[node name="@Area2D@18803" type="Area2D" parent="Board/Tile(2,2)" unique_id=1620853509]
+[node name="@Area2D@19076" type="Area2D" parent="Board/Tile(2,2)" unique_id=100225070]
 
-[node name="@CollisionShape2D@18804" type="CollisionShape2D" parent="Board/Tile(2,2)/@Area2D@18803" unique_id=1206091797]
-shape = SubResource("RectangleShape2D_seu75")
+[node name="@CollisionShape2D@19077" type="CollisionShape2D" parent="Board/Tile(2,2)/@Area2D@19076" unique_id=899560601]
+shape = SubResource("RectangleShape2D_qsp4k")
 
-[node name="Tile(2,3)" type="Sprite2D" parent="Board" unique_id=1374058101 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+[node name="Tile(2,3)" type="Sprite2D" parent="Board" unique_id=287754171 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
 position = Vector2(150, 100)
 scale = Vector2(0.33333334, 0.33333334)
 texture = ExtResource("4_5vw27")
@@ -787,12 +618,12 @@ southwest = NodePath("../Tile(3,2)")
 south = NodePath("../Tile(3,3)")
 southeast = NodePath("../Tile(3,4)")
 
-[node name="@Area2D@18806" type="Area2D" parent="Board/Tile(2,3)" unique_id=1846985129]
+[node name="@Area2D@19079" type="Area2D" parent="Board/Tile(2,3)" unique_id=882041428]
 
-[node name="@CollisionShape2D@18807" type="CollisionShape2D" parent="Board/Tile(2,3)/@Area2D@18806" unique_id=2023757132]
-shape = SubResource("RectangleShape2D_htxhm")
+[node name="@CollisionShape2D@19080" type="CollisionShape2D" parent="Board/Tile(2,3)/@Area2D@19079" unique_id=1252414233]
+shape = SubResource("RectangleShape2D_kq58d")
 
-[node name="Tile(2,4)" type="Sprite2D" parent="Board" unique_id=2136585215 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+[node name="Tile(2,4)" type="Sprite2D" parent="Board" unique_id=648225536 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
 position = Vector2(200, 100)
 scale = Vector2(0.33333334, 0.33333334)
 texture = ExtResource("4_5vw27")
@@ -807,12 +638,12 @@ southwest = NodePath("../Tile(3,3)")
 south = NodePath("../Tile(3,4)")
 southeast = NodePath("../Tile(3,5)")
 
-[node name="@Area2D@18809" type="Area2D" parent="Board/Tile(2,4)" unique_id=733112546]
+[node name="@Area2D@19082" type="Area2D" parent="Board/Tile(2,4)" unique_id=1612931612]
 
-[node name="@CollisionShape2D@18810" type="CollisionShape2D" parent="Board/Tile(2,4)/@Area2D@18809" unique_id=625611282]
-shape = SubResource("RectangleShape2D_jq2sk")
+[node name="@CollisionShape2D@19083" type="CollisionShape2D" parent="Board/Tile(2,4)/@Area2D@19082" unique_id=153967640]
+shape = SubResource("RectangleShape2D_seu75")
 
-[node name="Tile(2,5)" type="Sprite2D" parent="Board" unique_id=1081600353 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+[node name="Tile(2,5)" type="Sprite2D" parent="Board" unique_id=1207060163 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
 position = Vector2(250, 100)
 scale = Vector2(0.33333334, 0.33333334)
 texture = ExtResource("4_5vw27")
@@ -827,12 +658,12 @@ southwest = NodePath("../Tile(3,4)")
 south = NodePath("../Tile(3,5)")
 southeast = NodePath("../Tile(3,6)")
 
-[node name="@Area2D@18812" type="Area2D" parent="Board/Tile(2,5)" unique_id=294529999]
+[node name="@Area2D@19085" type="Area2D" parent="Board/Tile(2,5)" unique_id=998821269]
 
-[node name="@CollisionShape2D@18813" type="CollisionShape2D" parent="Board/Tile(2,5)/@Area2D@18812" unique_id=1219521164]
-shape = SubResource("RectangleShape2D_4k2k6")
+[node name="@CollisionShape2D@19086" type="CollisionShape2D" parent="Board/Tile(2,5)/@Area2D@19085" unique_id=1465888981]
+shape = SubResource("RectangleShape2D_htxhm")
 
-[node name="Tile(2,6)" type="Sprite2D" parent="Board" unique_id=303433012 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+[node name="Tile(2,6)" type="Sprite2D" parent="Board" unique_id=207361618 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
 position = Vector2(300, 100)
 scale = Vector2(0.33333334, 0.33333334)
 texture = ExtResource("4_5vw27")
@@ -847,12 +678,12 @@ southwest = NodePath("../Tile(3,5)")
 south = NodePath("../Tile(3,6)")
 southeast = NodePath("../Tile(3,7)")
 
-[node name="@Area2D@18815" type="Area2D" parent="Board/Tile(2,6)" unique_id=1809664487]
+[node name="@Area2D@19088" type="Area2D" parent="Board/Tile(2,6)" unique_id=1831439075]
 
-[node name="@CollisionShape2D@18816" type="CollisionShape2D" parent="Board/Tile(2,6)/@Area2D@18815" unique_id=562877777]
-shape = SubResource("RectangleShape2D_0rl1p")
+[node name="@CollisionShape2D@19089" type="CollisionShape2D" parent="Board/Tile(2,6)/@Area2D@19088" unique_id=1233629252]
+shape = SubResource("RectangleShape2D_jq2sk")
 
-[node name="Tile(2,7)" type="Sprite2D" parent="Board" unique_id=143725655 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+[node name="Tile(2,7)" type="Sprite2D" parent="Board" unique_id=1219956391 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
 position = Vector2(350, 100)
 texture = ExtResource("6_5vw27")
 script = ExtResource("2_0xm2m")
@@ -867,12 +698,12 @@ southwest = NodePath("../Tile(3,6)")
 south = NodePath("../Tile(3,7)")
 southeast = NodePath("../Tile(3,8)")
 
-[node name="@Area2D@18818" type="Area2D" parent="Board/Tile(2,7)" unique_id=1671963941]
+[node name="@Area2D@19091" type="Area2D" parent="Board/Tile(2,7)" unique_id=1932012600]
 
-[node name="@CollisionShape2D@18819" type="CollisionShape2D" parent="Board/Tile(2,7)/@Area2D@18818" unique_id=875339304]
-shape = SubResource("RectangleShape2D_ok6jj")
+[node name="@CollisionShape2D@19092" type="CollisionShape2D" parent="Board/Tile(2,7)/@Area2D@19091" unique_id=1187197913]
+shape = SubResource("RectangleShape2D_4k2k6")
 
-[node name="Tile(2,8)" type="Sprite2D" parent="Board" unique_id=436147247 node_paths=PackedStringArray("northwest", "north", "west", "southwest", "south")]
+[node name="Tile(2,8)" type="Sprite2D" parent="Board" unique_id=1504087729 node_paths=PackedStringArray("northwest", "north", "west", "southwest", "south")]
 position = Vector2(400, 100)
 texture = ExtResource("6_5vw27")
 script = ExtResource("2_0xm2m")
@@ -884,12 +715,12 @@ west = NodePath("../Tile(2,7)")
 southwest = NodePath("../Tile(3,7)")
 south = NodePath("../Tile(3,8)")
 
-[node name="@Area2D@18821" type="Area2D" parent="Board/Tile(2,8)" unique_id=902367748]
+[node name="@Area2D@19094" type="Area2D" parent="Board/Tile(2,8)" unique_id=998474121]
 
-[node name="@CollisionShape2D@18822" type="CollisionShape2D" parent="Board/Tile(2,8)/@Area2D@18821" unique_id=474114611]
-shape = SubResource("RectangleShape2D_facbu")
+[node name="@CollisionShape2D@19095" type="CollisionShape2D" parent="Board/Tile(2,8)/@Area2D@19094" unique_id=488077615]
+shape = SubResource("RectangleShape2D_0rl1p")
 
-[node name="Tile(3,0)" type="Sprite2D" parent="Board" unique_id=1709659402 node_paths=PackedStringArray("north", "northeast", "east", "south", "southeast")]
+[node name="Tile(3,0)" type="Sprite2D" parent="Board" unique_id=1981718476 node_paths=PackedStringArray("north", "northeast", "east", "south", "southeast")]
 position = Vector2(0, 150)
 scale = Vector2(0.33333334, 0.33333334)
 texture = ExtResource("4_5vw27")
@@ -901,15 +732,14 @@ east = NodePath("../Tile(3,1)")
 south = NodePath("../Tile(4,0)")
 southeast = NodePath("../Tile(4,1)")
 
-[node name="@Area2D@18824" type="Area2D" parent="Board/Tile(3,0)" unique_id=1731226379]
+[node name="@Area2D@19097" type="Area2D" parent="Board/Tile(3,0)" unique_id=84228864]
 
-[node name="@CollisionShape2D@18825" type="CollisionShape2D" parent="Board/Tile(3,0)/@Area2D@18824" unique_id=1127837096]
-shape = SubResource("RectangleShape2D_b1qrp")
+[node name="@CollisionShape2D@19098" type="CollisionShape2D" parent="Board/Tile(3,0)/@Area2D@19097" unique_id=1032262243]
+shape = SubResource("RectangleShape2D_ok6jj")
 
-[node name="Tile(3,1)" type="Sprite2D" parent="Board" unique_id=1772307859 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+[node name="Tile(3,1)" type="Sprite2D" parent="Board" unique_id=37728159 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
 position = Vector2(50, 150)
-scale = Vector2(0.33333334, 0.33333334)
-texture = ExtResource("7_4c57u")
+texture = ExtResource("5_lquwl")
 script = ExtResource("2_0xm2m")
 type = 1
 size = 50
@@ -922,12 +752,12 @@ southwest = NodePath("../Tile(4,0)")
 south = NodePath("../Tile(4,1)")
 southeast = NodePath("../Tile(4,2)")
 
-[node name="@Area2D@18827" type="Area2D" parent="Board/Tile(3,1)" unique_id=1327534030]
+[node name="@Area2D@19100" type="Area2D" parent="Board/Tile(3,1)" unique_id=217888407]
 
-[node name="@CollisionShape2D@18828" type="CollisionShape2D" parent="Board/Tile(3,1)/@Area2D@18827" unique_id=1677154706]
-shape = SubResource("RectangleShape2D_come4")
+[node name="@CollisionShape2D@19101" type="CollisionShape2D" parent="Board/Tile(3,1)/@Area2D@19100" unique_id=2137043625]
+shape = SubResource("RectangleShape2D_facbu")
 
-[node name="Tile(3,2)" type="Sprite2D" parent="Board" unique_id=1768426058 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+[node name="Tile(3,2)" type="Sprite2D" parent="Board" unique_id=482119787 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
 position = Vector2(100, 150)
 scale = Vector2(0.33333334, 0.33333334)
 texture = ExtResource("4_5vw27")
@@ -942,15 +772,14 @@ southwest = NodePath("../Tile(4,1)")
 south = NodePath("../Tile(4,2)")
 southeast = NodePath("../Tile(4,3)")
 
-[node name="@Area2D@18830" type="Area2D" parent="Board/Tile(3,2)" unique_id=1777818960]
+[node name="@Area2D@19103" type="Area2D" parent="Board/Tile(3,2)" unique_id=1384433254]
 
-[node name="@CollisionShape2D@18831" type="CollisionShape2D" parent="Board/Tile(3,2)/@Area2D@18830" unique_id=843242417]
-shape = SubResource("RectangleShape2D_h8e4i")
+[node name="@CollisionShape2D@19104" type="CollisionShape2D" parent="Board/Tile(3,2)/@Area2D@19103" unique_id=1479353180]
+shape = SubResource("RectangleShape2D_b1qrp")
 
-[node name="Tile(3,3)" type="Sprite2D" parent="Board" unique_id=1808846941 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+[node name="Tile(3,3)" type="Sprite2D" parent="Board" unique_id=585199317 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
 position = Vector2(150, 150)
-scale = Vector2(0.33333334, 0.33333334)
-texture = ExtResource("7_4c57u")
+texture = ExtResource("5_lquwl")
 script = ExtResource("2_0xm2m")
 type = 1
 size = 50
@@ -963,12 +792,12 @@ southwest = NodePath("../Tile(4,2)")
 south = NodePath("../Tile(4,3)")
 southeast = NodePath("../Tile(4,4)")
 
-[node name="@Area2D@18833" type="Area2D" parent="Board/Tile(3,3)" unique_id=1819501731]
+[node name="@Area2D@19106" type="Area2D" parent="Board/Tile(3,3)" unique_id=58708161]
 
-[node name="@CollisionShape2D@18834" type="CollisionShape2D" parent="Board/Tile(3,3)/@Area2D@18833" unique_id=963372481]
-shape = SubResource("RectangleShape2D_4lmeg")
+[node name="@CollisionShape2D@19107" type="CollisionShape2D" parent="Board/Tile(3,3)/@Area2D@19106" unique_id=1837601014]
+shape = SubResource("RectangleShape2D_come4")
 
-[node name="Tile(3,4)" type="Sprite2D" parent="Board" unique_id=2128637275 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+[node name="Tile(3,4)" type="Sprite2D" parent="Board" unique_id=855525725 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
 position = Vector2(200, 150)
 scale = Vector2(0.33333334, 0.33333334)
 texture = ExtResource("4_5vw27")
@@ -983,12 +812,12 @@ southwest = NodePath("../Tile(4,3)")
 south = NodePath("../Tile(4,4)")
 southeast = NodePath("../Tile(4,5)")
 
-[node name="@Area2D@18836" type="Area2D" parent="Board/Tile(3,4)" unique_id=1506575026]
+[node name="@Area2D@19109" type="Area2D" parent="Board/Tile(3,4)" unique_id=1624087424]
 
-[node name="@CollisionShape2D@18837" type="CollisionShape2D" parent="Board/Tile(3,4)/@Area2D@18836" unique_id=903767938]
-shape = SubResource("RectangleShape2D_0cp0l")
+[node name="@CollisionShape2D@19110" type="CollisionShape2D" parent="Board/Tile(3,4)/@Area2D@19109" unique_id=132666311]
+shape = SubResource("RectangleShape2D_h8e4i")
 
-[node name="Tile(3,5)" type="Sprite2D" parent="Board" unique_id=1078020989 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+[node name="Tile(3,5)" type="Sprite2D" parent="Board" unique_id=1306829878 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
 position = Vector2(250, 150)
 scale = Vector2(0.33333334, 0.33333334)
 texture = ExtResource("4_5vw27")
@@ -1003,12 +832,12 @@ southwest = NodePath("../Tile(4,4)")
 south = NodePath("../Tile(4,5)")
 southeast = NodePath("../Tile(4,6)")
 
-[node name="@Area2D@18839" type="Area2D" parent="Board/Tile(3,5)" unique_id=2004569305]
+[node name="@Area2D@19112" type="Area2D" parent="Board/Tile(3,5)" unique_id=395827287]
 
-[node name="@CollisionShape2D@18840" type="CollisionShape2D" parent="Board/Tile(3,5)/@Area2D@18839" unique_id=1539469973]
-shape = SubResource("RectangleShape2D_d2t1y")
+[node name="@CollisionShape2D@19113" type="CollisionShape2D" parent="Board/Tile(3,5)/@Area2D@19112" unique_id=357560600]
+shape = SubResource("RectangleShape2D_4lmeg")
 
-[node name="Tile(3,6)" type="Sprite2D" parent="Board" unique_id=2140312144 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+[node name="Tile(3,6)" type="Sprite2D" parent="Board" unique_id=1802636867 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
 position = Vector2(300, 150)
 scale = Vector2(0.33333334, 0.33333334)
 texture = ExtResource("4_5vw27")
@@ -1023,15 +852,14 @@ southwest = NodePath("../Tile(4,5)")
 south = NodePath("../Tile(4,6)")
 southeast = NodePath("../Tile(4,7)")
 
-[node name="@Area2D@18842" type="Area2D" parent="Board/Tile(3,6)" unique_id=551302016]
+[node name="@Area2D@19115" type="Area2D" parent="Board/Tile(3,6)" unique_id=1901468889]
 
-[node name="@CollisionShape2D@18843" type="CollisionShape2D" parent="Board/Tile(3,6)/@Area2D@18842" unique_id=1940521634]
-shape = SubResource("RectangleShape2D_gngh3")
+[node name="@CollisionShape2D@19116" type="CollisionShape2D" parent="Board/Tile(3,6)/@Area2D@19115" unique_id=1933352448]
+shape = SubResource("RectangleShape2D_0cp0l")
 
-[node name="Tile(3,7)" type="Sprite2D" parent="Board" unique_id=875493543 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
+[node name="Tile(3,7)" type="Sprite2D" parent="Board" unique_id=1870770642 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east", "southwest", "south", "southeast")]
 position = Vector2(350, 150)
-scale = Vector2(0.33333334, 0.33333334)
-texture = ExtResource("7_4c57u")
+texture = ExtResource("5_lquwl")
 script = ExtResource("2_0xm2m")
 type = 1
 size = 50
@@ -1044,12 +872,12 @@ southwest = NodePath("../Tile(4,6)")
 south = NodePath("../Tile(4,7)")
 southeast = NodePath("../Tile(4,8)")
 
-[node name="@Area2D@18845" type="Area2D" parent="Board/Tile(3,7)" unique_id=747889194]
+[node name="@Area2D@19118" type="Area2D" parent="Board/Tile(3,7)" unique_id=900751490]
 
-[node name="@CollisionShape2D@18846" type="CollisionShape2D" parent="Board/Tile(3,7)/@Area2D@18845" unique_id=2079297856]
-shape = SubResource("RectangleShape2D_0n3wm")
+[node name="@CollisionShape2D@19119" type="CollisionShape2D" parent="Board/Tile(3,7)/@Area2D@19118" unique_id=1552542858]
+shape = SubResource("RectangleShape2D_d2t1y")
 
-[node name="Tile(3,8)" type="Sprite2D" parent="Board" unique_id=1109413004 node_paths=PackedStringArray("northwest", "north", "west", "southwest", "south")]
+[node name="Tile(3,8)" type="Sprite2D" parent="Board" unique_id=772007467 node_paths=PackedStringArray("northwest", "north", "west", "southwest", "south")]
 position = Vector2(400, 150)
 scale = Vector2(0.33333334, 0.33333334)
 texture = ExtResource("4_5vw27")
@@ -1061,12 +889,12 @@ west = NodePath("../Tile(3,7)")
 southwest = NodePath("../Tile(4,7)")
 south = NodePath("../Tile(4,8)")
 
-[node name="@Area2D@18848" type="Area2D" parent="Board/Tile(3,8)" unique_id=955120786]
+[node name="@Area2D@19121" type="Area2D" parent="Board/Tile(3,8)" unique_id=1519519593]
 
-[node name="@CollisionShape2D@18849" type="CollisionShape2D" parent="Board/Tile(3,8)/@Area2D@18848" unique_id=500776973]
-shape = SubResource("RectangleShape2D_qnost")
+[node name="@CollisionShape2D@19122" type="CollisionShape2D" parent="Board/Tile(3,8)/@Area2D@19121" unique_id=812457391]
+shape = SubResource("RectangleShape2D_gngh3")
 
-[node name="Tile(4,0)" type="Sprite2D" parent="Board" unique_id=1977112727 node_paths=PackedStringArray("north", "northeast", "east")]
+[node name="Tile(4,0)" type="Sprite2D" parent="Board" unique_id=1185210138 node_paths=PackedStringArray("north", "northeast", "east")]
 position = Vector2(0, 200)
 scale = Vector2(0.33333334, 0.33333334)
 texture = ExtResource("4_5vw27")
@@ -1076,15 +904,14 @@ north = NodePath("../Tile(3,0)")
 northeast = NodePath("../Tile(3,1)")
 east = NodePath("../Tile(4,1)")
 
-[node name="@Area2D@18851" type="Area2D" parent="Board/Tile(4,0)" unique_id=1917159595]
+[node name="@Area2D@19124" type="Area2D" parent="Board/Tile(4,0)" unique_id=1371813055]
 
-[node name="@CollisionShape2D@18852" type="CollisionShape2D" parent="Board/Tile(4,0)/@Area2D@18851" unique_id=1355805874]
-shape = SubResource("RectangleShape2D_wnkbs")
+[node name="@CollisionShape2D@19125" type="CollisionShape2D" parent="Board/Tile(4,0)/@Area2D@19124" unique_id=870016013]
+shape = SubResource("RectangleShape2D_0n3wm")
 
-[node name="Tile(4,1)" type="Sprite2D" parent="Board" unique_id=1885213779 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east")]
+[node name="Tile(4,1)" type="Sprite2D" parent="Board" unique_id=621053091 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east")]
 position = Vector2(50, 200)
-scale = Vector2(0.33333334, 0.33333334)
-texture = ExtResource("7_4c57u")
+texture = ExtResource("5_lquwl")
 script = ExtResource("2_0xm2m")
 type = 1
 size = 50
@@ -1094,12 +921,12 @@ northeast = NodePath("../Tile(3,2)")
 west = NodePath("../Tile(4,0)")
 east = NodePath("../Tile(4,2)")
 
-[node name="@Area2D@18854" type="Area2D" parent="Board/Tile(4,1)" unique_id=370717514]
+[node name="@Area2D@19127" type="Area2D" parent="Board/Tile(4,1)" unique_id=1958864831]
 
-[node name="@CollisionShape2D@18855" type="CollisionShape2D" parent="Board/Tile(4,1)/@Area2D@18854" unique_id=1928258510]
-shape = SubResource("RectangleShape2D_f6a44")
+[node name="@CollisionShape2D@19128" type="CollisionShape2D" parent="Board/Tile(4,1)/@Area2D@19127" unique_id=1323941682]
+shape = SubResource("RectangleShape2D_qnost")
 
-[node name="Tile(4,2)" type="Sprite2D" parent="Board" unique_id=209703937 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east")]
+[node name="Tile(4,2)" type="Sprite2D" parent="Board" unique_id=1868034251 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east")]
 position = Vector2(100, 200)
 scale = Vector2(0.33333334, 0.33333334)
 texture = ExtResource("5_7mycd")
@@ -1112,12 +939,12 @@ northeast = NodePath("../Tile(3,3)")
 west = NodePath("../Tile(4,1)")
 east = NodePath("../Tile(4,3)")
 
-[node name="@Area2D@18857" type="Area2D" parent="Board/Tile(4,2)" unique_id=1605771188]
+[node name="@Area2D@19130" type="Area2D" parent="Board/Tile(4,2)" unique_id=2020313582]
 
-[node name="@CollisionShape2D@18858" type="CollisionShape2D" parent="Board/Tile(4,2)/@Area2D@18857" unique_id=1390486777]
-shape = SubResource("RectangleShape2D_0cbny")
+[node name="@CollisionShape2D@19131" type="CollisionShape2D" parent="Board/Tile(4,2)/@Area2D@19130" unique_id=1021896053]
+shape = SubResource("RectangleShape2D_wnkbs")
 
-[node name="Tile(4,3)" type="Sprite2D" parent="Board" unique_id=52235286 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east")]
+[node name="Tile(4,3)" type="Sprite2D" parent="Board" unique_id=1685808117 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east")]
 position = Vector2(150, 200)
 scale = Vector2(0.33333334, 0.33333334)
 texture = ExtResource("4_5vw27")
@@ -1129,12 +956,12 @@ northeast = NodePath("../Tile(3,4)")
 west = NodePath("../Tile(4,2)")
 east = NodePath("../Tile(4,4)")
 
-[node name="@Area2D@18860" type="Area2D" parent="Board/Tile(4,3)" unique_id=1570096193]
+[node name="@Area2D@19133" type="Area2D" parent="Board/Tile(4,3)" unique_id=1718502589]
 
-[node name="@CollisionShape2D@18861" type="CollisionShape2D" parent="Board/Tile(4,3)/@Area2D@18860" unique_id=2081228829]
-shape = SubResource("RectangleShape2D_hrvbo")
+[node name="@CollisionShape2D@19134" type="CollisionShape2D" parent="Board/Tile(4,3)/@Area2D@19133" unique_id=204163701]
+shape = SubResource("RectangleShape2D_f6a44")
 
-[node name="Tile(4,4)" type="Sprite2D" parent="Board" unique_id=180786391 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east")]
+[node name="Tile(4,4)" type="Sprite2D" parent="Board" unique_id=1813866857 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east")]
 position = Vector2(200, 200)
 scale = Vector2(0.33333334, 0.33333334)
 texture = ExtResource("4_5vw27")
@@ -1146,15 +973,14 @@ northeast = NodePath("../Tile(3,5)")
 west = NodePath("../Tile(4,3)")
 east = NodePath("../Tile(4,5)")
 
-[node name="@Area2D@18863" type="Area2D" parent="Board/Tile(4,4)" unique_id=1732589004]
+[node name="@Area2D@19136" type="Area2D" parent="Board/Tile(4,4)" unique_id=1307439488]
 
-[node name="@CollisionShape2D@18864" type="CollisionShape2D" parent="Board/Tile(4,4)/@Area2D@18863" unique_id=1319705952]
-shape = SubResource("RectangleShape2D_uypp3")
+[node name="@CollisionShape2D@19137" type="CollisionShape2D" parent="Board/Tile(4,4)/@Area2D@19136" unique_id=1887734736]
+shape = SubResource("RectangleShape2D_0cbny")
 
-[node name="Tile(4,5)" type="Sprite2D" parent="Board" unique_id=1577028449 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east")]
+[node name="Tile(4,5)" type="Sprite2D" parent="Board" unique_id=832205580 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east")]
 position = Vector2(250, 200)
-scale = Vector2(0.33333334, 0.33333334)
-texture = ExtResource("7_4c57u")
+texture = ExtResource("5_lquwl")
 script = ExtResource("2_0xm2m")
 type = 1
 size = 50
@@ -1164,12 +990,12 @@ northeast = NodePath("../Tile(3,6)")
 west = NodePath("../Tile(4,4)")
 east = NodePath("../Tile(4,6)")
 
-[node name="@Area2D@18866" type="Area2D" parent="Board/Tile(4,5)" unique_id=1788754146]
+[node name="@Area2D@19139" type="Area2D" parent="Board/Tile(4,5)" unique_id=5246086]
 
-[node name="@CollisionShape2D@18867" type="CollisionShape2D" parent="Board/Tile(4,5)/@Area2D@18866" unique_id=1925138319]
-shape = SubResource("RectangleShape2D_blkrb")
+[node name="@CollisionShape2D@19140" type="CollisionShape2D" parent="Board/Tile(4,5)/@Area2D@19139" unique_id=246053557]
+shape = SubResource("RectangleShape2D_hrvbo")
 
-[node name="Tile(4,6)" type="Sprite2D" parent="Board" unique_id=1021816287 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east")]
+[node name="Tile(4,6)" type="Sprite2D" parent="Board" unique_id=1034329079 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east")]
 position = Vector2(300, 200)
 scale = Vector2(0.33333334, 0.33333334)
 texture = ExtResource("4_5vw27")
@@ -1181,15 +1007,14 @@ northeast = NodePath("../Tile(3,7)")
 west = NodePath("../Tile(4,5)")
 east = NodePath("../Tile(4,7)")
 
-[node name="@Area2D@18869" type="Area2D" parent="Board/Tile(4,6)" unique_id=1347432712]
+[node name="@Area2D@19142" type="Area2D" parent="Board/Tile(4,6)" unique_id=418016024]
 
-[node name="@CollisionShape2D@18870" type="CollisionShape2D" parent="Board/Tile(4,6)/@Area2D@18869" unique_id=580974432]
-shape = SubResource("RectangleShape2D_abqjc")
+[node name="@CollisionShape2D@19143" type="CollisionShape2D" parent="Board/Tile(4,6)/@Area2D@19142" unique_id=2059122983]
+shape = SubResource("RectangleShape2D_uypp3")
 
-[node name="Tile(4,7)" type="Sprite2D" parent="Board" unique_id=636475281 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east")]
+[node name="Tile(4,7)" type="Sprite2D" parent="Board" unique_id=1080636949 node_paths=PackedStringArray("northwest", "north", "northeast", "west", "east")]
 position = Vector2(350, 200)
-scale = Vector2(0.33333334, 0.33333334)
-texture = ExtResource("7_4c57u")
+texture = ExtResource("5_lquwl")
 script = ExtResource("2_0xm2m")
 type = 1
 size = 50
@@ -1199,12 +1024,12 @@ northeast = NodePath("../Tile(3,8)")
 west = NodePath("../Tile(4,6)")
 east = NodePath("../Tile(4,8)")
 
-[node name="@Area2D@18872" type="Area2D" parent="Board/Tile(4,7)" unique_id=772443836]
+[node name="@Area2D@19145" type="Area2D" parent="Board/Tile(4,7)" unique_id=1088409056]
 
-[node name="@CollisionShape2D@18873" type="CollisionShape2D" parent="Board/Tile(4,7)/@Area2D@18872" unique_id=482774002]
-shape = SubResource("RectangleShape2D_6iyjs")
+[node name="@CollisionShape2D@19146" type="CollisionShape2D" parent="Board/Tile(4,7)/@Area2D@19145" unique_id=541029264]
+shape = SubResource("RectangleShape2D_blkrb")
 
-[node name="Tile(4,8)" type="Sprite2D" parent="Board" unique_id=1140721183 node_paths=PackedStringArray("northwest", "north", "west")]
+[node name="Tile(4,8)" type="Sprite2D" parent="Board" unique_id=1347647616 node_paths=PackedStringArray("northwest", "north", "west")]
 position = Vector2(400, 200)
 scale = Vector2(0.33333334, 0.33333334)
 texture = ExtResource("4_5vw27")
@@ -1214,23 +1039,11 @@ northwest = NodePath("../Tile(3,7)")
 north = NodePath("../Tile(3,8)")
 west = NodePath("../Tile(4,7)")
 
-[node name="@Area2D@18875" type="Area2D" parent="Board/Tile(4,8)" unique_id=46535276]
+[node name="@Area2D@19148" type="Area2D" parent="Board/Tile(4,8)" unique_id=874715256]
 
-[node name="@CollisionShape2D@18876" type="CollisionShape2D" parent="Board/Tile(4,8)/@Area2D@18875" unique_id=1820765185]
-shape = SubResource("RectangleShape2D_4w656")
+[node name="@CollisionShape2D@19149" type="CollisionShape2D" parent="Board/Tile(4,8)/@Area2D@19148" unique_id=780168966]
+shape = SubResource("RectangleShape2D_abqjc")
 
-[connection signal="pressed" from="Next Level/Button2" to="." method="_back_to_select"]
 [connection signal="pressed" from="Next Level/Button" to="." method="_next_level"]
-[connection signal="pressed" from="Level Selection/ColorRect/Menu" to="." method="_on_menu_pressed"]
-[connection signal="pressed" from="Level Selection/ColorRect/1" to="." method="_on_button_pressed" binds= [1]]
-[connection signal="pressed" from="Level Selection/ColorRect/2" to="." method="_on_button_pressed" binds= [2]]
-[connection signal="pressed" from="Level Selection/ColorRect/3" to="." method="_on_button_pressed" binds= [3]]
-[connection signal="pressed" from="Level Selection/ColorRect/4" to="." method="_on_button_pressed" binds= [4]]
-[connection signal="pressed" from="Level Selection/ColorRect/5" to="." method="_on_button_pressed" binds= [5]]
-[connection signal="pressed" from="Level Selection/ColorRect/6" to="." method="_on_button_pressed" binds= [6]]
-[connection signal="pressed" from="Level Selection/ColorRect/7" to="." method="_on_button_pressed" binds= [7]]
-[connection signal="pressed" from="Level Selection/ColorRect/8" to="." method="_on_button_pressed" binds= [8]]
-[connection signal="pressed" from="Level Selection/ColorRect/9" to="." method="_on_button_pressed" binds= [9]]
-[connection signal="pressed" from="Level Selection/ColorRect/10" to="." method="_on_button_pressed" binds= [10]]
-[connection signal="pressed" from="Board/Reset/Level Select" to="." method="_back_to_select"]
+[connection signal="pressed" from="Level Selection/Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="Board/Reset/Button" to="." method="_reset_level"]
