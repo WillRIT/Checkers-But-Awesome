@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dpbwokjm3kgm8"]
 
 [ext_resource type="Script" uid="uid://crxtelcgt32pf" path="res://mainmenu.gd" id="1_oyqm6"]
-[ext_resource type="PackedScene" uid="uid://fdvjay0qaipi" path="res://scenes/dummy.tscn" id="2_kpexm"]
+[ext_resource type="PackedScene" uid="uid://dqq7u7fxw5k0y" path="res://main.tscn" id="2_kpexm"]
 [ext_resource type="Texture2D" uid="uid://c842ft3fhctuk" path="res://assets/cba-bkgd.png" id="3_mom7w"]
 [ext_resource type="Texture2D" uid="uid://by3tvmypgaf6o" path="res://assets/cba-logo-black.png" id="4_7lgly"]
 [ext_resource type="Theme" uid="uid://cij650wjll7as" path="res://assets/select_button.theme" id="5_0824t"]
@@ -59,3 +59,5 @@ layout_mode = 2
 theme = ExtResource("5_0824t")
 theme_override_font_sizes/font_size = 45
 text = "QUIT"
+
+[connection signal="pressed" from="VBoxContainer/Start" to="." method="_on_start_pressed"]
