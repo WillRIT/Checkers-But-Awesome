@@ -64,7 +64,7 @@ func _ready() -> void:
 	
 	board = find_child("Board");
 
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	match state:
 		GAMESTATE.GAME:
 			if(board.numOfPieces <= 0):
@@ -128,6 +128,3 @@ func _reset_level()->void:
 	board.load_string()
 func _back_to_select() -> void:
 	state_change(GAMESTATE.LEVELSELECT)
-
-func _on_menu_pressed() -> void:
-	change_scene(start_scene)
